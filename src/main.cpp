@@ -1,5 +1,5 @@
 #include <iostream>
-#include "qam.hpp"
+#include "QAM.hpp"
 #include "deQAM.hpp"
 #include "data_path.hpp"
 #include <math.h>
