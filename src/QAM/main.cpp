@@ -17,10 +17,11 @@ int main(int argc, char *argv[]){
 	hls::stream<int> para_str_in;
 	hls::stream<int> para_str_temp;
 	hls::stream<int> para_str_out;
-	int qam_num =  4;
-	int sym_num =  4; //(8/4) = 2
-	int DATA_LEN =  30;
+	int qam_num =  16;
+	int sym_num =  2;
+	int DATA_LEN =  48;
 	int pilot_width =  4;
+	int CP_length = 16;
 
 	cout << ">> Start test!" << endl;
 
@@ -36,6 +37,9 @@ int main(int argc, char *argv[]){
 		}
 		else if(k==3){
 			para_str_in.write(pilot_width);
+		}
+		else if(k==4){
+			para_str_in.write(CP_length);
 		}
 		else{
 			break;
