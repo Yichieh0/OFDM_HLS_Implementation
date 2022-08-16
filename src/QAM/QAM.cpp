@@ -56,6 +56,7 @@ void QAM(hls::stream<ap_uint<QAM_unsigned_bit>>& in, hls::stream<ap_int<QAM_sign
 	para_str_out.write(qam_num);
 	para_str_out.write(sym_num);
 	para_str_out.write(pilot_width);
+	para_str_out.write(CP_length);
 
 	for(int k = 0; k < (DATA_LEN*sym_num); k++){
 		in_temp = in.read();
