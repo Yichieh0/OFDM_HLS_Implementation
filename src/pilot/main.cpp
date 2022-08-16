@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 	int sym_num = 2;
 	int DATA_LEN = 48;
 	int pilot_width = 4;
+	
 
 	cout << ">> Start test!" << endl;
 
@@ -39,6 +40,9 @@ int main(int argc, char *argv[])
 		}
 		else if(k==3){
 			para_str_in.write(pilot_width);
+		}
+		else if(k==4){
+			CP_length = para_str_in.read();
 		}
 		else{
 			break;
