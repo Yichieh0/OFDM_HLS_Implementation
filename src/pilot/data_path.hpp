@@ -19,6 +19,8 @@
 //#define qam_num 16
 //#define DATA_LEN 48
 //#define sym_num 2
+//#define CP_length 16
+//#define pilot_width 4
 
 #define QAM_normalization 10
 const ap_fixed<IN_WL,IN_IL> sqrt_QAM_norm = (ap_fixed<IN_WL,IN_IL>)sqrt(QAM_normalization);
