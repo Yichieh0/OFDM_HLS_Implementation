@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 	int sym_num = 2;
 	int DATA_LEN = 48;
 	int pilot_width = 4;
+	int CP_length = 16;
 	
 
 	cout << ">> Start test!" << endl;
