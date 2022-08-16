@@ -6,8 +6,8 @@
 #include <ap_fixed.h>
 #include <hls_stream.h>
 
-#define QAM_unsigned_bit 2 //4
-#define QAM_signed_bit 2 //3
+#define QAM_unsigned_bit 4
+#define QAM_signed_bit 3
 #define FFT_LEN 64
 #define IN_WL 20
 #define IN_IL 5
