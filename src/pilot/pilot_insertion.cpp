@@ -11,6 +11,7 @@ void pilot_insertion(hls::stream<ap_fixed<IN_WL, IN_IL>>& data_in_real, hls::str
 	int qam_num;
 	int sym_num;
 	int pilot_width;
+	int CP_length;
 
 	for(int para_cnt = 0; para_cnt < para_num; para_cnt++){
 		if(para_cnt==0){
@@ -25,6 +26,9 @@ void pilot_insertion(hls::stream<ap_fixed<IN_WL, IN_IL>>& data_in_real, hls::str
 		else if(para_cnt==3){
 			pilot_width = para_str_in.read();
 		}
+		else if(para_cnt==4){
+			CP_length = para_str_in.read();
+		}
 		else{
 			break;
 		}
@@ -34,6 +38,7 @@ void pilot_insertion(hls::stream<ap_fixed<IN_WL, IN_IL>>& data_in_real, hls::str
 	para_str_out.write(qam_num);
 	para_str_out.write(sym_num);
 	para_str_out.write(pilot_width);
+	para_str_out.write(CP_length);
 
 	for (int k = 0; k < DATA_LEN*sym_num/(FFT_LEN-(FFT_LEN/pilot_width)); k++){
 		for (int t = 0; t < FFT_LEN; t++) {
