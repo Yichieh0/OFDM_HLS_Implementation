@@ -16,7 +16,7 @@
  */
 //================================== End Lic =================================================
 
-#include "qam.hpp"
+#include "QAM.hpp"
 
 void QAM(hls::stream<ap_uint<QAM_unsigned_bit>>& in, hls::stream<ap_int<QAM_signed_bit>>& out_real, hls::stream<ap_int<QAM_signed_bit>>& out_imag, hls::stream<int>& para_str_in, hls::stream<int>& para_str_out){
 
