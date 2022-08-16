@@ -29,6 +29,7 @@ void QAM(hls::stream<ap_uint<QAM_unsigned_bit>>& in, hls::stream<ap_int<QAM_sign
 	int qam_num;
 	int sym_num;
 	int pilot_width;
+	int CP_length;
 
 	for(int para_cnt = 0; para_cnt < para_num; para_cnt++){
 		if(para_cnt==0){
@@ -42,6 +43,9 @@ void QAM(hls::stream<ap_uint<QAM_unsigned_bit>>& in, hls::stream<ap_int<QAM_sign
 		}
 		else if(para_cnt==3){
 			pilot_width = para_str_in.read();
+		}
+		else if(para_cnt==4){
+			CP_length = para_str_in.read();
 		}
 		else{
 			break;
