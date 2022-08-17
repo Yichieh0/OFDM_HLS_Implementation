@@ -10,7 +10,7 @@
 #define FFT_LEN 64
 #define IN_WL 20
 #define IN_IL 5
-#define para_num 10
+//#define para_num 10
 #define pilot_real 1
 #define pilot_imag 0
 
