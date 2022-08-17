@@ -13,39 +13,50 @@ void deQAM(hls::stream<ap_fixed<IN_WL,IN_IL>>& data_in_real, hls::stream<ap_fixe
 	ap_fixed<IN_WL,IN_IL> read_in_real;
 	ap_fixed<IN_WL,IN_IL> read_in_imag;
 
+	int flag = 0;
+	int para_num;
+	int para_cnt = 0;
 	int DATA_LEN;
 	int qam_num;
 	int sym_num;
 	int pilot_width;
 	int CP_length;
+	int useless_para;
 
-	for(int para_cnt = 0; para_cnt < para_num; para_cnt++){
+	while(!flag){
 		if(para_cnt==0){
-			DATA_LEN = para_str_in.read();
+			para_num = para_str_in.read();
+			//para_str_out.write(para_num);
 		}
 		else if(para_cnt==1){
-			qam_num = para_str_in.read();
+			DATA_LEN = para_str_in.read();
+			//para_str_out.write(DATA_LEN);
 		}
 		else if(para_cnt==2){
-			sym_num = para_str_in.read();
+			qam_num = para_str_in.read();
+			//para_str_out.write(qam_num);
 		}
 		else if(para_cnt==3){
-			pilot_width = para_str_in.read();
+			sym_num = para_str_in.read();
+			//para_str_out.write(sym_num);
 		}
 		else if(para_cnt==4){
+			pilot_width = para_str_in.read();
+			//para_str_out.write(pilot_width);
+		}
+		else if(para_cnt==5){
 			CP_length = para_str_in.read();
+			//para_str_out.write(CP_length);
 		}
 		else{
-			break;
+			useless_para = para_str_in.read();
+			//para_str_out.write(useless_para);
+		}
+		para_cnt++;
+		if(para_cnt > para_num){
+			flag = 1;
 		}
 	}
-	/*
-	para_str_out.write(DATA_LEN);
-	para_str_out.write(qam_num);
-	para_str_out.write(sym_num);
-	para_str_out.write(pilot_width);
-	para_str_out.write(CP_length);
-	*/
 
 	for(int k = 0; k < (DATA_LEN*sym_num); k++){
 		read_in_real = data_in_real.read();
