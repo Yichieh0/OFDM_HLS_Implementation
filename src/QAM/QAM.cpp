@@ -16,7 +16,7 @@
  */
 //================================== End Lic =================================================
 
-#include "QAM.hpp"
+#include "qam.hpp"
 
 void QAM(hls::stream<ap_uint<QAM_unsigned_bit>>& in, hls::stream<ap_int<QAM_signed_bit>>& out_real, hls::stream<ap_int<QAM_signed_bit>>& out_imag, hls::stream<int>& para_str_in, hls::stream<int>& para_str_out){
 
@@ -25,38 +25,50 @@ void QAM(hls::stream<ap_uint<QAM_unsigned_bit>>& in, hls::stream<ap_int<QAM_sign
 	ap_uint<QAM_unsigned_bit> in_temp;
 	ap_int<QAM_signed_bit> out_temp_real;
 	ap_int<QAM_signed_bit> out_temp_imag;
+	int flag = 0;
+	int para_num;
+	int para_cnt = 0;
 	int DATA_LEN;
 	int qam_num;
 	int sym_num;
 	int pilot_width;
 	int CP_length;
+	int useless_para;
 
-	for(int para_cnt = 0; para_cnt < para_num; para_cnt++){
+	while(!flag){
 		if(para_cnt==0){
-			DATA_LEN = para_str_in.read();
+			para_num = para_str_in.read();
+			para_str_out.write(para_num);
 		}
 		else if(para_cnt==1){
-			qam_num = para_str_in.read();
+			DATA_LEN = para_str_in.read();
+			para_str_out.write(DATA_LEN);
 		}
 		else if(para_cnt==2){
-			sym_num = para_str_in.read();
+			qam_num = para_str_in.read();
+			para_str_out.write(qam_num);
 		}
 		else if(para_cnt==3){
-			pilot_width = para_str_in.read();
+			sym_num = para_str_in.read();
+			para_str_out.write(sym_num);
 		}
 		else if(para_cnt==4){
+			pilot_width = para_str_in.read();
+			para_str_out.write(pilot_width);
+		}
+		else if(para_cnt==5){
 			CP_length = para_str_in.read();
+			para_str_out.write(CP_length);
 		}
 		else{
-			break;
+			useless_para = para_str_in.read();
+			para_str_out.write(useless_para);
+		}
+		para_cnt++;
+		if(para_cnt > para_num){
+			flag = 1;
 		}
 	}
-
-	para_str_out.write(DATA_LEN);
-	para_str_out.write(qam_num);
-	para_str_out.write(sym_num);
-	para_str_out.write(pilot_width);
-	para_str_out.write(CP_length);
 
 	for(int k = 0; k < (DATA_LEN*sym_num); k++){
 		in_temp = in.read();
