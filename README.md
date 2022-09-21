@@ -15,6 +15,7 @@ Exoprt IP by vitis_hls
 - check the design is synthesizable
 - check the hardware utilization and timing information
 3. COSIM
-- check the desi
+- check the hardware design result
 - check the II and latency
 4. Export IP
+- export IP for vivado composable connection
