@@ -20,13 +20,14 @@
 #define module_num 2
 
 void QAM(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data_out){
+#pragma HLS INTERFACE mode=ap_ctrl_none port=return
 #pragma HLS INTERFACE mode = axis port = data_in
 #pragma HLS INTERFACE mode = axis port = data_out
 
 	ap_uint_64 in_temp;
 	ap_axiu_64 out_temp;
-	ap_int_32 out_temp_real;
-	ap_int_32 out_temp_imag;
+	ap_fixed<IN_WL,IN_IL> out_temp_real;
+	ap_fixed<IN_WL,IN_IL> out_temp_imag;
 
 	int DATA_LEN;
 	int qam_num;
@@ -41,7 +42,8 @@ void QAM(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data_out){
 	const int threshold = pow(2,module_id_bit)-1;
 
 	do{
-		para_in = data_in.read().data;
+		para_out = data_in.read();
+		para_in = para_out.data;
 		module_id = para_in.range(63, para_id_bit+para_val_bit);
 		if(module_id == module_num){
 			para_id = para_in.range(para_id_bit+para_val_bit-1, para_val_bit);
@@ -67,7 +69,8 @@ void QAM(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data_out){
 
 
 	for(int k = 0; k < (DATA_LEN*sym_num); k++){
-		in_temp = data_in.read().data;
+		out_temp = data_in.read();
+		in_temp = out_temp.data;
 		if(qam_num == 16){
 			if((in_temp%4)==0){
 				out_temp_imag = -3;
@@ -108,7 +111,10 @@ void QAM(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data_out){
 				out_temp_real = 1;
 			}
 		}
-		out_temp.data = (out_temp_real, out_temp_imag);
+
+		out_temp.data.range(32+IN_WL-1,32) = out_temp_real.range(IN_WL-1,0);
+		out_temp.data.range(IN_WL-1,0) = out_temp_imag.range(IN_WL-1,0);
+		std::cout << k << " "<< (ap_uint_64)out_temp.data << std::endl;
 		data_out.write(out_temp);
 	}
 
