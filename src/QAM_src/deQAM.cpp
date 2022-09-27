@@ -3,6 +3,7 @@
 
 void deQAM(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data_out)
 {
+#pragma HLS INTERFACE mode=ap_ctrl_none port=return
 #pragma HLS INTERFACE mode = axis port = data_in
 #pragma HLS INTERFACE mode = axis port = data_out
 
@@ -30,7 +31,8 @@ void deQAM(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data_out)
 	const int threshold = pow(2,module_id_bit)-1;
 
 	do{
-		para_in = data_in.read().data;
+		para_out = data_in.read();
+		para_in = para_out.data;
 		module_id = para_in.range(63, para_id_bit+para_val_bit);
 		if(module_id == module_num){
 			para_id = para_in.range(para_id_bit+para_val_bit-1, para_val_bit);
@@ -48,24 +50,25 @@ void deQAM(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data_out)
 				pilot_width = para_val;
 			}
 		}
-		/*
+
 		else{
 			para_out.data = para_in;
 			data_out.write(para_out);
 		}
-		*/
+
 	}while( module_id != threshold);
 
 	for(int k = 0; k < (DATA_LEN*sym_num); k++){
-		read_in = data_in.read().data;
-		read_in_real = read_in.range(63, 32);
-		read_in_imag = read_in.range(31, 0);
+		read_out = data_in.read();
+		read_in = read_out.data;
+		read_in_real(IN_WL-1,0) = read_in.range(32+IN_WL-1, 32);
+		read_in_imag(IN_WL-1,0) = read_in.range(IN_WL-1, 0);
 
 		if (read_in_real >= 0){
 			sign_r = 1;
 		}
 		else{
-			sign_r = -1;
+			sign_r = -1; 
 			read_in_real = (read_in_real)*(-1);
 		}
 
