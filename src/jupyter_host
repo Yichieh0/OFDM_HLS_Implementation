@@ -5,13 +5,13 @@ import numpy as np
 import fir
 import math
 
-#check the kernels included by the system
+#---------- check the kernels included by the system ----------
 ol = Overlay("commun.bit")
 cfilter = ol.comm
 print(f"Parent class: {cfilter.__class__.__bases__}, driver: {type(cfilter)}")
 cfilter.c_dict
 
-#check the kernels connected by the composable pipeline
+#--- check the kernels connected by the composable pipeline ---
 cfilter.compose([cfilter.axi_dma, cfilter.pixl_to_symbol_0, cfilter.QAM_0, cfilter.pilot_insertion_0, cfilter.fft_top0_0, cfilter.CP_insertion_0, cfilter.channel_gen_0, cfilter.CP_removal_0, cfilter.fft_top1_0, cfilter.equalizer_pilot_remo_0, cfilter.deQAM_0, cfilter.symbol_to_pixl_0, cfilter.axi_dma])
 cfilter.graph
 
@@ -51,7 +51,7 @@ input_compensate = data_len%((FFT_len-pilot_width)/sym_num)
 input_buffer = allocate(shape=(in_num_sample,), dtype=np.uint64)
 output_buffer = allocate(shape=(out_num_sample,), dtype=np.uint64)
 
-#-----------------parameter set--------------------#
+#------------------------- parameter setting ----------------------------#
 temp = allocate(shape=(1,), dtype=np.uint64)
 cnt_para_in = 0
 for i in range(len_module_id):
@@ -65,25 +65,21 @@ for i in range(len_module_id):
     cnt_para_in = cnt_para_in+len_parameter_id[i]
 
 input_buffer[parameter_sum] = (pow(2,16)-1)*pow(2,48)
-#print(input_buffer[sum(len_parameter_id)])
-
-#-----------------data set--------------------#
+#------------------------- data setting ----------------------------#
 for k in range(data_len):
     input_buffer[parameter_sum+k+1] = k%256
-    #print(input_buffer[sum(len_parameter_id)+k+1])
-
-    
-#---------------------------------------------#
+   
+#------------------------------ DMA --------------------------------#
 dma_send.transfer(input_buffer)
 dma_recv.transfer(output_buffer)
+dma_send.wait()
+dma_recv.wait()
 
-#dma_send.wait()
-#dma_recv.wait()
-
-#error rate calculation
+#---------------------- error rate calculation ---------------------#
 ber = 0
 pixl_length = 8
 for k in range(data_len):
     err = '{:08b}'.format(output_buffer[k]^(input_buffer[k+parameter_sum+1])).count('1')
     ber = ber + err
 print("Bit Error Rate =", ber/data_len/pixl_length*100, "%")
+#-------------------------------------------------------------------#
