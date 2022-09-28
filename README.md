@@ -2,7 +2,7 @@ module num :
 ![image](https://user-images.githubusercontent.com/102524142/189187327-e17fa058-0e81-4b2c-9204-d0b3b748dec5.png)
 
 
-Export IP by vitis_hls
+**Export IP by vitis_hls**
 1. CSIM
 - check software design result is correct
 2. Synthesis
