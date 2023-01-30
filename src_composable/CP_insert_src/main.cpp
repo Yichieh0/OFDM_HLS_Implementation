@@ -1,5 +1,5 @@
 #include "CP_insertion.h"
-#include "syn_CP_removal.h"
+#include "CP_removal.h"
 #include "data_path.hpp"
 
 #define CP_insertion_module_num 5
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 	}
 	cout << "in finished" << endl;
 	CP_insertion(data_in, data_temp);
-	syn_CP_removal(data_temp, data_out);
+	CP_removal(data_temp, data_out);
 	cout << "out finished" << endl;
 
 	do{
