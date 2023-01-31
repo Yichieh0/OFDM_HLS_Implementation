@@ -3,7 +3,7 @@ The system can be built up through direct connection and composable pipeline, an
 
 ### > Motivation：
 
-Orthogonal Frequency Division Multiplexing (OFDM) is a multiplexing technology which is widely used in 4G and 5G. The system utilizes OFDM’s orthogonal property, which admit us to set subcarriers closer without interference in the frequency domain. Compared with single carrier system, we can transmit more data into same bandwidth. In this way, we can reach higher transmit rate. And due to its narrowband property, we can use a one-tap equalizer for channel compensation, which can reduce the complexity a lot. In this project, we tried to construct an end-to-end OFDM communication system by HLS.
+Orthogonal Frequency Division Multiplexing (OFDM) is a multiplexing technology which is widely used in 4G and 5G. The system utilizes OFDM’s orthogonal property, which admit us to set subcarriers closer without interference in the frequency domain. Compared with single carrier system, we can transmit more data through same resource. In this way, higher transmit rate could be reached. And due to its narrowband property, we can use a one-tap equalizer for channel compensation, which can reduce the complexity a lot. In this project, we tried to construct an end-to-end OFDM communication system by HLS.
 
 ![image](https://user-images.githubusercontent.com/102524142/174599266-031b3a6c-852f-442a-858c-c50b011f02cd.png)
 
