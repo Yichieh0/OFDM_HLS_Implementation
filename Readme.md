@@ -1,5 +1,5 @@
-module num : 
-![image](https://user-images.githubusercontent.com/102524142/189187327-e17fa058-0e81-4b2c-9204-d0b3b748dec5.png)
+This project is about an OFDM communication system with multipath channel.
+The system can be built up through direct connection and composable pipeline, and he corresponding source codes are attached.
 
 
 **Export IP by vitis_hls :**
