@@ -184,8 +184,7 @@ void channel_gen(ap_uint_64_str& data_in, ap_uint_64_str& data_out)
 				read_out = (data_temp_r, data_temp_i);
 				data_out.write(read_out);
 			}
-
-			else{
+			else if(TAPS_NUM==9){
 				for (i = TAPS_NUM-1 ;i > 0; i--){
 					x_real_9taps[i] = x_real_9taps[i-1];
 					x_imag_9taps[i] = x_imag_9taps[i-1];
