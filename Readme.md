@@ -1,4 +1,5 @@
 This project is about an OFDM communication system with multipath channel.
+The system can be built up through direct connection and composable pipeline, and the corresponding source codes are attached.
 
 ### > Motivation：
 
@@ -12,9 +13,8 @@ Orthogonal Frequency Division Multiplexing (OFDM) is a multiplexing technology w
 In wireless communication system, multipath and fading noise are the two main purposes we would like to solve. We can’t control how signal transmitted from transmitter to receiver in wireless system. Each path may arrived receiver through different channel fading gain and wastes different time. This may cause some difficulties for receiver to recover the transmit data. Due to the reason we mentioned, we tried to construct a system based on OFDM which have the ability to conquer all of the non-ideal effects.
 
 
-### > Interface :
+### > Folder Structure :
 
-The system can be built up through direct connection and composable pipeline, and the corresponding source codes are attached.
 1. Direct Conntection
 All sub-kernels will be wrapped in the top_module, which connect to the host code with hls master interface. Those sub-kernels will connect to each other with hls stream interface.
 
