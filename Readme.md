@@ -1,5 +1,4 @@
 This project is about an OFDM communication system with multipath channel.
-The system can be built up through direct connection and composable pipeline, and the corresponding source codes are attached.
 
 ### > Motivation：
 
@@ -13,21 +12,11 @@ Orthogonal Frequency Division Multiplexing (OFDM) is a multiplexing technology w
 In wireless communication system, multipath and fading noise are the two main purposes we would like to solve. We can’t control how signal transmitted from transmitter to receiver in wireless system. Each path may arrived receiver through different channel fading gain and wastes different time. This may cause some difficulties for receiver to recover the transmit data. Due to the reason we mentioned, we tried to construct a system based on OFDM which have the ability to conquer all of the non-ideal effects.
 
 
-### > Export IP by vitis_hls：
+### > Interface :
 
-1. CSIM
-- check software design result is correct
-2. Synthesis
-- set top module
-- set corresponding directives for input and output ports
-- set interface protocol as ap_ctrl_none
-- set clock period to 20ns
-- set the part to xck26-sfvc784-2LV-c
-- vivado IP flow target
-- check the design is synthesizable
-- check the hardware utilization and timing information
-3. COSIM
-- check the hardware design result is correct
-- check the II and latency
-4. Export IP
-- export IP for vivado composable connection
+The system can be built up through direct connection and composable pipeline, and the corresponding source codes are attached.
+1. Direct Conntection
+All sub-kernels will be wrapped in the top_module, which connect to the host code with hls master interface. Those sub-kernels will connect to each other with hls stream interface.
+
+2. Composable Pipeline
+The whole system will be connected by the hls stream interface.
