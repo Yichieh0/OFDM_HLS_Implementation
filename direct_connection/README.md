@@ -53,7 +53,7 @@ then clicked the start button at the toolbox
 The process will automatically started.
 
 ## 。Run Test
-
+In this section, some example outputs with different combinations of parameters would be shown.  
 #### - Original figure
 
 #### - After transmitted and decoded by the OFDM system with dircet connection
