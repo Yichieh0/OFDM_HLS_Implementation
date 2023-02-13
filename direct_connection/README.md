@@ -21,9 +21,9 @@ one with error correction code and one without. the setting could be adjusted in
 `# === without ECC ===
 add_files "src/top_module.cpp"
 add_files "src/top_module.h"
-add_files -tb "src/main.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas" 
+add_files -tb "src/main.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas" `
 
-# === with ECC ===
+`# === with ECC ===
 add_files "src/top_module_ECC.cpp"
 add_files "src/top_module_ECC.h"
 add_files -tb "src/main_ECC.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"`
