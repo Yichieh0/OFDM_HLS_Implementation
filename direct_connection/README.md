@@ -7,7 +7,7 @@ In this section, the folders in this project would be discribed.
 ## 。Build Setup
 In this section, the whole building flow would be shown.
 
-### - Vitis_hls
+#### - Vitis_hls
 1. Resources Downloading  
 Download the vitis_hls project `direct_connection/vitis_hls_project/`.  
 All the source code files could be found under the folder `direct_connection/vitis_hls_project/src/`.  
@@ -42,12 +42,21 @@ If the results of CSIM and COSIM are the same, then your design are ready to be 
 5. Export IP
 Open the project by vitis_hls GUI, and clicked the `Export IP` button.   
 
-### - Vivado
+#### - Vivado
 
 
-### - Jupyter Notebooks
+#### - Jupyter Notebooks
 upload the .bit and .hwh files
 the two files should have the same name.
 after checking all the parameters
 then clicked the start button at the toolbox
 The process will automatically started.
+
+## 。Run Test
+
+#### - Original figure
+
+#### - After transmitted and decoded by the OFDM system with dircet connection
+
+#### - After transmitted and decoded by the OFDM system with dircet connection and with error correction code
+
