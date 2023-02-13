@@ -18,12 +18,12 @@ There exists 2 modes
 
 one with error correction code and one without. the setting could be adjusted in `OFDM_HLS_Implementation/direct_connection/run_hls.tcl`
 
-`# === without ECC ===  
-add_files "src/top_module.cpp"  
-add_files "src/top_module.h"  
-add_files -tb "src/main.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas" `  
+>`#` === without ECC ===  `
+>add_files "src/top_module.cpp"  
+>add_files "src/top_module.h"  
+>add_files -tb "src/main.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas" 
 
-`# === with ECC ===  
-add_files "src/top_module_ECC.cpp"  
-add_files "src/top_module_ECC.h"  
-add_files -tb "src/main_ECC.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"`  
+>`# === with ECC ===  `
+>add_files "src/top_module_ECC.cpp"  
+>add_files "src/top_module_ECC.h"  
+>add_files -tb "src/main_ECC.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"  
