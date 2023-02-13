@@ -67,10 +67,10 @@ After generating bitstream, you would get `direct_connection/vivado_project/viva
 1. **Resources Downloading**  
 Download the vivado project `direct_connection/vivado_project/`. 
 
-2. Upload Necessary Files  
+2. **Upload Necessary Files**  
 Upload the .bit and .hwh files and rename those files should into the same name.
 
-3. Run the Process
+3. **Run the Process**  
 after checking all the parameters
 then clicked the start button at the toolbox
 The process will automatically started.
