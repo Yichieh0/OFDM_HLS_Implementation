@@ -2,10 +2,15 @@
 
 
 ## 。Folder Structure
-In this section, the folders in this project would be discribed.
-#### - 
+In this section, the folders in this project would be described.
+#### - vitis_hls_project
+In this folder, all source codes could be found in the folder `direct_connection/vitis_hls_project/src/`. 
 
-#### - 
+#### - vivado_project
+In this folder, the IP exported from vitis_hls can
+
+#### - jupyter_notebooks_project
+In this folder,
 
 ## 。Build Setup
 In this section, the whole building flow would be shown.
