@@ -43,7 +43,17 @@ If the results of CSIM and COSIM are the same, then your design are ready to be 
 Open the project by vitis_hls GUI, and clicked the `Export IP` button.   
 
 #### - Vivado
+1. Create Project
 
+and choose the board Kira KV260
+
+2. 
+Program Manager -> choose "Settings" -> Project Setting -> IP -> IP Repository -> click the "+" button -> choose the 
+`direct_connection/vitis_hls_project/prj_impulse_test.prj/solution1/
+
+3. Create Block Diagram
+Setting
+Create Block Diagram
 
 #### - Jupyter Notebooks
 upload the .bit and .hwh files
