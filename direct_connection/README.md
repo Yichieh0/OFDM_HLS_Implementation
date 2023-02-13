@@ -42,30 +42,32 @@ If the results of CSIM and COSIM are the same, then your design are ready to be 
 5. Export IP
 Open the project by vitis_hls GUI, and clicked the `Export IP` button.   
 #### - Vivado
-1. Create Project
+1. Open the Vivado Project
+The project could be found by following the path `direct_connection/vivado_project/vivado_project.xpr`.
 
-and choose the board Kira KV260
+2. 
 
-2. ADD IP to the Project
-Program Manager -> choose "Settings" -> Project Setting -> IP -> IP Repository -> click the "+" button -> choose the 
-`direct_connection/vitis_hls_project/prj_impulse_test.prj/solution1/
+3. Open Block Design
+Open the block design by
+And replace the top_module_0 IP with your own IP.
 
-3. Create Block Diagram
-Setting
-Create Block Diagram
+4. Create HDL Wrapper
+
+5. Generate Bitstream
+Clicked the 
+After generating bitstream, you would get `direct_connection/vivado_project/vivado_project.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh` and `direct_connection/vivado_project/vivado_project.runs/impl_1/design_1_wrapper.tcl`.
 
 #### - Jupyter Notebooks
-upload the .bit and .hwh files
-the two files should have the same name.
+Upload the .bit and .hwh files and rename those files should into the same name.
 after checking all the parameters
 then clicked the start button at the toolbox
 The process will automatically started.
 
 ## 。Run Test
 In this section, some example outputs with different combinations of parameters would be shown.  
-#### - Original figure
+#### - The original figure
 
-#### - After transmitted and decoded by the OFDM system with dircet connection
+#### - The figuer after transmitted and decoded by the OFDM system with dircet connection
 
-#### - After transmitted and decoded by the OFDM system with dircet connection and with error correction code
+#### - The figure after transmitted and decoded by the OFDM system with dircet connection and with error correction code
 
