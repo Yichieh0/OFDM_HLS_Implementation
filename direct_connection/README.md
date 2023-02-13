@@ -6,9 +6,11 @@ In this section, the function of folders in this project would be explained.
 #### - vitis_hls_project
 In this folder, all source codes could be found in the folder `direct_connection/vitis_hls_project/src/`. 
 #### - vivado_project
-In this folder, the IP exported from vitis_hls can
+This folder contains a vivado project.  
+The IP in the block design can be replaced by your design.  
 #### - jupyter_notebooks_project
-In this folder,
+There are host codes and example files of .hwh amd .tcl files.  
+The examples files mentioned above could directly process by the host code, or you could test for your own design.  
 
 ## 。Build Setup
 In this section, the whole building flow would be shown.
