@@ -52,11 +52,13 @@ The project could be found by following the path `direct_connection/vivado_proje
 
 3. **Import IP to the Project**  
 ![image](https://user-images.githubusercontent.com/102524142/218645658-2faf52d2-751f-45d8-a59a-6e01fb83efad.png)
+The IP file would be under the folder `direct_connection/vitis_hls_project/prj_impulse_test.prj/solution1`  
 ![image](https://user-images.githubusercontent.com/102524142/218645877-1bba8e79-7ee3-4011-b00e-e317bffda5c6.png)
 
-4. **Open Block Design**
-Open the block design by
-And replace the top_module_0 IP with your own IP.
+4. **Open Block Design**  
+Open the block design and replace the top_module_0 IP with your own IP.  
+![image](https://user-images.githubusercontent.com/102524142/218648419-04583858-bb18-4a3c-b0c9-cc1dd90be8a9.png)
+
 5. **Create HDL Wrapper**  
 ![image](https://user-images.githubusercontent.com/102524142/218645130-f3a166d4-06a2-4ff2-90c0-b41584ec9acd.png)
 
