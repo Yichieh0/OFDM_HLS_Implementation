@@ -65,10 +65,11 @@ After generating bitstream, you would get `direct_connection/vivado_project/viva
 
 #### - Jupyter Notebooks
 1. **Resources Downloading**  
-Download the vivado project `direct_connection/vivado_project/`. 
+Download the host code of jupyter notebooks in `direct_connection/vivado_project/`. 
 
 2. **Upload Necessary Files**  
 Upload the .bit and .hwh files and rename those files should into the same name.
+Upload an arbitrary picture.
 
 3. **Run the Process**  
 after checking all the parameters
