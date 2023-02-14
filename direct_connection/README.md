@@ -20,17 +20,16 @@ Three different projects under different tools should be built up during the pro
 #### - Vitis_hls
 1. **Resources Downloading**  
 Download the vitis_hls project `direct_connection/vitis_hls_project/`.  
-All the source code files could be found under the folder `direct_connection/vitis_hls_project/src/`.  
+All the source code files could be found in the folder `direct_connection/vitis_hls_project/src/`.  
 2. **Project Setting Adjustment**  
 There exists 2 modes for testing, one with error correction code and one without.  
 Both modes have their own top_module.cpp, top_module.h and main.cpp.  
-The setting could be adjusted in `direct_connection/vitis_hls_project/run_hls.tcl`.  
-Just leave the one you need, and the right files would be added automatically after the command implemented.  
+The setting could be modified in `direct_connection/vitis_hls_project/run_hls.tcl`.  
+Just leave the part you need, and the corresponding files would be added automatically after the command implemented.  
 > **#=== without ECC ===**  
 >add_files "src/top_module.cpp"  
 >add_files "src/top_module.h"  
 >add_files -tb "src/main.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas" 
-
 > **#=== with ECC ===**  
 >add_files "src/top_module_ECC.cpp"  
 >add_files "src/top_module_ECC.h"  
@@ -43,9 +42,11 @@ After that the project `prj_impulse_test.prj` would be built under the folder `d
 >In COSIM, the correction of the RTL design built up by the synthesis process could be checked.  
 4. **Results**  
 After the process of CSIM and COSIM done, the symbol error rate and the bit error rate could be checked.  
-If the results of CSIM and COSIM are the same, then your design are ready to be reported.
+If the results of CSIM and COSIM are the same, then your design are ready to be exported.  
+![image](https://user-images.githubusercontent.com/102524142/218661346-5eee9d67-79e7-410b-8258-9509217fa900.png)  
 5. **Export IP**  
 Open the project by vitis_hls GUI, and clicked the `Export IP` button.   
+![image](https://user-images.githubusercontent.com/102524142/218661965-c5f6f4fe-e5dc-4548-b103-72fa21f4a3bb.png)  
 #### - Vivado
 1. **Resources Downloading**  
 Download the vivado project `direct_connection/vivado_project/`.  
@@ -53,9 +54,8 @@ Download the vivado project `direct_connection/vivado_project/`.
 The project could be found by following the path `direct_connection/vivado_project/vivado_project.xpr`.
 
 3. **Import IP to the Project**  
-![image](https://user-images.githubusercontent.com/102524142/218645658-2faf52d2-751f-45d8-a59a-6e01fb83efad.png)
 The IP file would be under the folder `direct_connection/vitis_hls_project/prj_impulse_test.prj/solution1`  
-![image](https://user-images.githubusercontent.com/102524142/218645877-1bba8e79-7ee3-4011-b00e-e317bffda5c6.png)
+![image](https://user-images.githubusercontent.com/102524142/218662980-235e3b82-19a4-4969-bb91-6f75c2f293d4.png)
 
 4. **Open Block Design**  
 Open the block design and replace the top_module_0 IP with your own IP.  
@@ -89,7 +89,6 @@ In this section, some example results would be shown.
 #### - The figure after transmitted and decoded by the OFDM system with dircet connection and with error correction code, for TAP_NUM=1 SNR=10dB  
 ![image](https://user-images.githubusercontent.com/102524142/218643748-2ff0995e-0b8d-4a35-aeee-0a4ba823acf7.png)
 #### - SNR(dB) v.s. BER, for TAP_NUM=1  
-
 **#without ecc**  
 SNR = [0, 5, 10, 15, 20]  
 BER = [0.34173791458072586,0.2110691750104297,0.09312565185648728,0.015298615456821028,0.0001600307676261994]  
