@@ -9,7 +9,7 @@ In this folder, all source codes could be found in the folder `direct_connection
 This folder contains a vivado project.  
 The IP in the block design can be replaced by your design.  
 #### - jupyter_notebooks_project
-There are host codes and example files of .hwh amd .tcl files.  
+There are host codes and example files of .hwh and .tcl files.  
 The examples files mentioned above could directly process by the host code, or you could test for your own design.  
 
 ## 。Build Setup
