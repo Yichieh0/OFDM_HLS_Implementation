@@ -86,4 +86,11 @@ In this section, some example results would be shown.
 #### - The figure after transmitted and decoded by the OFDM system with dircet connection and with error correction code, for TAP_NUM=1 SNR=10dB  
 ![image](https://user-images.githubusercontent.com/102524142/218643748-2ff0995e-0b8d-4a35-aeee-0a4ba823acf7.png)
 #### - SNR(dB) v.s. BER, for TAP_NUM=1  
+
+#without ecc
+SNR = [0, 5, 10, 15, 20]
+BER = [0.34173791458072586,0.2110691750104297,0.09312565185648728,0.015298615456821028,0.0001600307676261994] #corresponding BER 
+#ecc
+SNR = [0, 5, 10, 15, 20]
+BER = [0.49950576241134755,0.4793715451606174,0.07988964069670422,0.000023336462244472255,0] #corresponding BER 
 ![image](https://user-images.githubusercontent.com/102524142/218641341-053a5bb5-85c0-4cbb-a7a8-68ae2cd8e687.png)
