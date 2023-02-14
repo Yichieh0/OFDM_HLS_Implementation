@@ -1,3 +1,6 @@
+##。Information
+The FFT and rand function is included by the HLS library.
+
 ## 。Build Setup
 This folder contains all the necessary source codes and the script for a vitis_hls project.  
 The vitis_hls project could be built automatically by command `make run CSIM=1 CSYNTH=1 COSIM=1` under this folder.  
