@@ -59,6 +59,8 @@ The IP file would be under the folder `direct_connection/vitis_hls_project/prj_i
 
 4. **Open Block Design**  
 Open the block design and replace the top_module_0 IP with your own IP.  
+![image](https://user-images.githubusercontent.com/102524142/218667122-d48f67ce-9d16-4c07-b966-7bfb0099d313.png)
+
 ![image](https://user-images.githubusercontent.com/102524142/218648419-04583858-bb18-4a3c-b0c9-cc1dd90be8a9.png)
 
 5. **Create HDL Wrapper**  
