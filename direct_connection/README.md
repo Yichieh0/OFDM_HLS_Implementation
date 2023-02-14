@@ -10,9 +10,9 @@ This folder contains a vivado project.
 The IP in the block design can be replaced by your design.
 #### - jupyter_notebooks_project
 There are host codes and example files of .hwh and .tcl files.  
-The examples files mentioned above could directly process by the host code, or you could test for your own design.
+The examples files mentioned above could directly process by the host code, or you could replaced by your own design.
 #### - impl_result
-The results report of vitis_hls_project would be included in this folder.
+The result reports of vitis_hls_project would be included in this folder.
 
 ## 。Build Setup
 In this section, the whole building flow would be shown.  
