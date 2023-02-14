@@ -1,6 +1,10 @@
 ## 。Introduction
 Here would be a guildline to rebuild the project quickly.
 
+![image](https://user-images.githubusercontent.com/102524142/218687462-f4d4fbfd-b3d1-400e-84f1-d97df15432d2.png)
+
+![image](https://user-images.githubusercontent.com/102524142/218687408-c8a98b2e-8c77-40b5-a763-649ebd71a188.png)
+
 ## 。Folder Structure
 In this section, the function of all folders in this project would be explained.
 #### - vitis_hls_project
