@@ -1,8 +1,8 @@
 ## 。Introduction
 #### - System Architecture
-**The Basic Block Diagram of HLS OFDM System**
+**1. The Basic Block Diagram of HLS OFDM System**
 ![image](https://user-images.githubusercontent.com/102524142/218687462-f4d4fbfd-b3d1-400e-84f1-d97df15432d2.png)
-**The Block Diagram with ECC of HLS OFDM System**
+**2. The Block Diagram with ECC of HLS OFDM System**
 ![image](https://user-images.githubusercontent.com/102524142/218687408-c8a98b2e-8c77-40b5-a763-649ebd71a188.png)
 
 ## 。Folder Structure
