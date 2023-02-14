@@ -44,7 +44,7 @@ Just leave the part you need, and the corresponding files would be added automat
 The steps CSIM, CSYNTH and COSIM can directly implement by the command `make run CSIM=1 CSYNTH=1 COSIM=1` under the folder `direct_connection/vitis_hls_project/`.  
 After that the project `prj_impulse_test.prj` would be built under the folder `direct_connection/vitis_hls_project/`.  
 >In CSIM, the correction of your C or C++ code could be checked.  
->In CSYNTH, the total resources of your designed and some violation which could be optimized could be checked.  
+>In CSYNTH, the total resources of your design and some violation which could be optimized could be checked.  
 >In COSIM, the correction of the RTL design built up by the synthesis process could be checked.  
 4. **Results**  
 After the process of CSIM and COSIM done, the symbol error rate and the bit error rate could be checked.  
