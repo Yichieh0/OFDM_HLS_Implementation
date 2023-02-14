@@ -115,6 +115,8 @@ void channel_gen(ap_uint_64_str& data_in, ap_uint_64_str& data_out)
 						n_2taps[i] = random_num.read();
 					}
 				}
+				x_out_r = 0;
+				x_out_i = 0;
 				for(i = 0; i < TAPS_NUM; i++){
 					x_out_r = x_out_r + (ap_fixed<IN_WL,IN_IL>)(weight_2taps[i]*n_2taps[i])*x_real_2taps[i];
 					x_out_i = x_out_i + (ap_fixed<IN_WL,IN_IL>)(weight_2taps[i]*n_2taps[i])*x_imag_2taps[i];
@@ -139,7 +141,9 @@ void channel_gen(ap_uint_64_str& data_in, ap_uint_64_str& data_out)
 						rand(random_num);
 						n_3taps[i] = random_num.read();
 					}
-				}
+				}				
+				x_out_r = 0;
+				x_out_i = 0;
 				for(i = 0; i < TAPS_NUM; i++){
 					x_out_r = x_out_r + (ap_fixed<IN_WL,IN_IL>)(weight_3taps[i]*n_3taps[i])*x_real_3taps[i];
 					x_out_i = x_out_i + (ap_fixed<IN_WL,IN_IL>)(weight_3taps[i]*n_3taps[i])*x_imag_3taps[i];
@@ -159,13 +163,14 @@ void channel_gen(ap_uint_64_str& data_in, ap_uint_64_str& data_out)
 				read_in = data_in.read();
 				x_real_6taps[0].range(IN_WL-1,0) = read_in.range(32+IN_WL-1,32);
 				x_imag_6taps[0].range(IN_WL-1,0) = read_in.range(IN_WL-1,0);
-
 				if(j==0){
 					for(i = 0; i < TAPS_NUM; i++){
 						rand(random_num);
 						n_6taps[i] = random_num.read();
 					}
 				}
+				x_out_r = 0;
+				x_out_i = 0;
 				for(i = 0; i < TAPS_NUM; i++){
 					x_out_r = x_out_r + (ap_fixed<IN_WL,IN_IL>)(weight_6taps[i]*n_6taps[i])*x_real_6taps[i];
 					x_out_i = x_out_i + (ap_fixed<IN_WL,IN_IL>)(weight_6taps[i]*n_6taps[i])*x_imag_6taps[i];
@@ -177,8 +182,6 @@ void channel_gen(ap_uint_64_str& data_in, ap_uint_64_str& data_out)
 				read_out = (data_temp_r, data_temp_i);
 				data_out.write(read_out);
 			}
-
-			//else{
 			else if(TAPS_NUM==9){
 				for (i = TAPS_NUM-1 ;i > 0; i--){
 					x_real_9taps[i] = x_real_9taps[i-1];
@@ -193,6 +196,8 @@ void channel_gen(ap_uint_64_str& data_in, ap_uint_64_str& data_out)
 						n_9taps[i] = random_num.read();
 					}
 				}
+				x_out_r = 0;
+				x_out_i = 0;
 				for(i = 0; i < TAPS_NUM; i++){
 					x_out_r = x_out_r + (ap_fixed<IN_WL,IN_IL>)(weight_9taps[i]+n_9taps[i])*x_real_9taps[i];
 					x_out_i = x_out_i + (ap_fixed<IN_WL,IN_IL>)(weight_9taps[i]+n_9taps[i])*x_imag_9taps[i];
