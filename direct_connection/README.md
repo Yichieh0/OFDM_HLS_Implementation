@@ -4,13 +4,13 @@ Here would be a guildline to rebuild the project quickly.
 ## 。Folder Structure
 In this section, the function of folders in this project would be explained.
 #### - vitis_hls_project
-In this folder, all source codes could be found in the folder `direct_connection/vitis_hls_project/src/`. 
+In this folder, all source codes could be found in the folder `direct_connection/vitis_hls_project/src/`.
 #### - vivado_project
 This folder contains a vivado project.  
-The IP in the block design can be replaced by your design.  
+The IP in the block design can be replaced by your design.
 #### - jupyter_notebooks_project
 There are host codes and example files of .hwh and .tcl files.  
-The examples files mentioned above could directly process by the host code, or you could test for your own design.  
+The examples files mentioned above could directly process by the host code, or you could test for your own design.
 
 ## 。Build Setup
 In this section, the whole building flow would be shown.  
@@ -47,7 +47,6 @@ Open the project by vitis_hls GUI, and clicked the `Export IP` button.
 #### - Vivado
 1. **Resources Downloading**  
 Download the vivado project `direct_connection/vivado_project/`.  
-
 2. **Open the Vivado Project**  
 The project could be found by following the path `direct_connection/vivado_project/vivado_project.xpr`.
 
@@ -56,7 +55,6 @@ The project could be found by following the path `direct_connection/vivado_proje
 4. **Open Block Design**
 Open the block design by
 And replace the top_module_0 IP with your own IP.
-
 5. **Create HDL Wrapper**
 
 6. **Generate Bitstream**
@@ -66,11 +64,9 @@ After generating bitstream, you would get `direct_connection/vivado_project/viva
 #### - Jupyter Notebooks
 1. **Resources Downloading**  
 Download the host code of jupyter notebooks in `direct_connection/vivado_project/`. 
-
 2. **Upload Necessary Files**  
 Upload the .bit and .hwh files and rename those files should into the same name.
 Upload an arbitrary picture.
-
 3. **Run the Process**  
 after checking all the parameters
 then clicked the start button at the toolbox
