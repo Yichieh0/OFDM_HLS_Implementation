@@ -1,5 +1,5 @@
 ## 。Introduction
-Here would be a guildline to rebuild the project quickly.
+Here would be a guildline to rebuild the project quickly.  
 **- The Basic Block Diagram of HLS OFDM system**
 ![image](https://user-images.githubusercontent.com/102524142/218687462-f4d4fbfd-b3d1-400e-84f1-d97df15432d2.png)
 **- The Block Diagram with ECC of HLS OFDM system**
