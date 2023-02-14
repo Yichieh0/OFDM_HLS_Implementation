@@ -65,7 +65,8 @@ Open the block design and replace the top_module_0 IP with your own IP.
 ![image](https://user-images.githubusercontent.com/102524142/218645130-f3a166d4-06a2-4ff2-90c0-b41584ec9acd.png)
 
 6. **Generate Bitstream**
-Clicked the 
+Clicked the generate bistream button in the toolbar.  
+![image](https://user-images.githubusercontent.com/102524142/218656985-ad70af63-fe23-430d-a271-cf508d7b8a1c.png)  
 After generating bitstream, you would get `direct_connection/vivado_project/vivado_project.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh` and `direct_connection/vivado_project/vivado_project.runs/impl_1/design_1_wrapper.tcl`.
 
 #### - Jupyter Notebooks
