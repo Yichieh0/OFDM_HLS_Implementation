@@ -50,12 +50,15 @@ Download the vivado project `direct_connection/vivado_project/`.
 2. **Open the Vivado Project**  
 The project could be found by following the path `direct_connection/vivado_project/vivado_project.xpr`.
 
-3. **Import IP to the Project**
+3. **Import IP to the Project**  
+![image](https://user-images.githubusercontent.com/102524142/218645658-2faf52d2-751f-45d8-a59a-6e01fb83efad.png)
+![image](https://user-images.githubusercontent.com/102524142/218645877-1bba8e79-7ee3-4011-b00e-e317bffda5c6.png)
 
 4. **Open Block Design**
 Open the block design by
 And replace the top_module_0 IP with your own IP.
-5. **Create HDL Wrapper**
+5. **Create HDL Wrapper**  
+![image](https://user-images.githubusercontent.com/102524142/218645130-f3a166d4-06a2-4ff2-90c0-b41584ec9acd.png)
 
 6. **Generate Bitstream**
 Clicked the 
