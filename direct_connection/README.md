@@ -2,7 +2,7 @@
 Here would be a guildline to rebuild the project quickly.
 
 ## 。Folder Structure
-In this section, the function of folders in this project would be explained.
+In this section, the function of all folders in this project would be explained.
 #### - vitis_hls_project
 In this folder, all source codes could be found in the folder `direct_connection/vitis_hls_project/src/`.
 #### - vivado_project
