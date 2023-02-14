@@ -29,7 +29,7 @@ Just leave the part you need, and the corresponding files would be added automat
 > **#=== without ECC ===**  
 >add_files "src/top_module.cpp"  
 >add_files "src/top_module.h"  
->add_files -tb "src/main.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas" 
+>add_files -tb "src/main.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"  
 > **#=== with ECC ===**  
 >add_files "src/top_module_ECC.cpp"  
 >add_files "src/top_module_ECC.h"  
