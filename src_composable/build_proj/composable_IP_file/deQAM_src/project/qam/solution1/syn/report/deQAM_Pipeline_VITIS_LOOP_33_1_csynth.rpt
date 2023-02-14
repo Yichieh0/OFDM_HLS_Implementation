@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vitis HLS Report for 'deQAM_Pipeline_VITIS_LOOP_33_1'
+================================================================
+* Date:           Mon Dec  5 17:17:09 2022
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        qam
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  1.102 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_33_1  |        ?|        ?|         2|          1|          1|     ?|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      34|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      36|    -|
+|Register         |        -|     -|     186|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     186|      70|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |ap_block_state2_io         |       and|   0|  0|   2|           1|           1|
+    |icmp_ln37_fu_196_p2        |      icmp|   0|  0|  13|          16|           4|
+    |icmp_ln59_fu_231_p2        |      icmp|   0|  0|  13|          16|           2|
+    |ap_block_pp0_stage0_01001  |        or|   0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_11001  |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|  34|          36|          11|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |ap_done_int                       |   9|          2|    1|          2|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   9|          2|    1|          2|
+    |data_in_TDATA_blk_n               |   9|          2|    1|          2|
+    |data_out_TDATA_blk_n              |   9|          2|    1|          2|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             |  36|          8|    4|          8|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |DATA_LEN_fu_86                    |  32|   0|   32|          0|
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |icmp_ln37_reg_302                 |   1|   0|    1|          0|
+    |icmp_ln59_reg_309                 |   1|   0|    1|          0|
+    |qam_num_fu_90                     |  32|   0|   32|          0|
+    |sym_num_fu_82                     |  32|   0|   32|          0|
+    |tmp_1_reg_272                     |   8|   0|    8|          0|
+    |tmp_2_reg_277                     |   8|   0|    8|          0|
+    |tmp_3_reg_282                     |   1|   0|    1|          0|
+    |tmp_4_reg_287                     |   1|   0|    1|          0|
+    |tmp_5_reg_292                     |   1|   0|    1|          0|
+    |tmp_6_reg_297                     |   1|   0|    1|          0|
+    |tmp_reg_267                       |  64|   0|   64|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 186|   0|  186|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+--------------------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |          Source Object         |    C Type    |
++-----------------------+-----+-----+------------+--------------------------------+--------------+
+|ap_clk                 |   in|    1|  ap_ctrl_hs|  deQAM_Pipeline_VITIS_LOOP_33_1|  return value|
+|ap_rst                 |   in|    1|  ap_ctrl_hs|  deQAM_Pipeline_VITIS_LOOP_33_1|  return value|
+|ap_start               |   in|    1|  ap_ctrl_hs|  deQAM_Pipeline_VITIS_LOOP_33_1|  return value|
+|ap_done                |  out|    1|  ap_ctrl_hs|  deQAM_Pipeline_VITIS_LOOP_33_1|  return value|
+|ap_idle                |  out|    1|  ap_ctrl_hs|  deQAM_Pipeline_VITIS_LOOP_33_1|  return value|
+|ap_ready               |  out|    1|  ap_ctrl_hs|  deQAM_Pipeline_VITIS_LOOP_33_1|  return value|
+|data_in_TVALID         |   in|    1|        axis|                data_in_V_data_V|       pointer|
+|data_in_TDATA          |   in|   64|        axis|                data_in_V_data_V|       pointer|
+|data_out_TREADY        |   in|    1|        axis|               data_out_V_data_V|       pointer|
+|data_out_TDATA         |  out|   64|        axis|               data_out_V_data_V|       pointer|
+|data_in_TREADY         |  out|    1|        axis|                data_in_V_dest_V|       pointer|
+|data_in_TDEST          |   in|    1|        axis|                data_in_V_dest_V|       pointer|
+|data_in_TKEEP          |   in|    8|        axis|                data_in_V_keep_V|       pointer|
+|data_in_TSTRB          |   in|    8|        axis|                data_in_V_strb_V|       pointer|
+|data_in_TUSER          |   in|    1|        axis|                data_in_V_user_V|       pointer|
+|data_in_TLAST          |   in|    1|        axis|                data_in_V_last_V|       pointer|
+|data_in_TID            |   in|    1|        axis|                  data_in_V_id_V|       pointer|
+|data_out_TVALID        |  out|    1|        axis|               data_out_V_dest_V|       pointer|
+|data_out_TDEST         |  out|    1|        axis|               data_out_V_dest_V|       pointer|
+|data_out_TKEEP         |  out|    8|        axis|               data_out_V_keep_V|       pointer|
+|data_out_TSTRB         |  out|    8|        axis|               data_out_V_strb_V|       pointer|
+|data_out_TUSER         |  out|    1|        axis|               data_out_V_user_V|       pointer|
+|data_out_TLAST         |  out|    1|        axis|               data_out_V_last_V|       pointer|
+|data_out_TID           |  out|    1|        axis|                 data_out_V_id_V|       pointer|
+|qam_num_2_out          |  out|   32|      ap_vld|                   qam_num_2_out|       pointer|
+|qam_num_2_out_ap_vld   |  out|    1|      ap_vld|                   qam_num_2_out|       pointer|
+|DATA_LEN_1_out         |  out|   32|      ap_vld|                  DATA_LEN_1_out|       pointer|
+|DATA_LEN_1_out_ap_vld  |  out|    1|      ap_vld|                  DATA_LEN_1_out|       pointer|
+|sym_num_3_out          |  out|   32|      ap_vld|                   sym_num_3_out|       pointer|
+|sym_num_3_out_ap_vld   |  out|    1|      ap_vld|                   sym_num_3_out|       pointer|
++-----------------------+-----+-----+------------+--------------------------------+--------------+
+

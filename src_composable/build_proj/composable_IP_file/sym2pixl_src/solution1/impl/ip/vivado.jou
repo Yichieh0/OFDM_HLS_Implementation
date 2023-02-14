@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Mon Nov 28 11:21:31 2022
+# Process ID: 4039363
+# Current directory: /mnt/HLSNAS/g110064539/composable_IP_file/sym2pixl_src/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /mnt/HLSNAS/g110064539/composable_IP_file/sym2pixl_src/solution1/impl/ip/vivado.log
+# Journal file: /mnt/HLSNAS/g110064539/composable_IP_file/sym2pixl_src/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

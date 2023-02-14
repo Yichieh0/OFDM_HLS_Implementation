@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fft.hpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft.hpp"/>
+    <originFiles name="fft.cpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft.cpp"/>
+    <originFiles name="data_path.hpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/data_path.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

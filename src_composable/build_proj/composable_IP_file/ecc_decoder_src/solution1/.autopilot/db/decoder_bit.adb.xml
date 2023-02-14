@@ -1,0 +1,867 @@
+<stg><name>decoder_bit</name>
+
+
+<trans_list>
+
+<trans id="16" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="17" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="18" from="3" to="4">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="78" bw="33" op_0_bw="64">
+<![CDATA[
+.split:4 %temp_trellis_survivor_V = alloca i64 1
+
+]]></Node>
+<StgValue><ssdm name="temp_trellis_survivor_V"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="2" lat="2">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="79" bw="32" op_0_bw="32" op_1_bw="33" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="1" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32" op_54_bw="32" op_55_bw="32" op_56_bw="32" op_57_bw="32" op_58_bw="32" op_59_bw="32" op_60_bw="32" op_61_bw="32" op_62_bw="32" op_63_bw="32" op_64_bw="32" op_65_bw="32" op_66_bw="32" op_67_bw="32" op_68_bw="32" op_69_bw="32" op_70_bw="32" op_71_bw="32" op_72_bw="32" op_73_bw="32">
+<![CDATA[
+.split:5 %best_branch_loc_channel = call i32 @decoder_bit_Block_.split148_proc3, i33 %temp_trellis_survivor_V, i1 %y0300, i1 %y1301, i1 %t, i1 %trellis_table_0_0, i1 %trellis_table_0_1, i1 %trellis_table_1_0, i1 %trellis_table_1_1, i32 %trellis_metric, i32 %trellis_survivor_V_0, i32 %trellis_survivor_V_1, i32 %trellis_survivor_V_2, i32 %trellis_survivor_V_3, i32 %trellis_survivor_V_4, i32 %trellis_survivor_V_5, i32 %trellis_survivor_V_6, i32 %trellis_survivor_V_7, i32 %trellis_survivor_V_8, i32 %trellis_survivor_V_9, i32 %trellis_survivor_V_10, i32 %trellis_survivor_V_11, i32 %trellis_survivor_V_12, i32 %trellis_survivor_V_13, i32 %trellis_survivor_V_14, i32 %trellis_survivor_V_15, i32 %trellis_survivor_V_16, i32 %trellis_survivor_V_17, i32 %trellis_survivor_V_18, i32 %trellis_survivor_V_19, i32 %trellis_survivor_V_20, i32 %trellis_survivor_V_21, i32 %trellis_survivor_V_22, i32 %trellis_survivor_V_23, i32 %trellis_survivor_V_24, i32 %trellis_survivor_V_25, i32 %trellis_survivor_V_26, i32 %trellis_survivor_V_27, i32 %trellis_survivor_V_28, i32 %trellis_survivor_V_29, i32 %trellis_survivor_V_30, i32 %trellis_survivor_V_31, i32 %trellis_survivor_V_32, i32 %trellis_survivor_V_33, i32 %trellis_survivor_V_34, i32 %trellis_survivor_V_35, i32 %trellis_survivor_V_36, i32 %trellis_survivor_V_37, i32 %trellis_survivor_V_38, i32 %trellis_survivor_V_39, i32 %trellis_survivor_V_40, i32 %trellis_survivor_V_41, i32 %trellis_survivor_V_42, i32 %trellis_survivor_V_43, i32 %trellis_survivor_V_44, i32 %trellis_survivor_V_45, i32 %trellis_survivor_V_46, i32 %trellis_survivor_V_47, i32 %trellis_survivor_V_48, i32 %trellis_survivor_V_49, i32 %trellis_survivor_V_50, i32 %trellis_survivor_V_51, i32 %trellis_survivor_V_52, i32 %trellis_survivor_V_53, i32 %trellis_survivor_V_54, i32 %trellis_survivor_V_55, i32 %trellis_survivor_V_56, i32 %trellis_survivor_V_57, i32 %trellis_survivor_V_58, i32 %trellis_survivor_V_59, i32 %trellis_survivor_V_60, i32 %trellis_survivor_V_61, i32 %trellis_survivor_V_62, i32 %trellis_survivor_V_63
+
+]]></Node>
+<StgValue><ssdm name="best_branch_loc_channel"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="7" st_id="2" stage="1" lat="2">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="79" bw="32" op_0_bw="32" op_1_bw="33" op_2_bw="1" op_3_bw="1" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="1" op_9_bw="32" op_10_bw="32" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="32" op_16_bw="32" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32" op_27_bw="32" op_28_bw="32" op_29_bw="32" op_30_bw="32" op_31_bw="32" op_32_bw="32" op_33_bw="32" op_34_bw="32" op_35_bw="32" op_36_bw="32" op_37_bw="32" op_38_bw="32" op_39_bw="32" op_40_bw="32" op_41_bw="32" op_42_bw="32" op_43_bw="32" op_44_bw="32" op_45_bw="32" op_46_bw="32" op_47_bw="32" op_48_bw="32" op_49_bw="32" op_50_bw="32" op_51_bw="32" op_52_bw="32" op_53_bw="32" op_54_bw="32" op_55_bw="32" op_56_bw="32" op_57_bw="32" op_58_bw="32" op_59_bw="32" op_60_bw="32" op_61_bw="32" op_62_bw="32" op_63_bw="32" op_64_bw="32" op_65_bw="32" op_66_bw="32" op_67_bw="32" op_68_bw="32" op_69_bw="32" op_70_bw="32" op_71_bw="32" op_72_bw="32" op_73_bw="32">
+<![CDATA[
+.split:5 %best_branch_loc_channel = call i32 @decoder_bit_Block_.split148_proc3, i33 %temp_trellis_survivor_V, i1 %y0300, i1 %y1301, i1 %t, i1 %trellis_table_0_0, i1 %trellis_table_0_1, i1 %trellis_table_1_0, i1 %trellis_table_1_1, i32 %trellis_metric, i32 %trellis_survivor_V_0, i32 %trellis_survivor_V_1, i32 %trellis_survivor_V_2, i32 %trellis_survivor_V_3, i32 %trellis_survivor_V_4, i32 %trellis_survivor_V_5, i32 %trellis_survivor_V_6, i32 %trellis_survivor_V_7, i32 %trellis_survivor_V_8, i32 %trellis_survivor_V_9, i32 %trellis_survivor_V_10, i32 %trellis_survivor_V_11, i32 %trellis_survivor_V_12, i32 %trellis_survivor_V_13, i32 %trellis_survivor_V_14, i32 %trellis_survivor_V_15, i32 %trellis_survivor_V_16, i32 %trellis_survivor_V_17, i32 %trellis_survivor_V_18, i32 %trellis_survivor_V_19, i32 %trellis_survivor_V_20, i32 %trellis_survivor_V_21, i32 %trellis_survivor_V_22, i32 %trellis_survivor_V_23, i32 %trellis_survivor_V_24, i32 %trellis_survivor_V_25, i32 %trellis_survivor_V_26, i32 %trellis_survivor_V_27, i32 %trellis_survivor_V_28, i32 %trellis_survivor_V_29, i32 %trellis_survivor_V_30, i32 %trellis_survivor_V_31, i32 %trellis_survivor_V_32, i32 %trellis_survivor_V_33, i32 %trellis_survivor_V_34, i32 %trellis_survivor_V_35, i32 %trellis_survivor_V_36, i32 %trellis_survivor_V_37, i32 %trellis_survivor_V_38, i32 %trellis_survivor_V_39, i32 %trellis_survivor_V_40, i32 %trellis_survivor_V_41, i32 %trellis_survivor_V_42, i32 %trellis_survivor_V_43, i32 %trellis_survivor_V_44, i32 %trellis_survivor_V_45, i32 %trellis_survivor_V_46, i32 %trellis_survivor_V_47, i32 %trellis_survivor_V_48, i32 %trellis_survivor_V_49, i32 %trellis_survivor_V_50, i32 %trellis_survivor_V_51, i32 %trellis_survivor_V_52, i32 %trellis_survivor_V_53, i32 %trellis_survivor_V_54, i32 %trellis_survivor_V_55, i32 %trellis_survivor_V_56, i32 %trellis_survivor_V_57, i32 %trellis_survivor_V_58, i32 %trellis_survivor_V_59, i32 %trellis_survivor_V_60, i32 %trellis_survivor_V_61, i32 %trellis_survivor_V_62, i32 %trellis_survivor_V_63
+
+]]></Node>
+<StgValue><ssdm name="best_branch_loc_channel"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="8" st_id="3" stage="2" lat="2">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="80" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="33" op_3_bw="0" op_4_bw="0">
+<![CDATA[
+.split:6 %best_branch_3_cast_loc_channel = call i1 @decoder_bit_Loop_VITIS_LOOP_227_6_proc, i32 %best_branch_loc_channel, i33 %temp_trellis_survivor_V
+
+]]></Node>
+<StgValue><ssdm name="best_branch_3_cast_loc_channel"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="9" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="74" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<![CDATA[
+.split:0 %specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_7
+
+]]></Node>
+<StgValue><ssdm name="specdataflowpipeline_ln0"/></StgValue>
+</operation>
+
+<operation id="10" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="75" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<![CDATA[
+.split:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %output302, void @empty_10, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="11" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="76" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<![CDATA[
+.split:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %y1301, void @empty_10, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="12" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="77" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0">
+<![CDATA[
+.split:3 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %y0300, void @empty_10, i32 0, i32 0, void @empty_7, i32 0, i32 0, void @empty_7, void @empty_7, void @empty_7, i32 0, i32 0, i32 0, i32 0, void @empty_7, void @empty_7
+
+]]></Node>
+<StgValue><ssdm name="specinterface_ln0"/></StgValue>
+</operation>
+
+<operation id="13" st_id="4" stage="1" lat="2">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="80" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="33" op_3_bw="0" op_4_bw="0">
+<![CDATA[
+.split:6 %best_branch_3_cast_loc_channel = call i1 @decoder_bit_Loop_VITIS_LOOP_227_6_proc, i32 %best_branch_loc_channel, i33 %temp_trellis_survivor_V
+
+]]></Node>
+<StgValue><ssdm name="best_branch_3_cast_loc_channel"/></StgValue>
+</operation>
+
+<operation id="14" st_id="4" stage="1" lat="1">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="81" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="1">
+<![CDATA[
+.split:7 %call_ln0 = call void @decoder_bit_Block_.split223_proc, i1 %best_branch_3_cast_loc_channel, i1 %output302
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+
+<operation id="15" st_id="4" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="82" bw="0">
+<![CDATA[
+.split:8 %ret_ln248 = ret
+
+]]></Node>
+<StgValue><ssdm name="ret_ln248"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="20" name="y0300" dir="0" iftype="3">
+<core>FIFO_SRL</core><StgValue><ssdm name="y0300"/></StgValue>
+</port>
+<port id="21" name="y1301" dir="0" iftype="3">
+<core>FIFO_SRL</core><StgValue><ssdm name="y1301"/></StgValue>
+</port>
+<port id="22" name="output302" dir="1" iftype="3">
+<core>FIFO_SRL</core><StgValue><ssdm name="output302"/></StgValue>
+</port>
+<port id="23" name="t" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="t"/></StgValue>
+</port>
+<port id="24" name="trellis_table_0_0" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="trellis_table_0_0"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="25" name="trellis_table_0_1" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="trellis_table_0_1"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="26" name="trellis_table_1_0" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="trellis_table_1_0"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="27" name="trellis_table_1_1" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="trellis_table_1_1"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="28" name="trellis_metric" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="trellis_metric"/><MemPortTyVec>2 1 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="29" name="trellis_survivor_V_0" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_0"/></StgValue>
+</port>
+<port id="30" name="trellis_survivor_V_1" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_1"/></StgValue>
+</port>
+<port id="31" name="trellis_survivor_V_2" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_2"/></StgValue>
+</port>
+<port id="32" name="trellis_survivor_V_3" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_3"/></StgValue>
+</port>
+<port id="33" name="trellis_survivor_V_4" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_4"/></StgValue>
+</port>
+<port id="34" name="trellis_survivor_V_5" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_5"/></StgValue>
+</port>
+<port id="35" name="trellis_survivor_V_6" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_6"/></StgValue>
+</port>
+<port id="36" name="trellis_survivor_V_7" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_7"/></StgValue>
+</port>
+<port id="37" name="trellis_survivor_V_8" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_8"/></StgValue>
+</port>
+<port id="38" name="trellis_survivor_V_9" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_9"/></StgValue>
+</port>
+<port id="39" name="trellis_survivor_V_10" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_10"/></StgValue>
+</port>
+<port id="40" name="trellis_survivor_V_11" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_11"/></StgValue>
+</port>
+<port id="41" name="trellis_survivor_V_12" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_12"/></StgValue>
+</port>
+<port id="42" name="trellis_survivor_V_13" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_13"/></StgValue>
+</port>
+<port id="43" name="trellis_survivor_V_14" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_14"/></StgValue>
+</port>
+<port id="44" name="trellis_survivor_V_15" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_15"/></StgValue>
+</port>
+<port id="45" name="trellis_survivor_V_16" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_16"/></StgValue>
+</port>
+<port id="46" name="trellis_survivor_V_17" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_17"/></StgValue>
+</port>
+<port id="47" name="trellis_survivor_V_18" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_18"/></StgValue>
+</port>
+<port id="48" name="trellis_survivor_V_19" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_19"/></StgValue>
+</port>
+<port id="49" name="trellis_survivor_V_20" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_20"/></StgValue>
+</port>
+<port id="50" name="trellis_survivor_V_21" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_21"/></StgValue>
+</port>
+<port id="51" name="trellis_survivor_V_22" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_22"/></StgValue>
+</port>
+<port id="52" name="trellis_survivor_V_23" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_23"/></StgValue>
+</port>
+<port id="53" name="trellis_survivor_V_24" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_24"/></StgValue>
+</port>
+<port id="54" name="trellis_survivor_V_25" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_25"/></StgValue>
+</port>
+<port id="55" name="trellis_survivor_V_26" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_26"/></StgValue>
+</port>
+<port id="56" name="trellis_survivor_V_27" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_27"/></StgValue>
+</port>
+<port id="57" name="trellis_survivor_V_28" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_28"/></StgValue>
+</port>
+<port id="58" name="trellis_survivor_V_29" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_29"/></StgValue>
+</port>
+<port id="59" name="trellis_survivor_V_30" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_30"/></StgValue>
+</port>
+<port id="60" name="trellis_survivor_V_31" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_31"/></StgValue>
+</port>
+<port id="61" name="trellis_survivor_V_32" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_32"/></StgValue>
+</port>
+<port id="62" name="trellis_survivor_V_33" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_33"/></StgValue>
+</port>
+<port id="63" name="trellis_survivor_V_34" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_34"/></StgValue>
+</port>
+<port id="64" name="trellis_survivor_V_35" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_35"/></StgValue>
+</port>
+<port id="65" name="trellis_survivor_V_36" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_36"/></StgValue>
+</port>
+<port id="66" name="trellis_survivor_V_37" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_37"/></StgValue>
+</port>
+<port id="67" name="trellis_survivor_V_38" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_38"/></StgValue>
+</port>
+<port id="68" name="trellis_survivor_V_39" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_39"/></StgValue>
+</port>
+<port id="69" name="trellis_survivor_V_40" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_40"/></StgValue>
+</port>
+<port id="70" name="trellis_survivor_V_41" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_41"/></StgValue>
+</port>
+<port id="71" name="trellis_survivor_V_42" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_42"/></StgValue>
+</port>
+<port id="72" name="trellis_survivor_V_43" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_43"/></StgValue>
+</port>
+<port id="73" name="trellis_survivor_V_44" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_44"/></StgValue>
+</port>
+<port id="74" name="trellis_survivor_V_45" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_45"/></StgValue>
+</port>
+<port id="75" name="trellis_survivor_V_46" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_46"/></StgValue>
+</port>
+<port id="76" name="trellis_survivor_V_47" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_47"/></StgValue>
+</port>
+<port id="77" name="trellis_survivor_V_48" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_48"/></StgValue>
+</port>
+<port id="78" name="trellis_survivor_V_49" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_49"/></StgValue>
+</port>
+<port id="79" name="trellis_survivor_V_50" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_50"/></StgValue>
+</port>
+<port id="80" name="trellis_survivor_V_51" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_51"/></StgValue>
+</port>
+<port id="81" name="trellis_survivor_V_52" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_52"/></StgValue>
+</port>
+<port id="82" name="trellis_survivor_V_53" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_53"/></StgValue>
+</port>
+<port id="83" name="trellis_survivor_V_54" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_54"/></StgValue>
+</port>
+<port id="84" name="trellis_survivor_V_55" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_55"/></StgValue>
+</port>
+<port id="85" name="trellis_survivor_V_56" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_56"/></StgValue>
+</port>
+<port id="86" name="trellis_survivor_V_57" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_57"/></StgValue>
+</port>
+<port id="87" name="trellis_survivor_V_58" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_58"/></StgValue>
+</port>
+<port id="88" name="trellis_survivor_V_59" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_59"/></StgValue>
+</port>
+<port id="89" name="trellis_survivor_V_60" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_60"/></StgValue>
+</port>
+<port id="90" name="trellis_survivor_V_61" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_61"/></StgValue>
+</port>
+<port id="91" name="trellis_survivor_V_62" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_62"/></StgValue>
+</port>
+<port id="92" name="trellis_survivor_V_63" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="trellis_survivor_V_63"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="94" from="StgValue_93" to="temp_trellis_survivor_V" fromId="93" toId="5">
+</dataflow>
+<dataflow id="96" from="decoder_bit_Block_.split148_proc3" to="best_branch_loc_channel" fromId="95" toId="6">
+</dataflow>
+<dataflow id="97" from="temp_trellis_survivor_V" to="best_branch_loc_channel" fromId="5" toId="6">
+</dataflow>
+<dataflow id="98" from="y0300" to="best_branch_loc_channel" fromId="20" toId="6">
+</dataflow>
+<dataflow id="99" from="y1301" to="best_branch_loc_channel" fromId="21" toId="6">
+</dataflow>
+<dataflow id="100" from="t" to="best_branch_loc_channel" fromId="23" toId="6">
+</dataflow>
+<dataflow id="101" from="trellis_table_0_0" to="best_branch_loc_channel" fromId="24" toId="6">
+</dataflow>
+<dataflow id="102" from="trellis_table_0_1" to="best_branch_loc_channel" fromId="25" toId="6">
+</dataflow>
+<dataflow id="103" from="trellis_table_1_0" to="best_branch_loc_channel" fromId="26" toId="6">
+</dataflow>
+<dataflow id="104" from="trellis_table_1_1" to="best_branch_loc_channel" fromId="27" toId="6">
+</dataflow>
+<dataflow id="105" from="trellis_metric" to="best_branch_loc_channel" fromId="28" toId="6">
+</dataflow>
+<dataflow id="106" from="trellis_survivor_V_0" to="best_branch_loc_channel" fromId="29" toId="6">
+</dataflow>
+<dataflow id="107" from="trellis_survivor_V_1" to="best_branch_loc_channel" fromId="30" toId="6">
+</dataflow>
+<dataflow id="108" from="trellis_survivor_V_2" to="best_branch_loc_channel" fromId="31" toId="6">
+</dataflow>
+<dataflow id="109" from="trellis_survivor_V_3" to="best_branch_loc_channel" fromId="32" toId="6">
+</dataflow>
+<dataflow id="110" from="trellis_survivor_V_4" to="best_branch_loc_channel" fromId="33" toId="6">
+</dataflow>
+<dataflow id="111" from="trellis_survivor_V_5" to="best_branch_loc_channel" fromId="34" toId="6">
+</dataflow>
+<dataflow id="112" from="trellis_survivor_V_6" to="best_branch_loc_channel" fromId="35" toId="6">
+</dataflow>
+<dataflow id="113" from="trellis_survivor_V_7" to="best_branch_loc_channel" fromId="36" toId="6">
+</dataflow>
+<dataflow id="114" from="trellis_survivor_V_8" to="best_branch_loc_channel" fromId="37" toId="6">
+</dataflow>
+<dataflow id="115" from="trellis_survivor_V_9" to="best_branch_loc_channel" fromId="38" toId="6">
+</dataflow>
+<dataflow id="116" from="trellis_survivor_V_10" to="best_branch_loc_channel" fromId="39" toId="6">
+</dataflow>
+<dataflow id="117" from="trellis_survivor_V_11" to="best_branch_loc_channel" fromId="40" toId="6">
+</dataflow>
+<dataflow id="118" from="trellis_survivor_V_12" to="best_branch_loc_channel" fromId="41" toId="6">
+</dataflow>
+<dataflow id="119" from="trellis_survivor_V_13" to="best_branch_loc_channel" fromId="42" toId="6">
+</dataflow>
+<dataflow id="120" from="trellis_survivor_V_14" to="best_branch_loc_channel" fromId="43" toId="6">
+</dataflow>
+<dataflow id="121" from="trellis_survivor_V_15" to="best_branch_loc_channel" fromId="44" toId="6">
+</dataflow>
+<dataflow id="122" from="trellis_survivor_V_16" to="best_branch_loc_channel" fromId="45" toId="6">
+</dataflow>
+<dataflow id="123" from="trellis_survivor_V_17" to="best_branch_loc_channel" fromId="46" toId="6">
+</dataflow>
+<dataflow id="124" from="trellis_survivor_V_18" to="best_branch_loc_channel" fromId="47" toId="6">
+</dataflow>
+<dataflow id="125" from="trellis_survivor_V_19" to="best_branch_loc_channel" fromId="48" toId="6">
+</dataflow>
+<dataflow id="126" from="trellis_survivor_V_20" to="best_branch_loc_channel" fromId="49" toId="6">
+</dataflow>
+<dataflow id="127" from="trellis_survivor_V_21" to="best_branch_loc_channel" fromId="50" toId="6">
+</dataflow>
+<dataflow id="128" from="trellis_survivor_V_22" to="best_branch_loc_channel" fromId="51" toId="6">
+</dataflow>
+<dataflow id="129" from="trellis_survivor_V_23" to="best_branch_loc_channel" fromId="52" toId="6">
+</dataflow>
+<dataflow id="130" from="trellis_survivor_V_24" to="best_branch_loc_channel" fromId="53" toId="6">
+</dataflow>
+<dataflow id="131" from="trellis_survivor_V_25" to="best_branch_loc_channel" fromId="54" toId="6">
+</dataflow>
+<dataflow id="132" from="trellis_survivor_V_26" to="best_branch_loc_channel" fromId="55" toId="6">
+</dataflow>
+<dataflow id="133" from="trellis_survivor_V_27" to="best_branch_loc_channel" fromId="56" toId="6">
+</dataflow>
+<dataflow id="134" from="trellis_survivor_V_28" to="best_branch_loc_channel" fromId="57" toId="6">
+</dataflow>
+<dataflow id="135" from="trellis_survivor_V_29" to="best_branch_loc_channel" fromId="58" toId="6">
+</dataflow>
+<dataflow id="136" from="trellis_survivor_V_30" to="best_branch_loc_channel" fromId="59" toId="6">
+</dataflow>
+<dataflow id="137" from="trellis_survivor_V_31" to="best_branch_loc_channel" fromId="60" toId="6">
+</dataflow>
+<dataflow id="138" from="trellis_survivor_V_32" to="best_branch_loc_channel" fromId="61" toId="6">
+</dataflow>
+<dataflow id="139" from="trellis_survivor_V_33" to="best_branch_loc_channel" fromId="62" toId="6">
+</dataflow>
+<dataflow id="140" from="trellis_survivor_V_34" to="best_branch_loc_channel" fromId="63" toId="6">
+</dataflow>
+<dataflow id="141" from="trellis_survivor_V_35" to="best_branch_loc_channel" fromId="64" toId="6">
+</dataflow>
+<dataflow id="142" from="trellis_survivor_V_36" to="best_branch_loc_channel" fromId="65" toId="6">
+</dataflow>
+<dataflow id="143" from="trellis_survivor_V_37" to="best_branch_loc_channel" fromId="66" toId="6">
+</dataflow>
+<dataflow id="144" from="trellis_survivor_V_38" to="best_branch_loc_channel" fromId="67" toId="6">
+</dataflow>
+<dataflow id="145" from="trellis_survivor_V_39" to="best_branch_loc_channel" fromId="68" toId="6">
+</dataflow>
+<dataflow id="146" from="trellis_survivor_V_40" to="best_branch_loc_channel" fromId="69" toId="6">
+</dataflow>
+<dataflow id="147" from="trellis_survivor_V_41" to="best_branch_loc_channel" fromId="70" toId="6">
+</dataflow>
+<dataflow id="148" from="trellis_survivor_V_42" to="best_branch_loc_channel" fromId="71" toId="6">
+</dataflow>
+<dataflow id="149" from="trellis_survivor_V_43" to="best_branch_loc_channel" fromId="72" toId="6">
+</dataflow>
+<dataflow id="150" from="trellis_survivor_V_44" to="best_branch_loc_channel" fromId="73" toId="6">
+</dataflow>
+<dataflow id="151" from="trellis_survivor_V_45" to="best_branch_loc_channel" fromId="74" toId="6">
+</dataflow>
+<dataflow id="152" from="trellis_survivor_V_46" to="best_branch_loc_channel" fromId="75" toId="6">
+</dataflow>
+<dataflow id="153" from="trellis_survivor_V_47" to="best_branch_loc_channel" fromId="76" toId="6">
+</dataflow>
+<dataflow id="154" from="trellis_survivor_V_48" to="best_branch_loc_channel" fromId="77" toId="6">
+</dataflow>
+<dataflow id="155" from="trellis_survivor_V_49" to="best_branch_loc_channel" fromId="78" toId="6">
+</dataflow>
+<dataflow id="156" from="trellis_survivor_V_50" to="best_branch_loc_channel" fromId="79" toId="6">
+</dataflow>
+<dataflow id="157" from="trellis_survivor_V_51" to="best_branch_loc_channel" fromId="80" toId="6">
+</dataflow>
+<dataflow id="158" from="trellis_survivor_V_52" to="best_branch_loc_channel" fromId="81" toId="6">
+</dataflow>
+<dataflow id="159" from="trellis_survivor_V_53" to="best_branch_loc_channel" fromId="82" toId="6">
+</dataflow>
+<dataflow id="160" from="trellis_survivor_V_54" to="best_branch_loc_channel" fromId="83" toId="6">
+</dataflow>
+<dataflow id="161" from="trellis_survivor_V_55" to="best_branch_loc_channel" fromId="84" toId="6">
+</dataflow>
+<dataflow id="162" from="trellis_survivor_V_56" to="best_branch_loc_channel" fromId="85" toId="6">
+</dataflow>
+<dataflow id="163" from="trellis_survivor_V_57" to="best_branch_loc_channel" fromId="86" toId="6">
+</dataflow>
+<dataflow id="164" from="trellis_survivor_V_58" to="best_branch_loc_channel" fromId="87" toId="6">
+</dataflow>
+<dataflow id="165" from="trellis_survivor_V_59" to="best_branch_loc_channel" fromId="88" toId="6">
+</dataflow>
+<dataflow id="166" from="trellis_survivor_V_60" to="best_branch_loc_channel" fromId="89" toId="6">
+</dataflow>
+<dataflow id="167" from="trellis_survivor_V_61" to="best_branch_loc_channel" fromId="90" toId="6">
+</dataflow>
+<dataflow id="168" from="trellis_survivor_V_62" to="best_branch_loc_channel" fromId="91" toId="6">
+</dataflow>
+<dataflow id="169" from="trellis_survivor_V_63" to="best_branch_loc_channel" fromId="92" toId="6">
+</dataflow>
+<dataflow id="170" from="decoder_bit_Block_.split148_proc3" to="best_branch_loc_channel" fromId="95" toId="7">
+</dataflow>
+<dataflow id="171" from="temp_trellis_survivor_V" to="best_branch_loc_channel" fromId="5" toId="7">
+</dataflow>
+<dataflow id="172" from="y0300" to="best_branch_loc_channel" fromId="20" toId="7">
+</dataflow>
+<dataflow id="173" from="y1301" to="best_branch_loc_channel" fromId="21" toId="7">
+</dataflow>
+<dataflow id="174" from="t" to="best_branch_loc_channel" fromId="23" toId="7">
+</dataflow>
+<dataflow id="175" from="trellis_table_0_0" to="best_branch_loc_channel" fromId="24" toId="7">
+</dataflow>
+<dataflow id="176" from="trellis_table_0_1" to="best_branch_loc_channel" fromId="25" toId="7">
+</dataflow>
+<dataflow id="177" from="trellis_table_1_0" to="best_branch_loc_channel" fromId="26" toId="7">
+</dataflow>
+<dataflow id="178" from="trellis_table_1_1" to="best_branch_loc_channel" fromId="27" toId="7">
+</dataflow>
+<dataflow id="179" from="trellis_metric" to="best_branch_loc_channel" fromId="28" toId="7">
+</dataflow>
+<dataflow id="180" from="trellis_survivor_V_0" to="best_branch_loc_channel" fromId="29" toId="7">
+</dataflow>
+<dataflow id="181" from="trellis_survivor_V_1" to="best_branch_loc_channel" fromId="30" toId="7">
+</dataflow>
+<dataflow id="182" from="trellis_survivor_V_2" to="best_branch_loc_channel" fromId="31" toId="7">
+</dataflow>
+<dataflow id="183" from="trellis_survivor_V_3" to="best_branch_loc_channel" fromId="32" toId="7">
+</dataflow>
+<dataflow id="184" from="trellis_survivor_V_4" to="best_branch_loc_channel" fromId="33" toId="7">
+</dataflow>
+<dataflow id="185" from="trellis_survivor_V_5" to="best_branch_loc_channel" fromId="34" toId="7">
+</dataflow>
+<dataflow id="186" from="trellis_survivor_V_6" to="best_branch_loc_channel" fromId="35" toId="7">
+</dataflow>
+<dataflow id="187" from="trellis_survivor_V_7" to="best_branch_loc_channel" fromId="36" toId="7">
+</dataflow>
+<dataflow id="188" from="trellis_survivor_V_8" to="best_branch_loc_channel" fromId="37" toId="7">
+</dataflow>
+<dataflow id="189" from="trellis_survivor_V_9" to="best_branch_loc_channel" fromId="38" toId="7">
+</dataflow>
+<dataflow id="190" from="trellis_survivor_V_10" to="best_branch_loc_channel" fromId="39" toId="7">
+</dataflow>
+<dataflow id="191" from="trellis_survivor_V_11" to="best_branch_loc_channel" fromId="40" toId="7">
+</dataflow>
+<dataflow id="192" from="trellis_survivor_V_12" to="best_branch_loc_channel" fromId="41" toId="7">
+</dataflow>
+<dataflow id="193" from="trellis_survivor_V_13" to="best_branch_loc_channel" fromId="42" toId="7">
+</dataflow>
+<dataflow id="194" from="trellis_survivor_V_14" to="best_branch_loc_channel" fromId="43" toId="7">
+</dataflow>
+<dataflow id="195" from="trellis_survivor_V_15" to="best_branch_loc_channel" fromId="44" toId="7">
+</dataflow>
+<dataflow id="196" from="trellis_survivor_V_16" to="best_branch_loc_channel" fromId="45" toId="7">
+</dataflow>
+<dataflow id="197" from="trellis_survivor_V_17" to="best_branch_loc_channel" fromId="46" toId="7">
+</dataflow>
+<dataflow id="198" from="trellis_survivor_V_18" to="best_branch_loc_channel" fromId="47" toId="7">
+</dataflow>
+<dataflow id="199" from="trellis_survivor_V_19" to="best_branch_loc_channel" fromId="48" toId="7">
+</dataflow>
+<dataflow id="200" from="trellis_survivor_V_20" to="best_branch_loc_channel" fromId="49" toId="7">
+</dataflow>
+<dataflow id="201" from="trellis_survivor_V_21" to="best_branch_loc_channel" fromId="50" toId="7">
+</dataflow>
+<dataflow id="202" from="trellis_survivor_V_22" to="best_branch_loc_channel" fromId="51" toId="7">
+</dataflow>
+<dataflow id="203" from="trellis_survivor_V_23" to="best_branch_loc_channel" fromId="52" toId="7">
+</dataflow>
+<dataflow id="204" from="trellis_survivor_V_24" to="best_branch_loc_channel" fromId="53" toId="7">
+</dataflow>
+<dataflow id="205" from="trellis_survivor_V_25" to="best_branch_loc_channel" fromId="54" toId="7">
+</dataflow>
+<dataflow id="206" from="trellis_survivor_V_26" to="best_branch_loc_channel" fromId="55" toId="7">
+</dataflow>
+<dataflow id="207" from="trellis_survivor_V_27" to="best_branch_loc_channel" fromId="56" toId="7">
+</dataflow>
+<dataflow id="208" from="trellis_survivor_V_28" to="best_branch_loc_channel" fromId="57" toId="7">
+</dataflow>
+<dataflow id="209" from="trellis_survivor_V_29" to="best_branch_loc_channel" fromId="58" toId="7">
+</dataflow>
+<dataflow id="210" from="trellis_survivor_V_30" to="best_branch_loc_channel" fromId="59" toId="7">
+</dataflow>
+<dataflow id="211" from="trellis_survivor_V_31" to="best_branch_loc_channel" fromId="60" toId="7">
+</dataflow>
+<dataflow id="212" from="trellis_survivor_V_32" to="best_branch_loc_channel" fromId="61" toId="7">
+</dataflow>
+<dataflow id="213" from="trellis_survivor_V_33" to="best_branch_loc_channel" fromId="62" toId="7">
+</dataflow>
+<dataflow id="214" from="trellis_survivor_V_34" to="best_branch_loc_channel" fromId="63" toId="7">
+</dataflow>
+<dataflow id="215" from="trellis_survivor_V_35" to="best_branch_loc_channel" fromId="64" toId="7">
+</dataflow>
+<dataflow id="216" from="trellis_survivor_V_36" to="best_branch_loc_channel" fromId="65" toId="7">
+</dataflow>
+<dataflow id="217" from="trellis_survivor_V_37" to="best_branch_loc_channel" fromId="66" toId="7">
+</dataflow>
+<dataflow id="218" from="trellis_survivor_V_38" to="best_branch_loc_channel" fromId="67" toId="7">
+</dataflow>
+<dataflow id="219" from="trellis_survivor_V_39" to="best_branch_loc_channel" fromId="68" toId="7">
+</dataflow>
+<dataflow id="220" from="trellis_survivor_V_40" to="best_branch_loc_channel" fromId="69" toId="7">
+</dataflow>
+<dataflow id="221" from="trellis_survivor_V_41" to="best_branch_loc_channel" fromId="70" toId="7">
+</dataflow>
+<dataflow id="222" from="trellis_survivor_V_42" to="best_branch_loc_channel" fromId="71" toId="7">
+</dataflow>
+<dataflow id="223" from="trellis_survivor_V_43" to="best_branch_loc_channel" fromId="72" toId="7">
+</dataflow>
+<dataflow id="224" from="trellis_survivor_V_44" to="best_branch_loc_channel" fromId="73" toId="7">
+</dataflow>
+<dataflow id="225" from="trellis_survivor_V_45" to="best_branch_loc_channel" fromId="74" toId="7">
+</dataflow>
+<dataflow id="226" from="trellis_survivor_V_46" to="best_branch_loc_channel" fromId="75" toId="7">
+</dataflow>
+<dataflow id="227" from="trellis_survivor_V_47" to="best_branch_loc_channel" fromId="76" toId="7">
+</dataflow>
+<dataflow id="228" from="trellis_survivor_V_48" to="best_branch_loc_channel" fromId="77" toId="7">
+</dataflow>
+<dataflow id="229" from="trellis_survivor_V_49" to="best_branch_loc_channel" fromId="78" toId="7">
+</dataflow>
+<dataflow id="230" from="trellis_survivor_V_50" to="best_branch_loc_channel" fromId="79" toId="7">
+</dataflow>
+<dataflow id="231" from="trellis_survivor_V_51" to="best_branch_loc_channel" fromId="80" toId="7">
+</dataflow>
+<dataflow id="232" from="trellis_survivor_V_52" to="best_branch_loc_channel" fromId="81" toId="7">
+</dataflow>
+<dataflow id="233" from="trellis_survivor_V_53" to="best_branch_loc_channel" fromId="82" toId="7">
+</dataflow>
+<dataflow id="234" from="trellis_survivor_V_54" to="best_branch_loc_channel" fromId="83" toId="7">
+</dataflow>
+<dataflow id="235" from="trellis_survivor_V_55" to="best_branch_loc_channel" fromId="84" toId="7">
+</dataflow>
+<dataflow id="236" from="trellis_survivor_V_56" to="best_branch_loc_channel" fromId="85" toId="7">
+</dataflow>
+<dataflow id="237" from="trellis_survivor_V_57" to="best_branch_loc_channel" fromId="86" toId="7">
+</dataflow>
+<dataflow id="238" from="trellis_survivor_V_58" to="best_branch_loc_channel" fromId="87" toId="7">
+</dataflow>
+<dataflow id="239" from="trellis_survivor_V_59" to="best_branch_loc_channel" fromId="88" toId="7">
+</dataflow>
+<dataflow id="240" from="trellis_survivor_V_60" to="best_branch_loc_channel" fromId="89" toId="7">
+</dataflow>
+<dataflow id="241" from="trellis_survivor_V_61" to="best_branch_loc_channel" fromId="90" toId="7">
+</dataflow>
+<dataflow id="242" from="trellis_survivor_V_62" to="best_branch_loc_channel" fromId="91" toId="7">
+</dataflow>
+<dataflow id="243" from="trellis_survivor_V_63" to="best_branch_loc_channel" fromId="92" toId="7">
+</dataflow>
+<dataflow id="245" from="decoder_bit_Loop_VITIS_LOOP_227_6_proc" to="best_branch_3_cast_loc_channel" fromId="244" toId="8">
+</dataflow>
+<dataflow id="246" from="best_branch_loc_channel" to="best_branch_3_cast_loc_channel" fromId="7" toId="8">
+</dataflow>
+<dataflow id="247" from="temp_trellis_survivor_V" to="best_branch_3_cast_loc_channel" fromId="5" toId="8">
+</dataflow>
+<dataflow id="249" from="_ssdm_op_SpecDataflowPipeline" to="specdataflowpipeline_ln0" fromId="248" toId="9">
+</dataflow>
+<dataflow id="251" from="StgValue_250" to="specdataflowpipeline_ln0" fromId="250" toId="9">
+</dataflow>
+<dataflow id="253" from="StgValue_252" to="specdataflowpipeline_ln0" fromId="252" toId="9">
+</dataflow>
+<dataflow id="255" from="empty_7" to="specdataflowpipeline_ln0" fromId="254" toId="9">
+</dataflow>
+<dataflow id="257" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="256" toId="10">
+</dataflow>
+<dataflow id="258" from="output302" to="specinterface_ln0" fromId="22" toId="10">
+</dataflow>
+<dataflow id="260" from="empty_10" to="specinterface_ln0" fromId="259" toId="10">
+</dataflow>
+<dataflow id="261" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="10">
+</dataflow>
+<dataflow id="262" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="10">
+</dataflow>
+<dataflow id="263" from="empty_7" to="specinterface_ln0" fromId="254" toId="10">
+</dataflow>
+<dataflow id="264" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="10">
+</dataflow>
+<dataflow id="265" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="10">
+</dataflow>
+<dataflow id="266" from="empty_7" to="specinterface_ln0" fromId="254" toId="10">
+</dataflow>
+<dataflow id="267" from="empty_7" to="specinterface_ln0" fromId="254" toId="10">
+</dataflow>
+<dataflow id="268" from="empty_7" to="specinterface_ln0" fromId="254" toId="10">
+</dataflow>
+<dataflow id="269" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="10">
+</dataflow>
+<dataflow id="270" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="10">
+</dataflow>
+<dataflow id="271" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="10">
+</dataflow>
+<dataflow id="272" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="10">
+</dataflow>
+<dataflow id="273" from="empty_7" to="specinterface_ln0" fromId="254" toId="10">
+</dataflow>
+<dataflow id="274" from="empty_7" to="specinterface_ln0" fromId="254" toId="10">
+</dataflow>
+<dataflow id="275" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="256" toId="11">
+</dataflow>
+<dataflow id="276" from="y1301" to="specinterface_ln0" fromId="21" toId="11">
+</dataflow>
+<dataflow id="277" from="empty_10" to="specinterface_ln0" fromId="259" toId="11">
+</dataflow>
+<dataflow id="278" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="11">
+</dataflow>
+<dataflow id="279" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="11">
+</dataflow>
+<dataflow id="280" from="empty_7" to="specinterface_ln0" fromId="254" toId="11">
+</dataflow>
+<dataflow id="281" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="11">
+</dataflow>
+<dataflow id="282" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="11">
+</dataflow>
+<dataflow id="283" from="empty_7" to="specinterface_ln0" fromId="254" toId="11">
+</dataflow>
+<dataflow id="284" from="empty_7" to="specinterface_ln0" fromId="254" toId="11">
+</dataflow>
+<dataflow id="285" from="empty_7" to="specinterface_ln0" fromId="254" toId="11">
+</dataflow>
+<dataflow id="286" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="11">
+</dataflow>
+<dataflow id="287" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="11">
+</dataflow>
+<dataflow id="288" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="11">
+</dataflow>
+<dataflow id="289" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="11">
+</dataflow>
+<dataflow id="290" from="empty_7" to="specinterface_ln0" fromId="254" toId="11">
+</dataflow>
+<dataflow id="291" from="empty_7" to="specinterface_ln0" fromId="254" toId="11">
+</dataflow>
+<dataflow id="292" from="_ssdm_op_SpecInterface" to="specinterface_ln0" fromId="256" toId="12">
+</dataflow>
+<dataflow id="293" from="y0300" to="specinterface_ln0" fromId="20" toId="12">
+</dataflow>
+<dataflow id="294" from="empty_10" to="specinterface_ln0" fromId="259" toId="12">
+</dataflow>
+<dataflow id="295" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="12">
+</dataflow>
+<dataflow id="296" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="12">
+</dataflow>
+<dataflow id="297" from="empty_7" to="specinterface_ln0" fromId="254" toId="12">
+</dataflow>
+<dataflow id="298" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="12">
+</dataflow>
+<dataflow id="299" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="12">
+</dataflow>
+<dataflow id="300" from="empty_7" to="specinterface_ln0" fromId="254" toId="12">
+</dataflow>
+<dataflow id="301" from="empty_7" to="specinterface_ln0" fromId="254" toId="12">
+</dataflow>
+<dataflow id="302" from="empty_7" to="specinterface_ln0" fromId="254" toId="12">
+</dataflow>
+<dataflow id="303" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="12">
+</dataflow>
+<dataflow id="304" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="12">
+</dataflow>
+<dataflow id="305" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="12">
+</dataflow>
+<dataflow id="306" from="StgValue_252" to="specinterface_ln0" fromId="252" toId="12">
+</dataflow>
+<dataflow id="307" from="empty_7" to="specinterface_ln0" fromId="254" toId="12">
+</dataflow>
+<dataflow id="308" from="empty_7" to="specinterface_ln0" fromId="254" toId="12">
+</dataflow>
+<dataflow id="309" from="decoder_bit_Loop_VITIS_LOOP_227_6_proc" to="best_branch_3_cast_loc_channel" fromId="244" toId="13">
+</dataflow>
+<dataflow id="310" from="best_branch_loc_channel" to="best_branch_3_cast_loc_channel" fromId="7" toId="13">
+</dataflow>
+<dataflow id="311" from="temp_trellis_survivor_V" to="best_branch_3_cast_loc_channel" fromId="5" toId="13">
+</dataflow>
+<dataflow id="313" from="decoder_bit_Block_.split223_proc" to="call_ln0" fromId="312" toId="14">
+</dataflow>
+<dataflow id="314" from="best_branch_3_cast_loc_channel" to="call_ln0" fromId="13" toId="14">
+</dataflow>
+<dataflow id="315" from="output302" to="call_ln0" fromId="22" toId="14">
+</dataflow>
+</dataflows>
+
+
+</stg>

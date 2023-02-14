@@ -1,0 +1,953 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 251.505 MB.
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/symbol_to_pixl.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/pixl_to_symbol.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.01 seconds. CPU system time: 0.44 seconds. Elapsed time: 6.27 seconds; current allocated memory: 252.981 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:62:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:60:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:57:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:27:21)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:5:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.73 seconds. CPU system time: 0.23 seconds. Elapsed time: 4.5 seconds; current allocated memory: 255.138 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.140 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 282.957 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 326.646 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_26_1' (sym2pixl_src/src/symbol_to_pixl.cpp:16) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_55_2' (sym2pixl_src/src/symbol_to_pixl.cpp:9) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (sym2pixl_src/src/symbol_to_pixl.cpp:53:2) in function 'symbol_to_pixl'... converting 6 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.24 seconds. CPU system time: 0 seconds. Elapsed time: 0.33 seconds; current allocated memory: 393.105 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 427.115 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'symbol_to_pixl' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_26_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_26_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.1 seconds; current allocated memory: 427.354 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 427.593 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_55_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_55_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 427.775 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 428.014 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 428.133 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 428.292 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'symbol_to_pixl_Pipeline_VITIS_LOOP_26_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'symbol_to_pixl_Pipeline_VITIS_LOOP_26_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 428.710 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2' pipeline 'VITIS_LOOP_55_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 429.822 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'symbol_to_pixl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'symbol_to_pixl' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'symbol_to_pixl'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.34 seconds; current allocated memory: 431.095 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.674 MB.
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/symbol_to_pixl.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/pixl_to_symbol.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.14 seconds. CPU system time: 0.44 seconds. Elapsed time: 6.36 seconds; current allocated memory: 253.211 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:62:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:60:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:57:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:27:21)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:5:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.63 seconds. CPU system time: 0.24 seconds. Elapsed time: 4.43 seconds; current allocated memory: 255.413 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.415 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 283.199 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.3 seconds; current allocated memory: 326.874 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_26_1' (sym2pixl_src/src/symbol_to_pixl.cpp:16) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_55_2' (sym2pixl_src/src/symbol_to_pixl.cpp:9) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (sym2pixl_src/src/symbol_to_pixl.cpp:53:2) in function 'symbol_to_pixl'... converting 6 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.47 seconds; current allocated memory: 393.283 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 427.130 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'symbol_to_pixl' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_26_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_26_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 427.360 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 427.572 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_55_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_55_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 427.788 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 427.952 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 428.040 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 428.159 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'symbol_to_pixl_Pipeline_VITIS_LOOP_26_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'symbol_to_pixl_Pipeline_VITIS_LOOP_26_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 428.598 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2' pipeline 'VITIS_LOOP_55_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 429.677 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'symbol_to_pixl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'symbol_to_pixl' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'symbol_to_pixl'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.13 seconds; current allocated memory: 430.802 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.3 seconds; current allocated memory: 432.979 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 439.462 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: set_directive_top -name symbol_to_pixl symbol_to_pixl 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.706 MB.
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/symbol_to_pixl.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/pixl_to_symbol.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6 seconds. CPU system time: 0.57 seconds. Elapsed time: 6.41 seconds; current allocated memory: 253.213 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:62:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:60:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:57:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:27:21)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:5:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.62 seconds. CPU system time: 0.26 seconds. Elapsed time: 4.44 seconds; current allocated memory: 255.414 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.416 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 283.198 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 326.873 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_26_1' (sym2pixl_src/src/symbol_to_pixl.cpp:16) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_55_2' (sym2pixl_src/src/symbol_to_pixl.cpp:9) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (sym2pixl_src/src/symbol_to_pixl.cpp:53:2) in function 'symbol_to_pixl'... converting 6 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.32 seconds; current allocated memory: 393.277 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 427.129 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'symbol_to_pixl' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_26_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_26_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.12 seconds; current allocated memory: 427.357 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 427.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_55_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_55_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 427.787 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 427.965 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 428.053 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 428.172 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'symbol_to_pixl_Pipeline_VITIS_LOOP_26_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'symbol_to_pixl_Pipeline_VITIS_LOOP_26_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 428.595 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2' pipeline 'VITIS_LOOP_55_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'symbol_to_pixl_Pipeline_VITIS_LOOP_55_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 429.690 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'symbol_to_pixl' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'symbol_to_pixl/data_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'symbol_to_pixl' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'symbol_to_pixl'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 430.815 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 432.995 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 439.464 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: set_directive_top -name symbol_to_pixl symbol_to_pixl 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.735 MB.
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/pixl_to_symbol.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/symbol_to_pixl.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.09 seconds. CPU system time: 0.36 seconds. Elapsed time: 6.25 seconds; current allocated memory: 253.243 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:28:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:64:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:61:27)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:57:27)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:51:13)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.78 seconds. CPU system time: 0.18 seconds. Elapsed time: 3.59 seconds; current allocated memory: 255.282 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.284 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 282.860 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.24 seconds; current allocated memory: 326.549 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_27_1' (sym2pixl_src/src/symbol_to_pixl.cpp:18) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_55_2' (sym2pixl_src/src/symbol_to_pixl.cpp:11) in function 'symbol_to_pixl' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.21 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.31 seconds; current allocated memory: 392.996 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 427.032 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'symbol_to_pixl' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: set_directive_top -name symbol_to_pixl symbol_to_pixl 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 251.736 MB.
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/symbol_to_pixl.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/pixl_to_symbol.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.93 seconds. CPU system time: 0.46 seconds. Elapsed time: 6.19 seconds; current allocated memory: 253.213 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:28:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:63:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:56:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:51:13)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.81 seconds. CPU system time: 0.16 seconds. Elapsed time: 3.59 seconds; current allocated memory: 255.188 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.190 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 282.762 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.18 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.28 seconds; current allocated memory: 326.439 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_27_1' (sym2pixl_src/src/symbol_to_pixl.cpp:18) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_55_2' (sym2pixl_src/src/symbol_to_pixl.cpp:10) in function 'symbol_to_pixl' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.22 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.31 seconds; current allocated memory: 392.866 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 426.874 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'symbol_to_pixl' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_27_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1'.
+INFO: [HLS 200-1470]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: set_directive_top -name symbol_to_pixl symbol_to_pixl 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.673 MB.
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/pixl_to_symbol.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/symbol_to_pixl.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.17 seconds. CPU system time: 0.47 seconds. Elapsed time: 6.48 seconds; current allocated memory: 253.210 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:28:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:63:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:56:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:51:13)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.02 seconds. CPU system time: 0.19 seconds. Elapsed time: 4.42 seconds; current allocated memory: 255.139 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.141 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.2 seconds; current allocated memory: 282.715 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.23 seconds. CPU system time: 0 seconds. Elapsed time: 0.28 seconds; current allocated memory: 326.394 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_27_1' (sym2pixl_src/src/symbol_to_pixl.cpp:18) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_55_2' (sym2pixl_src/src/symbol_to_pixl.cpp:10) in function 'symbol_to_pixl' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.24 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.34 seconds; current allocated memory: 392.814 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 426.849 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'symbol_to_pixl' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_27_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1'.
+INFO: [HLS 200-1470]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: set_directive_top -name symbol_to_pixl symbol_to_pixl 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.673 MB.
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/pixl_to_symbol.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/symbol_to_pixl.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.96 seconds. CPU system time: 0.48 seconds. Elapsed time: 6.22 seconds; current allocated memory: 253.210 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:28:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:63:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:56:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:51:13)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.81 seconds. CPU system time: 0.19 seconds. Elapsed time: 3.55 seconds; current allocated memory: 255.139 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 255.141 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 282.713 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.21 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 326.393 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_27_1' (sym2pixl_src/src/symbol_to_pixl.cpp:18) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_55_2' (sym2pixl_src/src/symbol_to_pixl.cpp:10) in function 'symbol_to_pixl' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.21 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.33 seconds; current allocated memory: 392.818 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 426.851 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'symbol_to_pixl' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_27_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1'.
+INFO: [HLS 200-1470]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: set_directive_top -name symbol_to_pixl symbol_to_pixl 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.673 MB.
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/pixl_to_symbol.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/symbol_to_pixl.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.48 seconds. CPU system time: 0.47 seconds. Elapsed time: 6.71 seconds; current allocated memory: 253.210 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:28:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:61:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:54:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:49:13)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.01 seconds. CPU system time: 0.25 seconds. Elapsed time: 4.87 seconds; current allocated memory: 255.155 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.158 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.2 seconds; current allocated memory: 282.734 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.23 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.29 seconds; current allocated memory: 326.414 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_27_1' (sym2pixl_src/src/symbol_to_pixl.cpp:18) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_2' (sym2pixl_src/src/symbol_to_pixl.cpp:11) in function 'symbol_to_pixl' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.26 seconds. CPU system time: 0 seconds. Elapsed time: 0.38 seconds; current allocated memory: 392.846 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 426.857 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'symbol_to_pixl' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_27_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1'.
+INFO: [HLS 200-1470]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: set_directive_top -name symbol_to_pixl symbol_to_pixl 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.736 MB.
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/symbol_to_pixl.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/pixl_to_symbol.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 6.97 seconds. CPU system time: 0.48 seconds. Elapsed time: 7.21 seconds; current allocated memory: 253.213 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:28:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:61:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:54:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:49:13)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.63 seconds. CPU system time: 0.24 seconds. Elapsed time: 4.37 seconds; current allocated memory: 255.424 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.425 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 282.974 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.21 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.28 seconds; current allocated memory: 326.652 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_27_1' (sym2pixl_src/src/symbol_to_pixl.cpp:18) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_2' (sym2pixl_src/src/symbol_to_pixl.cpp:11) in function 'symbol_to_pixl' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.34 seconds; current allocated memory: 393.058 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 427.012 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'symbol_to_pixl' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_27_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1'.
+INFO: ==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: set_directive_top -name symbol_to_pixl symbol_to_pixl 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.735 MB.
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/pixl_to_symbol.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/symbol_to_pixl.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.91 seconds. CPU system time: 0.56 seconds. Elapsed time: 6.24 seconds; current allocated memory: 253.243 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:28:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:61:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:54:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:49:13)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.9 seconds. CPU system time: 0.22 seconds. Elapsed time: 3.73 seconds; current allocated memory: 255.423 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.424 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 282.974 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.2 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 326.652 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_27_1' (sym2pixl_src/src/symbol_to_pixl.cpp:18) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_2' (sym2pixl_src/src/symbol_to_pixl.cpp:11) in function 'symbol_to_pixl' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.32 seconds; current allocated memory: 393.055 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.17 seconds; current allocated memory: 427.014 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'symbol_to_pixl' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_27_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1'.
+INFO: [HLS 200-1470]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: set_directive_top -name symbol_to_pixl symbol_to_pixl 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 251.705 MB.
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/symbol_to_pixl.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file 'sym2pixl_src/src/pixl_to_symbol.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 5.85 seconds. CPU system time: 0.57 seconds. Elapsed time: 6.26 seconds; current allocated memory: 253.211 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:28:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:65:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::read()' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:54:26)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>::write(hls::axis<ap_uint<64>, 0ul, 0ul, 0ul> const&)' into 'symbol_to_pixl(hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 0ul, 0ul, 0ul>, 0>&)' (sym2pixl_src/src/symbol_to_pixl.cpp:49:13)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 2.88 seconds. CPU system time: 0.22 seconds. Elapsed time: 3.64 seconds; current allocated memory: 255.370 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.371 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 282.925 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.19 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 326.603 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_27_1' (sym2pixl_src/src/symbol_to_pixl.cpp:18) in function 'symbol_to_pixl' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_53_2' (sym2pixl_src/src/symbol_to_pixl.cpp:11) in function 'symbol_to_pixl' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.23 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.37 seconds; current allocated memory: 393.009 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 426.973 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'symbol_to_pixl' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'symbol_to_pixl_Pipeline_VITIS_LOOP_27_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_27_1'.
+INFO: [HLS 200-1470]==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================

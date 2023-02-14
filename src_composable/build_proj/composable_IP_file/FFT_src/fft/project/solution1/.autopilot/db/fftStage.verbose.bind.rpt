@@ -1,0 +1,1272 @@
+
+
+================================================================
+== Vitis HLS Report for 'fftStage'
+================================================================
+* Date:           Mon Nov 28 17:11:19 2022
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  4.465 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------+
+        |                                                                                                                                                                                         |                                                                                                                                                                              |  Latency (cycles) |  Latency (absolute) |  Interval |                 Pipeline                 |
+        |                                                                                         Instance                                                                                        |                                                                                    Module                                                                                    |   min   |   max   |    min   |    max   | min | max |                   Type                   |
+        +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------+
+        |grp_fftStageKernelS2S_64_2_1_0_0_6_complex_ap_fixed_24_9_5_3_0_complex_ap_fixed_16_3_5_3_0_complex_ap_fixed_16_3_5_3_0_complex_ap_fixed_22_7_5_3_0_complex_ap_fixed_24_9_5_3_0_s_fu_150  |fftStageKernelS2S_64_2_1_0_0_6_complex_ap_fixed_24_9_5_3_0_complex_ap_fixed_16_3_5_3_0_complex_ap_fixed_16_3_5_3_0_complex_ap_fixed_22_7_5_3_0_complex_ap_fixed_24_9_5_3_0_s  |        ?|        ?|         ?|         ?|    0|    0|  loop rewind stp(delay=0 clock cycles(s))|
+        |grp_streamingDataCommutor_complex_ap_fixed_24_9_5_3_0_s_fu_159                                                                                                                           |streamingDataCommutor_complex_ap_fixed_24_9_5_3_0_s                                                                                                                           |       65|       66|  1.300 us|  1.320 us|   64|   64|  loop rewind stp(delay=0 clock cycles(s))|
+        |grp_fftStage_1_fu_181                                                                                                                                                                    |fftStage_1                                                                                                                                                                    |        ?|        ?|         ?|         ?|    ?|    ?|                                  dataflow|
+        +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+---------+----------+----------+-----+-----+------------------------------------------+
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 6, States = { 1 2 3 4 5 6 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%fftOutData_local = alloca i64 1" [../fixed/vitis_fft/hls_ssr_fft.hpp:885]   --->   Operation 7 'alloca' 'fftOutData_local' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 80 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 8> <FIFO>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%fftOutData_local2 = alloca i64 1" [../fixed/vitis_fft/hls_ssr_fft.hpp:891]   --->   Operation 8 'alloca' 'fftOutData_local2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 80 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 8> <FIFO>
+ST_1 : Operation 9 [2/2] (0.00ns)   --->   "%call_ln897 = call void @fftStageKernelS2S<64, 2, 1, 0, 0, 6, complex<ap_fixed<24, 9, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<22, 7, 5, 3, 0> >, complex<ap_fixed<24, 9, 5, 3, 0> > >, i128 %p_fftInData_reOrdered, i128 %fftOutData_local, i14 %twiddleObj_twiddleTable_M_imag_V" [../fixed/vitis_fft/hls_ssr_fft.hpp:897]   --->   Operation 9 'call' 'call_ln897' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 10 [1/2] (0.00ns)   --->   "%call_ln897 = call void @fftStageKernelS2S<64, 2, 1, 0, 0, 6, complex<ap_fixed<24, 9, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<22, 7, 5, 3, 0> >, complex<ap_fixed<24, 9, 5, 3, 0> > >, i128 %p_fftInData_reOrdered, i128 %fftOutData_local, i14 %twiddleObj_twiddleTable_M_imag_V" [../fixed/vitis_fft/hls_ssr_fft.hpp:897]   --->   Operation 10 'call' 'call_ln897' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 11 [2/2] (0.00ns)   --->   "%call_ln905 = call void @streamingDataCommutor<complex<ap_fixed<24, 9, 5, 3, 0> > >, i128 %fftOutData_local, i128 %fftOutData_local2, i1 %control_count_V, i1 %control_bits_V, i4 %pf_count_V, i5 %sample_in_read_count_V, i1 %delay_line_stall, i49 %delayline_Array_6, i32 %control_delayline_Array, i49 %delayline_Array" [../fixed/vitis_fft/hls_ssr_fft.hpp:905]   --->   Operation 11 'call' 'call_ln905' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln905 = call void @streamingDataCommutor<complex<ap_fixed<24, 9, 5, 3, 0> > >, i128 %fftOutData_local, i128 %fftOutData_local2, i1 %control_count_V, i1 %control_bits_V, i4 %pf_count_V, i5 %sample_in_read_count_V, i1 %delay_line_stall, i49 %delayline_Array_6, i32 %control_delayline_Array, i49 %delayline_Array" [../fixed/vitis_fft/hls_ssr_fft.hpp:905]   --->   Operation 12 'call' 'call_ln905' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 13 [2/2] (0.00ns)   --->   "%call_ln906 = call void @fftStage.1, i128 %fftOutData_local2, i27 %p_fftOutData_0_0_0_0_0, i27 %p_fftOutData_0_0_0_0_01, i27 %p_fftOutData_0_1_0_0_0, i27 %p_fftOutData_0_1_0_0_02, i14 %twiddleObj_twiddleTable_M_imag_V_1, i1 %control_count_V_5, i1 %control_bits_V_5, i3 %pf_count_V_3, i5 %sample_in_read_count_V_5, i1 %delay_line_stall_5, i51 %delayline_Array_1, i32 %control_delayline_Array_5, i51 %delayline_Array_19, i14 %twiddleObj_twiddleTable_M_imag_V_2, i1 %control_count_V_7, i1 %control_bits_V_7, i2 %pf_count_V_5, i5 %sample_in_read_count_V_7, i1 %delay_line_stall_7, i53 %delayline_Array_13, i32 %control_delayline_Array_7, i53 %delayline_Array_5, i14 %twiddleObj_twiddleTable_M_imag_V_3, i1 %control_count_V_9, i1 %control_bits_V_9, i1 %pf_count_V_7, i5 %sample_in_read_count_V_9, i1 %delay_line_stall_9, i55 %delayline_Array_10, i32 %control_delayline_Array_9, i55 %delayline_Array_9, i1 %control_count_V_2, i1 %control_bits_V_2, i5 %sample_in_read_count_V_2, i1 %delay_line_stall_2, i55 %delayline_Array_14, i32 %control_delayline_Array_2, i55 %delayline_Array_2" [../fixed/vitis_fft/hls_ssr_fft.hpp:906]   --->   Operation 13 'call' 'call_ln906' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i27 %p_fftOutData_0_0_0_0_0, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i27 %p_fftOutData_0_0_0_0_01, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i27 %p_fftOutData_0_1_0_0_0, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i27 %p_fftOutData_0_1_0_0_02, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 18 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 1, void @empty_12"   --->   Operation 18 'specdataflowpipeline' 'specdataflowpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 19 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i128 %p_fftInData_reOrdered, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 19 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %p_fftInData_reOrdered, void @empty_0, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 21 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @fftOutData_local_str, i32 1, void @p_str, void @p_str, i32 8, i32 8, i128 %fftOutData_local, i128 %fftOutData_local"   --->   Operation 21 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln885 = specmemcore void @_ssdm_op_SpecMemCore, i128 %fftOutData_local, i64 666, i64 9, i64 18446744073709551615" [../fixed/vitis_fft/hls_ssr_fft.hpp:885]   --->   Operation 22 'specmemcore' 'specmemcore_ln885' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %fftOutData_local, void @empty_0, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 24 [1/1] (0.00ns)   --->   "%empty_84 = specchannel i32 @_ssdm_op_SpecChannel, void @fftOutData_local2_str, i32 1, void @p_str, void @p_str, i32 8, i32 8, i128 %fftOutData_local2, i128 %fftOutData_local2"   --->   Operation 24 'specchannel' 'empty_84' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln891 = specmemcore void @_ssdm_op_SpecMemCore, i128 %fftOutData_local2, i64 666, i64 9, i64 18446744073709551615" [../fixed/vitis_fft/hls_ssr_fft.hpp:891]   --->   Operation 25 'specmemcore' 'specmemcore_ln891' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %fftOutData_local2, void @empty_0, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln906 = call void @fftStage.1, i128 %fftOutData_local2, i27 %p_fftOutData_0_0_0_0_0, i27 %p_fftOutData_0_0_0_0_01, i27 %p_fftOutData_0_1_0_0_0, i27 %p_fftOutData_0_1_0_0_02, i14 %twiddleObj_twiddleTable_M_imag_V_1, i1 %control_count_V_5, i1 %control_bits_V_5, i3 %pf_count_V_3, i5 %sample_in_read_count_V_5, i1 %delay_line_stall_5, i51 %delayline_Array_1, i32 %control_delayline_Array_5, i51 %delayline_Array_19, i14 %twiddleObj_twiddleTable_M_imag_V_2, i1 %control_count_V_7, i1 %control_bits_V_7, i2 %pf_count_V_5, i5 %sample_in_read_count_V_7, i1 %delay_line_stall_7, i53 %delayline_Array_13, i32 %control_delayline_Array_7, i53 %delayline_Array_5, i14 %twiddleObj_twiddleTable_M_imag_V_3, i1 %control_count_V_9, i1 %control_bits_V_9, i1 %pf_count_V_7, i5 %sample_in_read_count_V_9, i1 %delay_line_stall_9, i55 %delayline_Array_10, i32 %control_delayline_Array_9, i55 %delayline_Array_9, i1 %control_count_V_2, i1 %control_bits_V_2, i5 %sample_in_read_count_V_2, i1 %delay_line_stall_2, i55 %delayline_Array_14, i32 %control_delayline_Array_2, i55 %delayline_Array_2" [../fixed/vitis_fft/hls_ssr_fft.hpp:906]   --->   Operation 27 'call' 'call_ln906' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 28 [1/1] (0.00ns)   --->   "%ret_ln909 = ret" [../fixed/vitis_fft/hls_ssr_fft.hpp:909]   --->   Operation 28 'ret' 'ret_ln909' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ p_fftInData_reOrdered]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ p_fftOutData_0_0_0_0_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ p_fftOutData_0_0_0_0_01]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ p_fftOutData_0_1_0_0_0]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ p_fftOutData_0_1_0_0_02]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=3; pingpong=0; private_global=0; IO mode=ap_fifo:ce=0
+Port [ twiddleObj_twiddleTable_M_imag_V]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ control_count_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ control_bits_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ pf_count_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ sample_in_read_count_V]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ delay_line_stall]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ delayline_Array_6]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ control_delayline_Array]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ delayline_Array]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ twiddleObj_twiddleTable_M_imag_V_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ control_count_V_5]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ control_bits_V_5]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ pf_count_V_3]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ sample_in_read_count_V_5]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ delay_line_stall_5]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ delayline_Array_1]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ control_delayline_Array_5]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ delayline_Array_19]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ twiddleObj_twiddleTable_M_imag_V_2]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ control_count_V_7]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ control_bits_V_7]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ pf_count_V_5]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ sample_in_read_count_V_7]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ delay_line_stall_7]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ delayline_Array_13]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ control_delayline_Array_7]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ delayline_Array_5]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ twiddleObj_twiddleTable_M_imag_V_3]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
+Port [ control_count_V_9]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ control_bits_V_9]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ pf_count_V_7]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ sample_in_read_count_V_9]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ delay_line_stall_9]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ delayline_Array_10]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ control_delayline_Array_9]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ delayline_Array_9]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ control_count_V_2]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ control_bits_V_2]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ sample_in_read_count_V_2]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ delay_line_stall_2]:  wired=0; compound=0; hidden=1; nouse=1; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
+Port [ delayline_Array_14]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ control_delayline_Array_2]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+Port [ delayline_Array_2]:  wired=0; compound=1; hidden=1; nouse=1; global=1; static=1; extern=0; dir=3; type=1; pingpong=0; private_global=0; MemPort=[2]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+fftOutData_local         (alloca              ) [ 0111111]
+fftOutData_local2        (alloca              ) [ 0011111]
+call_ln897               (call                ) [ 0000000]
+call_ln905               (call                ) [ 0000000]
+specinterface_ln0        (specinterface       ) [ 0000000]
+specinterface_ln0        (specinterface       ) [ 0000000]
+specinterface_ln0        (specinterface       ) [ 0000000]
+specinterface_ln0        (specinterface       ) [ 0000000]
+specdataflowpipeline_ln0 (specdataflowpipeline) [ 0000000]
+specmemcore_ln0          (specmemcore         ) [ 0000000]
+specinterface_ln0        (specinterface       ) [ 0000000]
+empty                    (specchannel         ) [ 0000000]
+specmemcore_ln885        (specmemcore         ) [ 0000000]
+specinterface_ln0        (specinterface       ) [ 0000000]
+empty_84                 (specchannel         ) [ 0000000]
+specmemcore_ln891        (specmemcore         ) [ 0000000]
+specinterface_ln0        (specinterface       ) [ 0000000]
+call_ln906               (call                ) [ 0000000]
+ret_ln909                (ret                 ) [ 0000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="p_fftInData_reOrdered">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_fftInData_reOrdered"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="p_fftOutData_0_0_0_0_0">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_fftOutData_0_0_0_0_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="p_fftOutData_0_0_0_0_01">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_fftOutData_0_0_0_0_01"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="p_fftOutData_0_1_0_0_0">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_fftOutData_0_1_0_0_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="p_fftOutData_0_1_0_0_02">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_fftOutData_0_1_0_0_02"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="twiddleObj_twiddleTable_M_imag_V">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="twiddleObj_twiddleTable_M_imag_V"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="control_count_V">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_count_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="control_bits_V">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_bits_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="pf_count_V">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pf_count_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="sample_in_read_count_V">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sample_in_read_count_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="delay_line_stall">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delay_line_stall"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="delayline_Array_6">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delayline_Array_6"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="control_delayline_Array">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_delayline_Array"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="delayline_Array">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delayline_Array"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="twiddleObj_twiddleTable_M_imag_V_1">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="twiddleObj_twiddleTable_M_imag_V_1"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1000" name="control_count_V_5">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_count_V_5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1000" name="control_bits_V_5">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_bits_V_5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1000" name="pf_count_V_3">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pf_count_V_3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1000" name="sample_in_read_count_V_5">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sample_in_read_count_V_5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1000" name="delay_line_stall_5">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delay_line_stall_5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1000" name="delayline_Array_1">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delayline_Array_1"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1000" name="control_delayline_Array_5">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_delayline_Array_5"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1000" name="delayline_Array_19">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delayline_Array_19"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1000" name="twiddleObj_twiddleTable_M_imag_V_2">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="twiddleObj_twiddleTable_M_imag_V_2"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1000" name="control_count_V_7">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_count_V_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1000" name="control_bits_V_7">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_bits_V_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1000" name="pf_count_V_5">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pf_count_V_5"/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1000" name="sample_in_read_count_V_7">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sample_in_read_count_V_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1000" name="delay_line_stall_7">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delay_line_stall_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1000" name="delayline_Array_13">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delayline_Array_13"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1000" name="control_delayline_Array_7">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_delayline_Array_7"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1000" name="delayline_Array_5">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delayline_Array_5"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1000" name="twiddleObj_twiddleTable_M_imag_V_3">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="twiddleObj_twiddleTable_M_imag_V_3"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1000" name="control_count_V_9">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_count_V_9"/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1000" name="control_bits_V_9">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_bits_V_9"/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1000" name="pf_count_V_7">
+<pin_list>
+<pin id="71" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="pf_count_V_7"/></StgValue>
+</bind>
+</comp>
+
+<comp id="72" class="1000" name="sample_in_read_count_V_9">
+<pin_list>
+<pin id="73" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sample_in_read_count_V_9"/></StgValue>
+</bind>
+</comp>
+
+<comp id="74" class="1000" name="delay_line_stall_9">
+<pin_list>
+<pin id="75" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delay_line_stall_9"/></StgValue>
+</bind>
+</comp>
+
+<comp id="76" class="1000" name="delayline_Array_10">
+<pin_list>
+<pin id="77" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delayline_Array_10"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="78" class="1000" name="control_delayline_Array_9">
+<pin_list>
+<pin id="79" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_delayline_Array_9"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="80" class="1000" name="delayline_Array_9">
+<pin_list>
+<pin id="81" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delayline_Array_9"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="82" class="1000" name="control_count_V_2">
+<pin_list>
+<pin id="83" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_count_V_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="84" class="1000" name="control_bits_V_2">
+<pin_list>
+<pin id="85" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_bits_V_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="86" class="1000" name="sample_in_read_count_V_2">
+<pin_list>
+<pin id="87" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="sample_in_read_count_V_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="88" class="1000" name="delay_line_stall_2">
+<pin_list>
+<pin id="89" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delay_line_stall_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="90" class="1000" name="delayline_Array_14">
+<pin_list>
+<pin id="91" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delayline_Array_14"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="92" class="1000" name="control_delayline_Array_2">
+<pin_list>
+<pin id="93" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="control_delayline_Array_2"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="94" class="1000" name="delayline_Array_2">
+<pin_list>
+<pin id="95" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="delayline_Array_2"/><MemPortTyVec>2 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="96" class="1001" name="const_96">
+<pin_list>
+<pin id="97" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="98" class="1001" name="const_98">
+<pin_list>
+<pin id="99" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fftStageKernelS2S<64, 2, 1, 0, 0, 6, complex<ap_fixed<24, 9, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<22, 7, 5, 3, 0> >, complex<ap_fixed<24, 9, 5, 3, 0> > >"/></StgValue>
+</bind>
+</comp>
+
+<comp id="100" class="1001" name="const_100">
+<pin_list>
+<pin id="101" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="streamingDataCommutor<complex<ap_fixed<24, 9, 5, 3, 0> > >"/></StgValue>
+</bind>
+</comp>
+
+<comp id="102" class="1001" name="const_102">
+<pin_list>
+<pin id="103" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fftStage.1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="104" class="1001" name="const_104">
+<pin_list>
+<pin id="105" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="106" class="1001" name="const_106">
+<pin_list>
+<pin id="107" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="108" class="1001" name="const_108">
+<pin_list>
+<pin id="109" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="110" class="1001" name="const_110">
+<pin_list>
+<pin id="111" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="112" class="1001" name="const_112">
+<pin_list>
+<pin id="113" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="114" class="1001" name="const_114">
+<pin_list>
+<pin id="115" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="116" class="1001" name="const_116">
+<pin_list>
+<pin id="117" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="118" class="1001" name="const_118">
+<pin_list>
+<pin id="119" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="120" class="1001" name="const_120">
+<pin_list>
+<pin id="121" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="122" class="1001" name="const_122">
+<pin_list>
+<pin id="123" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_12"/></StgValue>
+</bind>
+</comp>
+
+<comp id="124" class="1001" name="const_124">
+<pin_list>
+<pin id="125" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecMemCore"/></StgValue>
+</bind>
+</comp>
+
+<comp id="126" class="1001" name="const_126">
+<pin_list>
+<pin id="127" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="128" class="1001" name="const_128">
+<pin_list>
+<pin id="129" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="130" class="1001" name="const_130">
+<pin_list>
+<pin id="131" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="132" class="1001" name="const_132">
+<pin_list>
+<pin id="133" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="empty_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="134" class="1001" name="const_134">
+<pin_list>
+<pin id="135" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecChannel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="136" class="1001" name="const_136">
+<pin_list>
+<pin id="137" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fftOutData_local_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="138" class="1001" name="const_138">
+<pin_list>
+<pin id="139" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="140" class="1001" name="const_140">
+<pin_list>
+<pin id="141" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="fftOutData_local2_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="142" class="1004" name="fftOutData_local_fu_142">
+<pin_list>
+<pin id="143" dir="0" index="0" bw="1" slack="0"/>
+<pin id="144" dir="1" index="1" bw="128" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="fftOutData_local/1 "/>
+</bind>
+</comp>
+
+<comp id="146" class="1004" name="fftOutData_local2_fu_146">
+<pin_list>
+<pin id="147" dir="0" index="0" bw="1" slack="0"/>
+<pin id="148" dir="1" index="1" bw="128" slack="2"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="fftOutData_local2/1 "/>
+</bind>
+</comp>
+
+<comp id="150" class="1004" name="grp_fftStageKernelS2S_64_2_1_0_0_6_complex_ap_fixed_24_9_5_3_0_complex_ap_fixed_16_3_5_3_0_complex_ap_fixed_16_3_5_3_0_complex_ap_fixed_22_7_5_3_0_complex_ap_fixed_24_9_5_3_0_s_fu_150">
+<pin_list>
+<pin id="151" dir="0" index="0" bw="0" slack="0"/>
+<pin id="152" dir="0" index="1" bw="128" slack="0"/>
+<pin id="153" dir="0" index="2" bw="128" slack="0"/>
+<pin id="154" dir="0" index="3" bw="14" slack="0"/>
+<pin id="155" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln897/1 "/>
+</bind>
+</comp>
+
+<comp id="159" class="1004" name="grp_streamingDataCommutor_complex_ap_fixed_24_9_5_3_0_s_fu_159">
+<pin_list>
+<pin id="160" dir="0" index="0" bw="0" slack="0"/>
+<pin id="161" dir="0" index="1" bw="128" slack="2"/>
+<pin id="162" dir="0" index="2" bw="128" slack="2"/>
+<pin id="163" dir="0" index="3" bw="1" slack="0"/>
+<pin id="164" dir="0" index="4" bw="1" slack="0"/>
+<pin id="165" dir="0" index="5" bw="4" slack="0"/>
+<pin id="166" dir="0" index="6" bw="5" slack="0"/>
+<pin id="167" dir="0" index="7" bw="1" slack="0"/>
+<pin id="168" dir="0" index="8" bw="49" slack="0"/>
+<pin id="169" dir="0" index="9" bw="32" slack="0"/>
+<pin id="170" dir="0" index="10" bw="49" slack="0"/>
+<pin id="171" dir="1" index="11" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln905/3 "/>
+</bind>
+</comp>
+
+<comp id="181" class="1004" name="grp_fftStage_1_fu_181">
+<pin_list>
+<pin id="182" dir="0" index="0" bw="0" slack="0"/>
+<pin id="183" dir="0" index="1" bw="128" slack="4"/>
+<pin id="184" dir="0" index="2" bw="27" slack="0"/>
+<pin id="185" dir="0" index="3" bw="27" slack="0"/>
+<pin id="186" dir="0" index="4" bw="27" slack="0"/>
+<pin id="187" dir="0" index="5" bw="27" slack="0"/>
+<pin id="188" dir="0" index="6" bw="14" slack="0"/>
+<pin id="189" dir="0" index="7" bw="1" slack="0"/>
+<pin id="190" dir="0" index="8" bw="1" slack="0"/>
+<pin id="191" dir="0" index="9" bw="3" slack="0"/>
+<pin id="192" dir="0" index="10" bw="5" slack="0"/>
+<pin id="193" dir="0" index="11" bw="1" slack="0"/>
+<pin id="194" dir="0" index="12" bw="51" slack="0"/>
+<pin id="195" dir="0" index="13" bw="32" slack="0"/>
+<pin id="196" dir="0" index="14" bw="51" slack="0"/>
+<pin id="197" dir="0" index="15" bw="14" slack="0"/>
+<pin id="198" dir="0" index="16" bw="1" slack="0"/>
+<pin id="199" dir="0" index="17" bw="1" slack="0"/>
+<pin id="200" dir="0" index="18" bw="2" slack="0"/>
+<pin id="201" dir="0" index="19" bw="5" slack="0"/>
+<pin id="202" dir="0" index="20" bw="1" slack="0"/>
+<pin id="203" dir="0" index="21" bw="53" slack="0"/>
+<pin id="204" dir="0" index="22" bw="32" slack="0"/>
+<pin id="205" dir="0" index="23" bw="53" slack="0"/>
+<pin id="206" dir="0" index="24" bw="14" slack="0"/>
+<pin id="207" dir="0" index="25" bw="1" slack="0"/>
+<pin id="208" dir="0" index="26" bw="1" slack="0"/>
+<pin id="209" dir="0" index="27" bw="1" slack="0"/>
+<pin id="210" dir="0" index="28" bw="5" slack="0"/>
+<pin id="211" dir="0" index="29" bw="1" slack="0"/>
+<pin id="212" dir="0" index="30" bw="55" slack="0"/>
+<pin id="213" dir="0" index="31" bw="32" slack="0"/>
+<pin id="214" dir="0" index="32" bw="55" slack="0"/>
+<pin id="215" dir="0" index="33" bw="1" slack="0"/>
+<pin id="216" dir="0" index="34" bw="1" slack="0"/>
+<pin id="217" dir="0" index="35" bw="5" slack="0"/>
+<pin id="218" dir="0" index="36" bw="1" slack="0"/>
+<pin id="219" dir="0" index="37" bw="55" slack="0"/>
+<pin id="220" dir="0" index="38" bw="32" slack="0"/>
+<pin id="221" dir="0" index="39" bw="55" slack="0"/>
+<pin id="222" dir="1" index="40" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln906/5 "/>
+</bind>
+</comp>
+
+<comp id="262" class="1005" name="fftOutData_local_reg_262">
+<pin_list>
+<pin id="263" dir="0" index="0" bw="128" slack="0"/>
+<pin id="264" dir="1" index="1" bw="128" slack="0"/>
+</pin_list>
+<bind>
+<opset="fftOutData_local "/>
+</bind>
+</comp>
+
+<comp id="268" class="1005" name="fftOutData_local2_reg_268">
+<pin_list>
+<pin id="269" dir="0" index="0" bw="128" slack="2"/>
+<pin id="270" dir="1" index="1" bw="128" slack="2"/>
+</pin_list>
+<bind>
+<opset="fftOutData_local2 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="145"><net_src comp="96" pin="0"/><net_sink comp="142" pin=0"/></net>
+
+<net id="149"><net_src comp="96" pin="0"/><net_sink comp="146" pin=0"/></net>
+
+<net id="156"><net_src comp="98" pin="0"/><net_sink comp="150" pin=0"/></net>
+
+<net id="157"><net_src comp="0" pin="0"/><net_sink comp="150" pin=1"/></net>
+
+<net id="158"><net_src comp="10" pin="0"/><net_sink comp="150" pin=3"/></net>
+
+<net id="172"><net_src comp="100" pin="0"/><net_sink comp="159" pin=0"/></net>
+
+<net id="173"><net_src comp="12" pin="0"/><net_sink comp="159" pin=3"/></net>
+
+<net id="174"><net_src comp="14" pin="0"/><net_sink comp="159" pin=4"/></net>
+
+<net id="175"><net_src comp="16" pin="0"/><net_sink comp="159" pin=5"/></net>
+
+<net id="176"><net_src comp="18" pin="0"/><net_sink comp="159" pin=6"/></net>
+
+<net id="177"><net_src comp="20" pin="0"/><net_sink comp="159" pin=7"/></net>
+
+<net id="178"><net_src comp="22" pin="0"/><net_sink comp="159" pin=8"/></net>
+
+<net id="179"><net_src comp="24" pin="0"/><net_sink comp="159" pin=9"/></net>
+
+<net id="180"><net_src comp="26" pin="0"/><net_sink comp="159" pin=10"/></net>
+
+<net id="223"><net_src comp="102" pin="0"/><net_sink comp="181" pin=0"/></net>
+
+<net id="224"><net_src comp="2" pin="0"/><net_sink comp="181" pin=2"/></net>
+
+<net id="225"><net_src comp="4" pin="0"/><net_sink comp="181" pin=3"/></net>
+
+<net id="226"><net_src comp="6" pin="0"/><net_sink comp="181" pin=4"/></net>
+
+<net id="227"><net_src comp="8" pin="0"/><net_sink comp="181" pin=5"/></net>
+
+<net id="228"><net_src comp="28" pin="0"/><net_sink comp="181" pin=6"/></net>
+
+<net id="229"><net_src comp="30" pin="0"/><net_sink comp="181" pin=7"/></net>
+
+<net id="230"><net_src comp="32" pin="0"/><net_sink comp="181" pin=8"/></net>
+
+<net id="231"><net_src comp="34" pin="0"/><net_sink comp="181" pin=9"/></net>
+
+<net id="232"><net_src comp="36" pin="0"/><net_sink comp="181" pin=10"/></net>
+
+<net id="233"><net_src comp="38" pin="0"/><net_sink comp="181" pin=11"/></net>
+
+<net id="234"><net_src comp="40" pin="0"/><net_sink comp="181" pin=12"/></net>
+
+<net id="235"><net_src comp="42" pin="0"/><net_sink comp="181" pin=13"/></net>
+
+<net id="236"><net_src comp="44" pin="0"/><net_sink comp="181" pin=14"/></net>
+
+<net id="237"><net_src comp="46" pin="0"/><net_sink comp="181" pin=15"/></net>
+
+<net id="238"><net_src comp="48" pin="0"/><net_sink comp="181" pin=16"/></net>
+
+<net id="239"><net_src comp="50" pin="0"/><net_sink comp="181" pin=17"/></net>
+
+<net id="240"><net_src comp="52" pin="0"/><net_sink comp="181" pin=18"/></net>
+
+<net id="241"><net_src comp="54" pin="0"/><net_sink comp="181" pin=19"/></net>
+
+<net id="242"><net_src comp="56" pin="0"/><net_sink comp="181" pin=20"/></net>
+
+<net id="243"><net_src comp="58" pin="0"/><net_sink comp="181" pin=21"/></net>
+
+<net id="244"><net_src comp="60" pin="0"/><net_sink comp="181" pin=22"/></net>
+
+<net id="245"><net_src comp="62" pin="0"/><net_sink comp="181" pin=23"/></net>
+
+<net id="246"><net_src comp="64" pin="0"/><net_sink comp="181" pin=24"/></net>
+
+<net id="247"><net_src comp="66" pin="0"/><net_sink comp="181" pin=25"/></net>
+
+<net id="248"><net_src comp="68" pin="0"/><net_sink comp="181" pin=26"/></net>
+
+<net id="249"><net_src comp="70" pin="0"/><net_sink comp="181" pin=27"/></net>
+
+<net id="250"><net_src comp="72" pin="0"/><net_sink comp="181" pin=28"/></net>
+
+<net id="251"><net_src comp="74" pin="0"/><net_sink comp="181" pin=29"/></net>
+
+<net id="252"><net_src comp="76" pin="0"/><net_sink comp="181" pin=30"/></net>
+
+<net id="253"><net_src comp="78" pin="0"/><net_sink comp="181" pin=31"/></net>
+
+<net id="254"><net_src comp="80" pin="0"/><net_sink comp="181" pin=32"/></net>
+
+<net id="255"><net_src comp="82" pin="0"/><net_sink comp="181" pin=33"/></net>
+
+<net id="256"><net_src comp="84" pin="0"/><net_sink comp="181" pin=34"/></net>
+
+<net id="257"><net_src comp="86" pin="0"/><net_sink comp="181" pin=35"/></net>
+
+<net id="258"><net_src comp="88" pin="0"/><net_sink comp="181" pin=36"/></net>
+
+<net id="259"><net_src comp="90" pin="0"/><net_sink comp="181" pin=37"/></net>
+
+<net id="260"><net_src comp="92" pin="0"/><net_sink comp="181" pin=38"/></net>
+
+<net id="261"><net_src comp="94" pin="0"/><net_sink comp="181" pin=39"/></net>
+
+<net id="265"><net_src comp="142" pin="1"/><net_sink comp="262" pin=0"/></net>
+
+<net id="266"><net_src comp="262" pin="1"/><net_sink comp="150" pin=2"/></net>
+
+<net id="267"><net_src comp="262" pin="1"/><net_sink comp="159" pin=1"/></net>
+
+<net id="271"><net_src comp="146" pin="1"/><net_sink comp="268" pin=0"/></net>
+
+<net id="272"><net_src comp="268" pin="1"/><net_sink comp="159" pin=2"/></net>
+
+<net id="273"><net_src comp="268" pin="1"/><net_sink comp="181" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: p_fftOutData_0_0_0_0_0 | {5 6 }
+	Port: p_fftOutData_0_0_0_0_01 | {5 6 }
+	Port: p_fftOutData_0_1_0_0_0 | {5 6 }
+	Port: p_fftOutData_0_1_0_0_02 | {5 6 }
+	Port: control_count_V | {3 4 }
+	Port: control_bits_V | {3 4 }
+	Port: pf_count_V | {3 4 }
+	Port: sample_in_read_count_V | {3 4 }
+	Port: delay_line_stall | {3 4 }
+	Port: delayline_Array_6 | {3 4 }
+	Port: control_delayline_Array | {3 4 }
+	Port: delayline_Array | {3 4 }
+	Port: control_count_V_5 | {5 6 }
+	Port: control_bits_V_5 | {5 6 }
+	Port: pf_count_V_3 | {5 6 }
+	Port: sample_in_read_count_V_5 | {5 6 }
+	Port: delay_line_stall_5 | {5 6 }
+	Port: delayline_Array_1 | {5 6 }
+	Port: control_delayline_Array_5 | {5 6 }
+	Port: delayline_Array_19 | {5 6 }
+	Port: control_count_V_7 | {5 6 }
+	Port: control_bits_V_7 | {5 6 }
+	Port: pf_count_V_5 | {5 6 }
+	Port: sample_in_read_count_V_7 | {5 6 }
+	Port: delay_line_stall_7 | {5 6 }
+	Port: delayline_Array_13 | {5 6 }
+	Port: control_delayline_Array_7 | {5 6 }
+	Port: delayline_Array_5 | {5 6 }
+	Port: control_count_V_9 | {5 6 }
+	Port: control_bits_V_9 | {5 6 }
+	Port: pf_count_V_7 | {5 6 }
+	Port: sample_in_read_count_V_9 | {5 6 }
+	Port: delay_line_stall_9 | {5 6 }
+	Port: delayline_Array_10 | {5 6 }
+	Port: control_delayline_Array_9 | {5 6 }
+	Port: delayline_Array_9 | {5 6 }
+	Port: control_count_V_2 | {5 6 }
+	Port: control_bits_V_2 | {5 6 }
+	Port: sample_in_read_count_V_2 | {5 6 }
+	Port: delay_line_stall_2 | {5 6 }
+	Port: delayline_Array_14 | {5 6 }
+	Port: control_delayline_Array_2 | {5 6 }
+	Port: delayline_Array_2 | {5 6 }
+ - Input state : 
+	Port: fftStage : p_fftInData_reOrdered | {1 2 }
+	Port: fftStage : twiddleObj_twiddleTable_M_imag_V | {1 2 }
+	Port: fftStage : control_count_V | {3 4 }
+	Port: fftStage : control_bits_V | {3 4 }
+	Port: fftStage : pf_count_V | {3 4 }
+	Port: fftStage : sample_in_read_count_V | {3 4 }
+	Port: fftStage : delay_line_stall | {3 4 }
+	Port: fftStage : delayline_Array_6 | {3 4 }
+	Port: fftStage : control_delayline_Array | {3 4 }
+	Port: fftStage : delayline_Array | {3 4 }
+	Port: fftStage : twiddleObj_twiddleTable_M_imag_V_1 | {5 6 }
+	Port: fftStage : control_count_V_5 | {5 6 }
+	Port: fftStage : control_bits_V_5 | {5 6 }
+	Port: fftStage : pf_count_V_3 | {5 6 }
+	Port: fftStage : sample_in_read_count_V_5 | {5 6 }
+	Port: fftStage : delay_line_stall_5 | {5 6 }
+	Port: fftStage : delayline_Array_1 | {5 6 }
+	Port: fftStage : control_delayline_Array_5 | {5 6 }
+	Port: fftStage : delayline_Array_19 | {5 6 }
+	Port: fftStage : twiddleObj_twiddleTable_M_imag_V_2 | {5 6 }
+	Port: fftStage : control_count_V_7 | {5 6 }
+	Port: fftStage : control_bits_V_7 | {5 6 }
+	Port: fftStage : pf_count_V_5 | {5 6 }
+	Port: fftStage : sample_in_read_count_V_7 | {5 6 }
+	Port: fftStage : delay_line_stall_7 | {5 6 }
+	Port: fftStage : delayline_Array_13 | {5 6 }
+	Port: fftStage : control_delayline_Array_7 | {5 6 }
+	Port: fftStage : delayline_Array_5 | {5 6 }
+	Port: fftStage : twiddleObj_twiddleTable_M_imag_V_3 | {5 6 }
+	Port: fftStage : control_count_V_9 | {5 6 }
+	Port: fftStage : control_bits_V_9 | {5 6 }
+	Port: fftStage : pf_count_V_7 | {5 6 }
+	Port: fftStage : sample_in_read_count_V_9 | {5 6 }
+	Port: fftStage : delay_line_stall_9 | {5 6 }
+	Port: fftStage : delayline_Array_10 | {5 6 }
+	Port: fftStage : control_delayline_Array_9 | {5 6 }
+	Port: fftStage : delayline_Array_9 | {5 6 }
+	Port: fftStage : control_count_V_2 | {5 6 }
+	Port: fftStage : control_bits_V_2 | {5 6 }
+	Port: fftStage : sample_in_read_count_V_2 | {5 6 }
+	Port: fftStage : delay_line_stall_2 | {5 6 }
+	Port: fftStage : delayline_Array_14 | {5 6 }
+	Port: fftStage : control_delayline_Array_2 | {5 6 }
+	Port: fftStage : delayline_Array_2 | {5 6 }
+  - Chain level:
+	State 1
+		call_ln897 : 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+| Operation|                                                                                     Functional Unit                                                                                     |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|          | grp_fftStageKernelS2S_64_2_1_0_0_6_complex_ap_fixed_24_9_5_3_0_complex_ap_fixed_16_3_5_3_0_complex_ap_fixed_16_3_5_3_0_complex_ap_fixed_22_7_5_3_0_complex_ap_fixed_24_9_5_3_0_s_fu_150 |    0    |    4    |   4.27  |   395   |   634   |    0    |
+|   call   |                                                              grp_streamingDataCommutor_complex_ap_fixed_24_9_5_3_0_s_fu_159                                                             |    0    |    0    |  0.427  |   306   |   169   |    0    |
+|          |                                                                                  grp_fftStage_1_fu_181                                                                                  |    0    |    16   |  21.35  |   4644  |   4023  |    0    |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+|   Total  |                                                                                                                                                                                         |    0    |    20   |  26.047 |   5345  |   4826  |    0    |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-------------------------+--------+
+|                         |   FF   |
++-------------------------+--------+
+|fftOutData_local2_reg_268|   128  |
+| fftOutData_local_reg_262|   128  |
++-------------------------+--------+
+|          Total          |   256  |
++-------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+--------+
+|           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+--------+
+|  Function |    0   |   20   |   26   |  5345  |  4826  |    0   |
+|   Memory  |    -   |    -   |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    -   |    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |   256  |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+--------+
+|   Total   |    0   |   20   |   26   |  5601  |  4826  |    0   |
++-----------+--------+--------+--------+--------+--------+--------+

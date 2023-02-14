@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1669624816586">
+  <ports id="1" name="fftOutData_local2" type="PortType" coreName="FIFO_LUTRAM" coreId="1701080941" bitwidth="128" iftype="IfTypeRom">
+    <dataOutputObjs>nbreadreq</dataOutputObjs>
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="fftOutData_local" type="PortType" coreName="FIFO_LUTRAM" coreId="1685024095" bitwidth="128" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="61" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="64" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="68" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="69" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="73" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="76" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="80" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.4"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.4/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.5"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.5"/>
+  <edges id="99" source_obj="//@regions.0/@basic_blocks.4/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.6"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.4/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.6"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.4/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.7"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.4/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.8"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.4/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.9"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.4/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.10"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.4/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.11"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.4/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.12"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.4/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.13"/>
+  <edges id="131" source_obj="//@regions.0/@basic_blocks.4/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.14"/>
+  <edges id="133" source_obj="//@regions.0/@basic_blocks.4/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.15"/>
+  <edges id="136" source_obj="//@regions.0/@basic_blocks.4/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.16"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.16"/>
+  <edges id="138" source_obj="//@regions.0/@basic_blocks.4/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.17"/>
+  <edges id="139" source_obj="//@regions.0/@basic_blocks.4/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.17"/>
+  <edges id="141" source_obj="//@regions.0/@basic_blocks.4/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.18"/>
+  <edges id="144" source_obj="//@regions.0/@basic_blocks.4/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.19"/>
+  <edges id="146" source_obj="//@regions.0/@basic_blocks.4/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.20"/>
+  <edges id="149" source_obj="//@regions.0/@basic_blocks.4/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.21"/>
+  <edges id="150" source_obj="//@regions.0/@basic_blocks.4/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.22"/>
+  <edges id="153" source_obj="//@regions.0/@basic_blocks.4/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.23"/>
+  <edges id="156" source_obj="//@regions.0/@basic_blocks.4/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.23"/>
+  <edges id="157" source_obj="//@regions.0/@basic_blocks.4/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.23"/>
+  <edges id="159" source_obj="//@regions.0/@basic_blocks.4/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.23"/>
+  <edges id="160" source_obj="//@regions.0/@basic_blocks.4/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.24"/>
+  <edges id="161" source_obj="//@regions.0/@basic_blocks.4/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.25"/>
+  <edges id="164" source_obj="//@regions.0/@basic_blocks.4/@node_objs.26" sink_obj="//@ports.1"/>
+  <edges id="165" source_obj="//@regions.0/@basic_blocks.4/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.26"/>
+  <edges id="166" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.27"/>
+  <edges id="167" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="168" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="169" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="170" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="171" source_obj="//@regions.0/@basic_blocks.5/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="175" source_obj="//@regions.0/@basic_blocks.5/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.2"/>
+  <edges id="180" source_obj="//@regions.0/@basic_blocks.5/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.3"/>
+  <edges id="183" source_obj="//@regions.0/@basic_blocks.5/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.4"/>
+  <edges id="184" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.4"/>
+  <edges id="185" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.4"/>
+  <edges id="188" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.6/@node_objs.1"/>
+  <edges id="189" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="192" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="195" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="197" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="200" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="201" source_obj="//@regions.0/@basic_blocks.5/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="202" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="204" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1" is_back_edge="1"/>
+  <edges id="205" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="206" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="207" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="270" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="271" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="272" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="273" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="274" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="275" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="276" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="277" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="278" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="279" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.6"/>
+  <edges id="280" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.6" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="281" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <blocks id="6" name="block_6" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>rewind_header</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="br_ln215" lineNumber="215" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." coreId="1767994478" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="215" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+      <controlInputObjs>rewind_header</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../fixed/vitis_fft/hls_ssr_fft.hpp">
+      <validLinenumbers>215</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="248" pipe_depth="2" RegionName="L_FFTs_LOOP">
+    <basic_blocks id="10" name="rewind_header" type="BlockType">
+      <controlInputObjs>block_6</controlInputObjs>
+      <controlInputObjs>block_57</controlInputObjs>
+      <controlInputObjs>block_60</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>rewind_init</controlOutputObjs>
+      <controlOutputObjs>block_19</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="7" name="do_init" coreId="1767994478" bitwidth="1" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataOutputObjs>br</dataOutputObjs>
+        <controlInputObjs>block_6</controlInputObjs>
+        <controlInputObjs>block_57</controlInputObjs>
+        <controlInputObjs>block_60</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="8" name="iter1" originalName="iter" coreId="1767994478" bitwidth="32" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <controlInputObjs>block_6</controlInputObjs>
+        <controlInputObjs>block_57</controlInputObjs>
+        <controlInputObjs>block_60</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="9" name="br_ln0" coreId="1767994478" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <dataInputObjs>phi</dataInputObjs>
+        <controlInputObjs>block_19</controlInputObjs>
+        <controlInputObjs>rewind_init</controlInputObjs>
+      </node_objs>
+    </basic_blocks>
+    <basic_blocks id="14" name="rewind_init" type="BlockType">
+      <controlInputObjs>rewind_header</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_19</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln215" lineNumber="215" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." coreId="1767994478" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="215" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <controlInputObjs>block_19</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../fixed/vitis_fft/hls_ssr_fft.hpp">
+        <validLinenumbers>215</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="19" name="block_19" type="BlockType">
+      <controlInputObjs>rewind_header</controlInputObjs>
+      <controlInputObjs>rewind_init</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>_ZN20SuperSampleContainerILi2ESt7complexI8ap_fixedILi27ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EEEEC2Ev.exit</controlOutputObjs>
+      <controlOutputObjs>block_22</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="tmp" lineNumber="136" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_LUTRAM" implIndex="lutram" control="no" opType="fifo" coreId="80" contextFuncName="empty" bitwidth="1" opcode="nbreadreq" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="136" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="empty"/>
+        <dataInputObjs>fftOutData_local2</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="18" name="br_ln217" lineNumber="217" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." coreId="909196388" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="217" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>nbreadreq</dataInputObjs>
+        <controlInputObjs>block_22</controlInputObjs>
+        <controlInputObjs>_ZN20SuperSampleContainerILi2ESt7complexI8ap_fixedILi27ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EEEEC2Ev.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>136</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../fixed/vitis_fft/hls_ssr_fft.hpp">
+        <validLinenumbers>217</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="22" name="block_22" type="BlockType">
+      <controlInputObjs>block_19</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>block_57</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="iter_2" lineNumber="218" originalName="iter" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="iter_2_fu_142_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.01" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="218" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="br_ln219" lineNumber="219" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." coreId="662516368" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.42" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="219" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <controlInputObjs>block_57</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../fixed/vitis_fft/hls_ssr_fft.hpp">
+        <validLinenumbers>218</validLinenumbers>
+        <validLinenumbers>219</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="51" name="_ZN20SuperSampleContainerILi2ESt7complexI8ap_fixedILi27ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EEEEC2Ev.exit" type="BlockType">
+      <controlInputObjs>block_19</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>block_57</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="fftOutData_local2_read" lineNumber="145" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_LUTRAM" implIndex="lutram" control="no" opType="fifo" coreId="80" contextFuncName="read" bitwidth="128" opcode="read" nodeLabel="1.0" m_display="0" m_delay="1.93" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="read"/>
+        <dataInputObjs>fftOutData_local2</dataInputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="X_of_ns_M_real_V_0" lineNumber="145" originalName="X_of_ns._M_real.V[0]" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="X_of_ns_M_real_V_0_fu_149_p1" coreId="656962304" contextFuncName="read" bitwidth="27" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="X_of_ns_M_imag_V_0" lineNumber="145" originalName="X_of_ns._M_imag.V[0]" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="X_of_ns_M_imag_V_0_fu_153_p4" coreId="654530880" contextFuncName="read" bitwidth="27" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="X_of_ns_M_real_V_1" lineNumber="145" originalName="X_of_ns._M_real.V[1]" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="X_of_ns_M_real_V_1_fu_163_p4" coreId="648776032" contextFuncName="read" bitwidth="27" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="X_of_ns_M_imag_V_1" lineNumber="145" originalName="X_of_ns._M_imag.V[1]" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="X_of_ns_M_imag_V_1_fu_173_p4" coreId="657043136" contextFuncName="read" bitwidth="27" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="145" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="read"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="add_ln712" lineNumber="235" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="add_ln712_fu_183_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.96" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="add_ln712_21" lineNumber="235" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="add_ln712_21_fu_189_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.96" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="bflyOutData_M_real_V_0" lineNumber="235" originalName="bflyOutData._M_real.V[0]" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="bflyOutData_M_real_V_0_reg_360" coreId="656879920" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="26" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="sext_ln717" lineNumber="235" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="sext_ln717_fu_317_p1" coreId="1869440370" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="bflyOutData_M_imag_V_0" lineNumber="235" originalName="bflyOutData._M_imag.V[0]" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="bflyOutData_M_imag_V_0_reg_365" coreId="646172096" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="26" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="shl_ln" lineNumber="235" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="shl_ln_fu_215_p3" coreId="646690704" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="40" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="r_V" lineNumber="235" originalName="r.V" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="r_V_fu_223_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="40" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.03" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="real1_V" lineNumber="235" originalName="real1.V" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="real1_V_fu_229_p4" coreId="660216928" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="shl_ln1171_6" lineNumber="235" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="shl_ln1171_6_fu_239_p3" coreId="646172096" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="40" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>sub</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="r_V_27" lineNumber="235" originalName="r.V" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="r_V_27_fu_247_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="40" opcode="sub" nodeLabel="1.0" m_display="0" m_delay="1.03" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="imag2_V" lineNumber="235" originalName="imag2.V" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="imag2_V_fu_253_p4" coreId="653080176" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>sub</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="add_ln712_22" lineNumber="235" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="add_ln712_22_fu_263_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.96" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="add_ln712_23" lineNumber="235" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="add_ln712_23_fu_269_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.96" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="bflyOutData_M_real_V_1" lineNumber="235" originalName="bflyOutData._M_real.V[1]" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="bflyOutData_M_real_V_1_reg_370" coreId="655976560" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="26" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="sext_ln717_1" lineNumber="235" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="sext_ln717_1_fu_320_p1" coreId="653080176" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="trunc_ln717_s" lineNumber="235" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="trunc_ln717_s_reg_375" coreId="653080176" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="26" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="235" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="sext_ln174" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="sext_ln174_fu_323_p1" coreId="646172096" contextFuncName="write" bitwidth="27" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="write"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="zext_ln174" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="zext_ln174_fu_326_p1" coreId="653428768" contextFuncName="write" bitwidth="32" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="write"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="tmp_4" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="tmp_4_fu_330_p7" coreId="646172096" contextFuncName="write" bitwidth="122" opcode="bitconcatenate" nodeLabel="2.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="write"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>sext</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="sext_ln174_1" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="sext_ln174_1_fu_345_p1" coreId="661128832" contextFuncName="write" bitwidth="123" opcode="sext" nodeLabel="2.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="write"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="zext_ln174_10" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="fftOutData_local_din" coreId="646172096" contextFuncName="write" bitwidth="128" opcode="zext" nodeLabel="2.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="write"/>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="49" name="fftOutData_local_write_ln174" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_LUTRAM" implIndex="lutram" control="no" opType="fifo" coreId="80" contextFuncName="write" opcode="write" nodeLabel="2.0" m_display="0" m_delay="1.93" m_topoIndex="43" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="write"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>fftOutData_local</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="50" name="br_ln0" coreId="654602816" opcode="br" nodeLabel="1.0" m_display="0" m_delay="0.42" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_57</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>145</validLinenumbers>
+        <validLinenumbers>174</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../fixed/vitis_fft/hls_ssr_fft.hpp">
+        <validLinenumbers>235</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="57" name="block_57" type="BlockType">
+      <controlInputObjs>block_22</controlInputObjs>
+      <controlInputObjs>_ZN20SuperSampleContainerILi2ESt7complexI8ap_fixedILi27ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EEEEC2Ev.exit</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>rewind_header</controlOutputObjs>
+      <controlOutputObjs>block_60</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="52" name="iter_1" originalName="iter" coreId="646172096" bitwidth="32" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="1">
+        <dataInputObjs>phi</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>_ZN20SuperSampleContainerILi2ESt7complexI8ap_fixedILi27ELi13EL9ap_q_mode5EL9ap_o_mode3ELi0EEEEC2Ev.exit</controlInputObjs>
+        <controlInputObjs>block_22</controlInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="53" name="iter" lineNumber="215" originalName="iter" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="iter_fu_295_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.01" m_topoIndex="31" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="215" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="tmp_47" lineNumber="215" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="tmp_47_fu_301_p4" coreId="1869440370" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="215" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="55" name="icmp_ln215" lineNumber="215" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." rtlName="icmp_ln215_fu_311_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.02" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="215" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="56" name="br_ln215" lineNumber="215" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." coreId="659193152" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="215" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>block_60</controlInputObjs>
+        <controlInputObjs>rewind_header</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../fixed/vitis_fft/hls_ssr_fft.hpp">
+        <validLinenumbers>215</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="60" name="block_60" type="BlockType">
+      <controlInputObjs>block_57</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>rewind_header</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="_ln252" lineNumber="252" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." coreId="320" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" opcode="return" nodeLabel="2.0" m_display="0" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="252" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="59" name="br_ln252" lineNumber="252" fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" fileDirectory=".." coreId="654531440" contextFuncName="fftStageKernelLastStageS2S_64_2_xf_dsp_fft_SSR_FFT_GROW_TO_MAX_WIDTH_xf_dsp_fft_REVERSE_TRANSFORM_xf_dsp_fft_TRN_1_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_16_3_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_13_AP_TRN_AP_WRAP_0_std_complex_ap_fixed_27_14_AP_TRN_AP_WRAP_0_s" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft.hpp" linenumber="252" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="fftStageKernelLastStageS2S&amp;lt;64, 2, xf::dsp::fft::SSR_FFT_GROW_TO_MAX_WIDTH, xf::dsp::fft::REVERSE_TRANSFORM, xf::dsp::fft::TRN, 1, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;16, 3, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 13, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;, std::complex&amp;lt;ap_fixed&amp;lt;27, 14, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt; &amp;gt;"/>
+        <controlInputObjs>rewind_header</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../fixed/vitis_fft/hls_ssr_fft.hpp">
+        <validLinenumbers>252</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="bflyOutData_M_imag_V_0_reg_365">
+    <nodeIds>32</nodeIds>
+  </regnodes>
+  <regnodes realName="iter_1_reg_132">
+    <nodeIds>52</nodeIds>
+  </regnodes>
+  <regnodes realName="do_init_reg_103">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="bflyOutData_M_real_V_0_reg_360">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="iter1_reg_118">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_356">
+    <nodeIds>17</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln215_reg_385">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="bflyOutData_M_real_V_1_reg_370">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="iter_reg_380">
+    <nodeIds>53</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln717_s_reg_375">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <expressionNodes realName="bflyOutData_M_real_V_0_fu_195">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bflyOutData_M_imag_V_0_fu_205">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="return_ln252_fu_354">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bflyOutData_M_real_V_1_fu_275">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_of_ns_M_imag_V_1_fu_173">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln_fu_215">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln712_fu_183">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="real1_V_fu_229">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln174_fu_323">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_330">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln174_10_fu_349">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="iter_fu_295">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln717_s_fu_285">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="iter_2_fu_142">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="shl_ln1171_6_fu_239">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_V_fu_223">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="do_init_phi_fu_107">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="iter1_phi_fu_122">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln717_1_fu_320">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_47_fu_301">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_of_ns_M_real_V_0_fu_149">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln712_23_fu_269">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln712_21_fu_189">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="imag2_V_fu_253">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln174_1_fu_345">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_of_ns_M_real_V_1_fu_163">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln717_fu_317">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln174_fu_326">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln215_fu_311">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="iter_1_phi_fu_135">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_V_27_fu_247">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="X_of_ns_M_imag_V_0_fu_153">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln712_22_fu_263">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="fftOutData_local2_read_read_fu_90">
+    <nodeIds>23</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln174_write_fu_96">
+    <nodeIds>49</nodeIds>
+  </ioNodes>
+  <ioNodes realName="tmp_nbreadreq_fu_82">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioPorts name="fftOutData_local">
+    <contents name="write">
+      <nodeIds>49</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="fftOutData_local2">
+    <contents name="nbreadreq">
+      <nodeIds>17</nodeIds>
+    </contents>
+    <contents name="read">
+      <nodeIds>23</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="58" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="fftStageKernelLastStageS2S_64_2_1_1_0_1_complex_ap_fixed_27_14_5_3_0_complex_ap_fixed_16_3_5_3_0_complex_ap_fixed_27_13_5_3_0_complex_ap_fixed_27_14_5_3_0_s" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>6</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="L_FFTs_LOOP" mII="1" mDepth="2" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1" mType="1">
+      <basicBlocks>10</basicBlocks>
+      <basicBlocks>14</basicBlocks>
+      <basicBlocks>19</basicBlocks>
+      <basicBlocks>22</basicBlocks>
+      <basicBlocks>51</basicBlocks>
+      <basicBlocks>57</basicBlocks>
+      <basicBlocks>60</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

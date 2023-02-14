@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1670233387579">
+  <ports id="1" name="y0300" type="PortType" coreName="FIFO_SRL" coreId="30" bitwidth="1" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="y1301" type="PortType" coreName="FIFO_SRL" coreId="30" bitwidth="1" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="output302" type="PortType" coreName="FIFO_SRL" coreId="1451311360" bitwidth="1" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="88" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="89" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="90" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="93" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="99" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="100" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="101" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="102" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="103" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="104" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="105" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="106" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="107" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="108" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="109" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="110" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="111" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="112" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="113" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="114" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="115" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="116" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="117" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="118" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="119" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="120" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="121" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="122" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="123" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="124" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="125" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="126" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="127" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="128" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="129" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="130" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="131" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="132" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="133" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="134" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="135" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="136" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="137" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="138" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="139" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="140" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="141" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="142" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="143" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="144" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="145" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="146" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="147" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="148" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="149" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="150" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="151" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="152" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="153" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="154" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="155" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="156" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="157" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="158" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="159" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="160" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="161" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="162" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="163" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="164" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="165" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="166" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="167" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="168" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="230" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="231" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="149" RegionName="decoder_bit">
+    <basic_blocks id="83" name="decoder_bit" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="temp_trellis_survivor_V" rtlName="temp_trellis_survivor_V_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="83" bitwidth="33" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="79" name="best_branch_loc_channel" rtlName="best_branch_loc_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" bitwidth="32" opcode="call" nodeLatency="1" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataInputObjs>y0300</dataInputObjs>
+        <dataInputObjs>y1301</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>decoder_bit_Block_split148_proc3</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="best_branch_3_cast_loc_channel" rtlName="best_branch_3_cast_loc_channel_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" bitwidth="1" opcode="call" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="1.66" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <dataInputObjs>call</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>decoder_bit_Loop_VITIS_LOOP_227_6_proc</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="81" name="_ln0" rtlName="decoder_bit_Block_split223_proc_U0" coreId="1451375712" opcode="call" nodeLabel="3.0" m_display="0" m_delay="1.83" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <dataInputObjs>call</dataInputObjs>
+        <dataOutputObjs>output302</dataOutputObjs>
+        <constName>decoder_bit_Block_split223_proc</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="_ln248" lineNumber="248" fileName="ecc_decoder_src/src/decoder.cpp" fileDirectory=".." coreId="1450749376" contextFuncName="decoder_bit" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="ecc_decoder_src/src/decoder.cpp" linenumber="248" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file" functionName="decoder_bit"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="ecc_decoder_src/src/decoder.cpp">
+        <validLinenumbers>248</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="best_branch_loc_channel_reg_334">
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <expressionNodes realName="temp_trellis_survivor_V_alloca_fu_166">
+    <nodeIds>78</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_decoder_bit_Block_split148_proc3_fu_170">
+    <nodeIds>79</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ln0_decoder_bit_Block_split223_proc_fu_326">
+    <nodeIds>81</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_decoder_bit_Loop_VITIS_LOOP_227_6_proc_fu_320">
+    <nodeIds>80</nodeIds>
+  </moduleNodes>
+  <memoryPorts dataString="trellis_metric" portID="100">
+    <nodeIds>79</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="trellis_table_0_0" portID="100">
+    <nodeIds>79</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="trellis_table_0_1" portID="100">
+    <nodeIds>79</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="trellis_table_1_0" portID="100">
+    <nodeIds>79</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="trellis_table_1_1" portID="100">
+    <nodeIds>79</nodeIds>
+  </memoryPorts>
+  <ioPorts name="output302">
+    <contents name="call">
+      <nodeIds>81</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="y0300">
+    <contents name="call">
+      <nodeIds>79</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="y1301">
+    <contents name="call">
+      <nodeIds>79</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="79" stage="2" latency="2"/>
+    </states>
+    <states id="2">
+      <operations id="79" stage="1" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="80" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="2"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="decoder_bit" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="556" mMaxLatency="620" mIsDfPipe="true">
+      <basicBlocks>83</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.2/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.0/@sink/@inst">
+        <processe_list name="decoder_bit_Block_split148_proc3_U0" ssdmobj_id="79">
+          <pins>
+            <port name="y0300" top_port_object_id="" top_port_object_id_reference="_99" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="decoder_bit_Block_split148_proc3_U0" ssdmobj_id="79" object_id="_105"/>
+          </pins>
+          <pins>
+            <port name="y1301" top_port_object_id="" top_port_object_id_reference="_100" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="decoder_bit_Block_split148_proc3_U0" ssdmobj_id="79" object_id="_105"/>
+          </pins>
+        </processe_list>
+        <processe_list name="decoder_bit_Loop_VITIS_LOOP_227_6_proc_U0" ssdmobj_id="80"/>
+        <processe_list name="decoder_bit_Block_split223_proc_U0" ssdmobj_id="81">
+          <pins>
+            <port name="output302" dir="DirOut" top_port_object_id="" top_port_object_id_reference="_101" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="decoder_bit_Block_split223_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="0" bitwidth="0" type="PIPO" suggested_type="0" suggested_depth="2" name="temp_trellis_survivor_V" ssdmobj_id="78">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="decoder_bit_Block_split148_proc3_U0" ssdmobj_id="79" object_id="_105"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="decoder_bit_Loop_VITIS_LOOP_227_6_proc_U0" ssdmobj_id="80" object_id="_118"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="32" suggested_type="1" suggested_depth="2" name="best_branch_loc_channel" ssdmobj_id="79">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="decoder_bit_Block_split148_proc3_U0" ssdmobj_id="79" object_id="_105"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="decoder_bit_Loop_VITIS_LOOP_227_6_proc_U0" ssdmobj_id="80" object_id="_118"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="1" suggested_type="1" suggested_depth="2" name="best_branch_3_cast_loc_channel" ssdmobj_id="80">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="decoder_bit_Loop_VITIS_LOOP_227_6_proc_U0" ssdmobj_id="80" object_id="_118"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="decoder_bit_Block_split223_proc_U0" ssdmobj_id="81" object_id="_112"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

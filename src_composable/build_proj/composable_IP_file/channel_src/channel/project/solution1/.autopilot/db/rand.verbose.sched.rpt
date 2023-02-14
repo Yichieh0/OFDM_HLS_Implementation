@@ -1,0 +1,870 @@
+
+
+================================================================
+== Vitis HLS Report for 'rand'
+================================================================
+* Date:           Wed Sep 14 20:24:05 2022
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+-----------+------------+
+    |  Clock |  Target  | Estimated | Uncertainty|
+    +--------+----------+-----------+------------+
+    |ap_clk  |  20.00 ns|  12.453 ns|     5.40 ns|
+    +--------+----------+-----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max    | min | max |   Type  |
+    +---------+---------+----------+-----------+-----+-----+---------+
+    |       41|      674|  0.820 us|  13.480 us|   41|  674|       no|
+    +---------+---------+----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 52
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 3 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 45 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 51 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i22 %random_num3774, void @empty_6, i32 0, i32 0, void @empty_20, i32 0, i32 0, void @empty_20, void @empty_20, void @empty_20, i32 0, i32 0, i32 0, i32 0, void @empty_20, void @empty_20"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%t_load = load i1 %t"   --->   Operation 54 'load' 't_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%br_ln11 = br i1 %t_load, void, void %._crit_edge" [../channel_code/rand.cpp:11]   --->   Operation 55 'br' 'br_ln11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [2/2] (0.00ns)   --->   "%call_ln1230 = call void @seedInitialization, i32 %rngMT19937ICN_uniformRNG_mt_even_0_V, i32 %rngMT19937ICN_uniformRNG_mt_even_1_V, i32 %rngMT19937ICN_uniformRNG_mt_odd_0_V, i32 %rngMT19937ICN_uniformRNG_mt_odd_1_V, i32 %rngMT19937ICN_uniformRNG_x_k_p_0_V, i32 %rngMT19937ICN_uniformRNG_x_k_p_1_V, i32 %rngMT19937ICN_uniformRNG_x_k_p_2_V, i32 %rngMT19937ICN_uniformRNG_x_k_p_m_V, i10 %rngMT19937ICN_uniformRNG_addr_head_V" [../channel_code/xf_fintech/rng.hpp:1230]   --->   Operation 56 'call' 'call_ln1230' <Predicate = (!t_load)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 57 [1/2] (0.00ns)   --->   "%call_ln1230 = call void @seedInitialization, i32 %rngMT19937ICN_uniformRNG_mt_even_0_V, i32 %rngMT19937ICN_uniformRNG_mt_even_1_V, i32 %rngMT19937ICN_uniformRNG_mt_odd_0_V, i32 %rngMT19937ICN_uniformRNG_mt_odd_1_V, i32 %rngMT19937ICN_uniformRNG_x_k_p_0_V, i32 %rngMT19937ICN_uniformRNG_x_k_p_1_V, i32 %rngMT19937ICN_uniformRNG_x_k_p_2_V, i32 %rngMT19937ICN_uniformRNG_x_k_p_m_V, i10 %rngMT19937ICN_uniformRNG_addr_head_V" [../channel_code/xf_fintech/rng.hpp:1230]   --->   Operation 57 'call' 'call_ln1230' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%store_ln0 = store i1 1, i1 %t"   --->   Operation 58 'store' 'store_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%br_ln14 = br void %._crit_edge" [../channel_code/rand.cpp:14]   --->   Operation 59 'br' 'br_ln14' <Predicate = true> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.02>
+ST_3 : Operation 60 [1/1] (0.00ns)   --->   "%rngMT19937ICN_uniformRNG_load = load i10 %rngMT19937ICN_uniformRNG_addr_head_V"   --->   Operation 60 'load' 'rngMT19937ICN_uniformRNG_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 61 [1/1] (0.00ns)   --->   "%trunc_ln223 = trunc i10 %rngMT19937ICN_uniformRNG_load"   --->   Operation 61 'trunc' 'trunc_ln223' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 62 [1/1] (0.78ns)   --->   "%addr_head_p_3_V = add i10 %rngMT19937ICN_uniformRNG_load, i10 3"   --->   Operation 62 'add' 'addr_head_p_3_V' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 63 [1/1] (0.78ns)   --->   "%addr_head_p_m_p_1_V = add i10 %rngMT19937ICN_uniformRNG_load, i10 398"   --->   Operation 63 'add' 'addr_head_p_m_p_1_V' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 64 [1/1] (0.78ns)   --->   "%addr_head_p_n_V = add i10 %rngMT19937ICN_uniformRNG_load, i10 624"   --->   Operation 64 'add' 'addr_head_p_n_V' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 65 [1/1] (0.78ns)   --->   "%add_ln870 = add i10 %rngMT19937ICN_uniformRNG_load, i10 1"   --->   Operation 65 'add' 'add_ln870' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%store_ln870 = store i10 %add_ln870, i10 %rngMT19937ICN_uniformRNG_addr_head_V"   --->   Operation 66 'store' 'store_ln870' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (0.00ns)   --->   "%p_Val2_s = load i32 %rngMT19937ICN_uniformRNG_x_k_p_0_V"   --->   Operation 67 'load' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 68 [1/1] (0.00ns) (grouped into LUT with out node ret_6)   --->   "%tmp_4 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %p_Val2_s, i32 31"   --->   Operation 68 'bitselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%p_Val2_3 = load i32 %rngMT19937ICN_uniformRNG_x_k_p_1_V"   --->   Operation 69 'load' 'p_Val2_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.00ns) (grouped into LUT with out node ret_6)   --->   "%p_Result_4 = trunc i32 %p_Val2_3"   --->   Operation 70 'trunc' 'p_Result_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 71 [1/1] (0.00ns) (grouped into LUT with out node ret_6)   --->   "%tmp_3 = partselect i30 @_ssdm_op_PartSelect.i30.i32.i32.i32, i32 %p_Val2_3, i32 1, i32 30"   --->   Operation 71 'partselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 72 [1/1] (0.00ns) (grouped into LUT with out node ret_6)   --->   "%tmp_V = bitconcatenate i31 @_ssdm_op_BitConcatenate.i31.i1.i30, i1 %tmp_4, i30 %tmp_3"   --->   Operation 72 'bitconcatenate' 'tmp_V' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (0.00ns) (grouped into LUT with out node ret_6)   --->   "%zext_ln1028 = zext i31 %tmp_V"   --->   Operation 73 'zext' 'zext_ln1028' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 74 [1/1] (0.00ns) (grouped into LUT with out node ret_6)   --->   "%select_ln722 = select i1 %p_Result_4, i32 2567483615, i32 0" [../channel_code/xf_fintech/rng.hpp:722]   --->   Operation 74 'select' 'select_ln722' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%lhs_V = load i32 %rngMT19937ICN_uniformRNG_x_k_p_m_V"   --->   Operation 75 'load' 'lhs_V' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 76 [1/1] (0.00ns) (grouped into LUT with out node ret_6)   --->   "%xor_ln1529 = xor i32 %zext_ln1028, i32 %select_ln722"   --->   Operation 76 'xor' 'xor_ln1529' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 77 [1/1] (0.44ns) (out node of the LUT)   --->   "%ret_6 = xor i32 %xor_ln1529, i32 %lhs_V"   --->   Operation 77 'xor' 'ret_6' <Predicate = true> <Delay = 0.44> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 78 [1/1] (0.00ns)   --->   "%store_ln727 = store i32 %p_Val2_3, i32 %rngMT19937ICN_uniformRNG_x_k_p_0_V" [../channel_code/xf_fintech/rng.hpp:727]   --->   Operation 78 'store' 'store_ln727' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 79 [1/1] (0.00ns)   --->   "%rngMT19937ICN_uniformRNG_x_k_p_2_V_load = load i32 %rngMT19937ICN_uniformRNG_x_k_p_2_V" [../channel_code/xf_fintech/rng.hpp:728]   --->   Operation 79 'load' 'rngMT19937ICN_uniformRNG_x_k_p_2_V_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 80 [1/1] (0.00ns)   --->   "%store_ln728 = store i32 %rngMT19937ICN_uniformRNG_x_k_p_2_V_load, i32 %rngMT19937ICN_uniformRNG_x_k_p_1_V" [../channel_code/xf_fintech/rng.hpp:728]   --->   Operation 80 'store' 'store_ln728' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 81 [1/1] (0.00ns)   --->   "%r_s = partselect i9 @_ssdm_op_PartSelect.i9.i10.i32.i32, i10 %addr_head_p_3_V, i32 1, i32 9"   --->   Operation 81 'partselect' 'r_s' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 82 [1/1] (0.00ns)   --->   "%r_1 = partselect i9 @_ssdm_op_PartSelect.i9.i10.i32.i32, i10 %addr_head_p_m_p_1_V, i32 1, i32 9"   --->   Operation 82 'partselect' 'r_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 83 [1/1] (0.00ns)   --->   "%r_2 = partselect i9 @_ssdm_op_PartSelect.i9.i10.i32.i32, i10 %addr_head_p_n_V, i32 1, i32 9"   --->   Operation 83 'partselect' 'r_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 84 [1/1] (0.00ns)   --->   "%zext_ln573 = zext i9 %r_s"   --->   Operation 84 'zext' 'zext_ln573' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 85 [1/1] (0.00ns)   --->   "%zext_ln573_1 = zext i9 %r_1"   --->   Operation 85 'zext' 'zext_ln573_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 86 [1/1] (0.00ns)   --->   "%zext_ln573_2 = zext i9 %r_2"   --->   Operation 86 'zext' 'zext_ln573_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 87 [1/1] (0.00ns)   --->   "%br_ln734 = br i1 %trunc_ln223, void, void" [../channel_code/xf_fintech/rng.hpp:734]   --->   Operation 87 'br' 'br_ln734' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 88 [1/1] (0.00ns)   --->   "%rngMT19937ICN_uniformRNG_mt_odd_0_V_addr_2 = getelementptr i32 %rngMT19937ICN_uniformRNG_mt_odd_0_V, i64 0, i64 %zext_ln573" [../channel_code/xf_fintech/rng.hpp:739]   --->   Operation 88 'getelementptr' 'rngMT19937ICN_uniformRNG_mt_odd_0_V_addr_2' <Predicate = (!trunc_ln223)> <Delay = 0.00>
+ST_3 : Operation 89 [2/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_odd_0_V_load_2 = load i9 %rngMT19937ICN_uniformRNG_mt_odd_0_V_addr_2" [../channel_code/xf_fintech/rng.hpp:739]   --->   Operation 89 'load' 'rngMT19937ICN_uniformRNG_mt_odd_0_V_load_2' <Predicate = (!trunc_ln223)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%rngMT19937ICN_uniformRNG_mt_even_0_V_addr_1 = getelementptr i32 %rngMT19937ICN_uniformRNG_mt_even_0_V, i64 0, i64 %zext_ln573_1" [../channel_code/xf_fintech/rng.hpp:740]   --->   Operation 90 'getelementptr' 'rngMT19937ICN_uniformRNG_mt_even_0_V_addr_1' <Predicate = (!trunc_ln223)> <Delay = 0.00>
+ST_3 : Operation 91 [2/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_even_0_V_load_2 = load i9 %rngMT19937ICN_uniformRNG_mt_even_0_V_addr_1" [../channel_code/xf_fintech/rng.hpp:740]   --->   Operation 91 'load' 'rngMT19937ICN_uniformRNG_mt_even_0_V_load_2' <Predicate = (!trunc_ln223)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_3 : Operation 92 [1/1] (0.00ns)   --->   "%rngMT19937ICN_uniformRNG_mt_even_0_V_addr_2 = getelementptr i32 %rngMT19937ICN_uniformRNG_mt_even_0_V, i64 0, i64 %zext_ln573_2" [../channel_code/xf_fintech/rng.hpp:741]   --->   Operation 92 'getelementptr' 'rngMT19937ICN_uniformRNG_mt_even_0_V_addr_2' <Predicate = (!trunc_ln223)> <Delay = 0.00>
+ST_3 : Operation 93 [1/1] (1.23ns)   --->   "%store_ln741 = store i32 %ret_6, i9 %rngMT19937ICN_uniformRNG_mt_even_0_V_addr_2" [../channel_code/xf_fintech/rng.hpp:741]   --->   Operation 93 'store' 'store_ln741' <Predicate = (!trunc_ln223)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%rngMT19937ICN_uniformRNG_mt_even_0_V_addr = getelementptr i32 %rngMT19937ICN_uniformRNG_mt_even_0_V, i64 0, i64 %zext_ln573" [../channel_code/xf_fintech/rng.hpp:735]   --->   Operation 94 'getelementptr' 'rngMT19937ICN_uniformRNG_mt_even_0_V_addr' <Predicate = (trunc_ln223)> <Delay = 0.00>
+ST_3 : Operation 95 [2/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_even_0_V_load = load i9 %rngMT19937ICN_uniformRNG_mt_even_0_V_addr" [../channel_code/xf_fintech/rng.hpp:735]   --->   Operation 95 'load' 'rngMT19937ICN_uniformRNG_mt_even_0_V_load' <Predicate = (trunc_ln223)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_3 : Operation 96 [1/1] (0.00ns)   --->   "%rngMT19937ICN_uniformRNG_mt_odd_0_V_addr = getelementptr i32 %rngMT19937ICN_uniformRNG_mt_odd_0_V, i64 0, i64 %zext_ln573_1" [../channel_code/xf_fintech/rng.hpp:736]   --->   Operation 96 'getelementptr' 'rngMT19937ICN_uniformRNG_mt_odd_0_V_addr' <Predicate = (trunc_ln223)> <Delay = 0.00>
+ST_3 : Operation 97 [2/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_odd_0_V_load = load i9 %rngMT19937ICN_uniformRNG_mt_odd_0_V_addr" [../channel_code/xf_fintech/rng.hpp:736]   --->   Operation 97 'load' 'rngMT19937ICN_uniformRNG_mt_odd_0_V_load' <Predicate = (trunc_ln223)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_3 : Operation 98 [1/1] (0.00ns)   --->   "%rngMT19937ICN_uniformRNG_mt_odd_0_V_addr_1 = getelementptr i32 %rngMT19937ICN_uniformRNG_mt_odd_0_V, i64 0, i64 %zext_ln573_2" [../channel_code/xf_fintech/rng.hpp:737]   --->   Operation 98 'getelementptr' 'rngMT19937ICN_uniformRNG_mt_odd_0_V_addr_1' <Predicate = (trunc_ln223)> <Delay = 0.00>
+ST_3 : Operation 99 [1/1] (1.23ns)   --->   "%store_ln737 = store i32 %ret_6, i9 %rngMT19937ICN_uniformRNG_mt_odd_0_V_addr_1" [../channel_code/xf_fintech/rng.hpp:737]   --->   Operation 99 'store' 'store_ln737' <Predicate = (trunc_ln223)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+
+State 4 <SV = 3> <Delay = 6.94>
+ST_4 : Operation 100 [1/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_odd_0_V_load_2 = load i9 %rngMT19937ICN_uniformRNG_mt_odd_0_V_addr_2" [../channel_code/xf_fintech/rng.hpp:739]   --->   Operation 100 'load' 'rngMT19937ICN_uniformRNG_mt_odd_0_V_load_2' <Predicate = (!trunc_ln223)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_4 : Operation 101 [1/1] (0.42ns)   --->   "%store_ln739 = store i32 %rngMT19937ICN_uniformRNG_mt_odd_0_V_load_2, i32 %rngMT19937ICN_uniformRNG_x_k_p_2_V" [../channel_code/xf_fintech/rng.hpp:739]   --->   Operation 101 'store' 'store_ln739' <Predicate = (!trunc_ln223)> <Delay = 0.42>
+ST_4 : Operation 102 [1/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_even_0_V_load_2 = load i9 %rngMT19937ICN_uniformRNG_mt_even_0_V_addr_1" [../channel_code/xf_fintech/rng.hpp:740]   --->   Operation 102 'load' 'rngMT19937ICN_uniformRNG_mt_even_0_V_load_2' <Predicate = (!trunc_ln223)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_4 : Operation 103 [1/1] (0.42ns)   --->   "%store_ln740 = store i32 %rngMT19937ICN_uniformRNG_mt_even_0_V_load_2, i32 %rngMT19937ICN_uniformRNG_x_k_p_m_V" [../channel_code/xf_fintech/rng.hpp:740]   --->   Operation 103 'store' 'store_ln740' <Predicate = (!trunc_ln223)> <Delay = 0.42>
+ST_4 : Operation 104 [1/1] (0.00ns)   --->   "%br_ln0 = br void %18"   --->   Operation 104 'br' 'br_ln0' <Predicate = (!trunc_ln223)> <Delay = 0.00>
+ST_4 : Operation 105 [1/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_even_0_V_load = load i9 %rngMT19937ICN_uniformRNG_mt_even_0_V_addr" [../channel_code/xf_fintech/rng.hpp:735]   --->   Operation 105 'load' 'rngMT19937ICN_uniformRNG_mt_even_0_V_load' <Predicate = (trunc_ln223)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_4 : Operation 106 [1/1] (0.42ns)   --->   "%store_ln735 = store i32 %rngMT19937ICN_uniformRNG_mt_even_0_V_load, i32 %rngMT19937ICN_uniformRNG_x_k_p_2_V" [../channel_code/xf_fintech/rng.hpp:735]   --->   Operation 106 'store' 'store_ln735' <Predicate = (trunc_ln223)> <Delay = 0.42>
+ST_4 : Operation 107 [1/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_odd_0_V_load = load i9 %rngMT19937ICN_uniformRNG_mt_odd_0_V_addr" [../channel_code/xf_fintech/rng.hpp:736]   --->   Operation 107 'load' 'rngMT19937ICN_uniformRNG_mt_odd_0_V_load' <Predicate = (trunc_ln223)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_4 : Operation 108 [1/1] (0.42ns)   --->   "%store_ln736 = store i32 %rngMT19937ICN_uniformRNG_mt_odd_0_V_load, i32 %rngMT19937ICN_uniformRNG_x_k_p_m_V" [../channel_code/xf_fintech/rng.hpp:736]   --->   Operation 108 'store' 'store_ln736' <Predicate = (trunc_ln223)> <Delay = 0.42>
+ST_4 : Operation 109 [1/1] (0.00ns)   --->   "%br_ln738 = br void %18" [../channel_code/xf_fintech/rng.hpp:738]   --->   Operation 109 'br' 'br_ln738' <Predicate = (trunc_ln223)> <Delay = 0.00>
+ST_4 : Operation 110 [1/1] (0.00ns)   --->   "%r = partselect i21 @_ssdm_op_PartSelect.i21.i32.i32.i32, i32 %ret_6, i32 11, i32 31"   --->   Operation 110 'partselect' 'r' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 111 [1/1] (0.00ns)   --->   "%zext_ln1676 = zext i21 %r"   --->   Operation 111 'zext' 'zext_ln1676' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 112 [1/1] (0.35ns)   --->   "%pre_result_V_2 = xor i32 %zext_ln1676, i32 %ret_6"   --->   Operation 112 'xor' 'pre_result_V_2' <Predicate = true> <Delay = 0.35> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 113 [1/1] (0.00ns)   --->   "%tmp_10 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %pre_result_V_2, i32 24"   --->   Operation 113 'bitselect' 'tmp_10' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 114 [1/1] (0.00ns)   --->   "%tmp_6 = partselect i3 @_ssdm_op_PartSelect.i3.i32.i32.i32, i32 %pre_result_V_2, i32 19, i32 21"   --->   Operation 114 'partselect' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 115 [1/1] (0.00ns)   --->   "%tmp_11 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %pre_result_V_2, i32 17"   --->   Operation 115 'bitselect' 'tmp_11' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 116 [1/1] (0.00ns)   --->   "%tmp_13 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %pre_result_V_2, i32 14"   --->   Operation 116 'bitselect' 'tmp_13' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 117 [1/1] (0.00ns)   --->   "%tmp_s = partselect i2 @_ssdm_op_PartSelect.i2.i32.i32.i32, i32 %pre_result_V_2, i32 11, i32 12"   --->   Operation 117 'partselect' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 118 [1/1] (0.00ns)   --->   "%tmp_14 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %pre_result_V_2, i32 7"   --->   Operation 118 'bitselect' 'tmp_14' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 119 [1/1] (0.00ns)   --->   "%tmp_16 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %pre_result_V_2, i32 5"   --->   Operation 119 'bitselect' 'tmp_16' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 120 [1/1] (0.00ns)   --->   "%tmp_12 = partselect i2 @_ssdm_op_PartSelect.i2.i32.i32.i32, i32 %pre_result_V_2, i32 2, i32 3"   --->   Operation 120 'partselect' 'tmp_12' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 121 [1/1] (0.00ns)   --->   "%trunc_ln1527 = trunc i32 %pre_result_V_2"   --->   Operation 121 'trunc' 'trunc_ln1527' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 122 [1/1] (0.00ns)   --->   "%ret = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i1.i2.i3.i1.i1.i2.i1.i1.i2.i3.i1.i1.i1.i1.i2.i1.i1.i7, i1 %tmp_10, i2 0, i3 %tmp_6, i1 0, i1 %tmp_11, i2 0, i1 %tmp_13, i1 0, i2 %tmp_s, i3 0, i1 %tmp_14, i1 0, i1 %tmp_16, i1 0, i2 %tmp_12, i1 0, i1 %trunc_ln1527, i7 0"   --->   Operation 122 'bitconcatenate' 'ret' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 123 [1/1] (0.35ns)   --->   "%pre_result_V_3 = xor i32 %ret, i32 %pre_result_V_2"   --->   Operation 123 'xor' 'pre_result_V_3' <Predicate = true> <Delay = 0.35> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 124 [1/1] (0.00ns)   --->   "%tmp_15 = partselect i3 @_ssdm_op_PartSelect.i3.i32.i32.i32, i32 %pre_result_V_3, i32 14, i32 16"   --->   Operation 124 'partselect' 'tmp_15' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 125 [1/1] (0.00ns)   --->   "%tmp_17 = partselect i6 @_ssdm_op_PartSelect.i6.i32.i32.i32, i32 %pre_result_V_3, i32 7, i32 12"   --->   Operation 125 'partselect' 'tmp_17' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 126 [1/1] (0.00ns)   --->   "%tmp_18 = partselect i2 @_ssdm_op_PartSelect.i2.i32.i32.i32, i32 %pre_result_V_3, i32 2, i32 3"   --->   Operation 126 'partselect' 'tmp_18' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 127 [1/1] (0.00ns)   --->   "%ret_3 = bitconcatenate i32 @_ssdm_op_BitConcatenate.i32.i3.i1.i6.i3.i2.i17, i3 %tmp_15, i1 0, i6 %tmp_17, i3 0, i2 %tmp_18, i17 0"   --->   Operation 127 'bitconcatenate' 'ret_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 128 [1/1] (0.35ns)   --->   "%pre_result_V_4 = xor i32 %ret_3, i32 %pre_result_V_3"   --->   Operation 128 'xor' 'pre_result_V_4' <Predicate = true> <Delay = 0.35> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 129 [1/1] (0.00ns)   --->   "%r_3 = partselect i14 @_ssdm_op_PartSelect.i14.i32.i32.i32, i32 %pre_result_V_4, i32 18, i32 31"   --->   Operation 129 'partselect' 'r_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 130 [1/1] (0.00ns)   --->   "%zext_ln1676_1 = zext i14 %r_3"   --->   Operation 130 'zext' 'zext_ln1676_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 131 [1/1] (0.35ns)   --->   "%pre_result_V = xor i32 %zext_ln1676_1, i32 %pre_result_V_4"   --->   Operation 131 'xor' 'pre_result_V' <Predicate = true> <Delay = 0.35> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 132 [1/1] (0.99ns)   --->   "%icmp_ln988 = icmp_eq  i32 %zext_ln1676_1, i32 %pre_result_V_4"   --->   Operation 132 'icmp' 'icmp_ln988' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 133 [1/1] (0.00ns)   --->   "%p_Result_5 = partselect i32 @_ssdm_op_PartSelect.i32.i32.i32.i32, i32 %pre_result_V, i32 31, i32 0"   --->   Operation 133 'partselect' 'p_Result_5' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 134 [1/1] (0.00ns)   --->   "%l = cttz i32 @llvm.cttz.i32, i32 %p_Result_5, i1 1"   --->   Operation 134 'cttz' 'l' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 135 [1/1] (0.00ns)   --->   "%trunc_ln996 = trunc i32 %l"   --->   Operation 135 'trunc' 'trunc_ln996' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 136 [1/1] (1.01ns)   --->   "%sub_ln997 = sub i32 32, i32 %l"   --->   Operation 136 'sub' 'sub_ln997' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 137 [1/1] (1.01ns)   --->   "%lsb_index = add i32 %sub_ln997, i32 4294967272"   --->   Operation 137 'add' 'lsb_index' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 138 [1/1] (0.00ns)   --->   "%tmp_19 = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %lsb_index, i32 1, i32 31"   --->   Operation 138 'partselect' 'tmp_19' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 139 [1/1] (0.99ns)   --->   "%icmp_ln999 = icmp_sgt  i31 %tmp_19, i31 0"   --->   Operation 139 'icmp' 'icmp_ln999' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 140 [1/1] (0.00ns)   --->   "%trunc_ln1000 = trunc i32 %sub_ln997"   --->   Operation 140 'trunc' 'trunc_ln1000' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 141 [1/1] (0.78ns)   --->   "%sub_ln1000 = sub i6 57, i6 %trunc_ln1000"   --->   Operation 141 'sub' 'sub_ln1000' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 142 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln1002)   --->   "%zext_ln1000 = zext i6 %sub_ln1000"   --->   Operation 142 'zext' 'zext_ln1000' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 143 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln1002)   --->   "%lshr_ln1000 = lshr i32 4294967295, i32 %zext_ln1000"   --->   Operation 143 'lshr' 'lshr_ln1000' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.17> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 144 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln1002)   --->   "%shl_ln1002 = shl i32 1, i32 %lsb_index"   --->   Operation 144 'shl' 'shl_ln1002' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.17> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 145 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln1002)   --->   "%or_ln1002_1 = or i32 %lshr_ln1000, i32 %shl_ln1002"   --->   Operation 145 'or' 'or_ln1002_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 146 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln1002)   --->   "%and_ln1002 = and i32 %pre_result_V, i32 %or_ln1002_1"   --->   Operation 146 'and' 'and_ln1002' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 147 [1/1] (1.38ns) (out node of the LUT)   --->   "%icmp_ln1002 = icmp_ne  i32 %and_ln1002, i32 0"   --->   Operation 147 'icmp' 'icmp_ln1002' <Predicate = true> <Delay = 1.38> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 148 [1/1] (0.00ns)   --->   "%zext_ln1010 = zext i32 %pre_result_V"   --->   Operation 148 'zext' 'zext_ln1010' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 149 [1/1] (0.00ns) (grouped into LUT with out node select_ln1011)   --->   "%tmp_20 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %lsb_index, i32 31"   --->   Operation 149 'bitselect' 'tmp_20' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 150 [1/1] (0.00ns) (grouped into LUT with out node select_ln1011)   --->   "%xor_ln1002 = xor i1 %tmp_20, i1 1"   --->   Operation 150 'xor' 'xor_ln1002' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 151 [1/1] (0.00ns)   --->   "%p_Result_6 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %pre_result_V, i32 %lsb_index"   --->   Operation 151 'bitselect' 'p_Result_6' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 152 [1/1] (0.99ns)   --->   "%icmp_ln1011 = icmp_sgt  i32 %lsb_index, i32 0"   --->   Operation 152 'icmp' 'icmp_ln1011' <Predicate = true> <Delay = 0.99> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 153 [1/1] (0.00ns) (grouped into LUT with out node select_ln1011)   --->   "%select_ln999 = select i1 %icmp_ln999, i1 %icmp_ln1002, i1 %p_Result_6"   --->   Operation 153 'select' 'select_ln999' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 154 [1/1] (1.01ns)   --->   "%add_ln1011 = add i32 %sub_ln997, i32 4294967271"   --->   Operation 154 'add' 'add_ln1011' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 155 [1/1] (0.00ns) (grouped into LUT with out node m_3)   --->   "%zext_ln1011 = zext i32 %add_ln1011"   --->   Operation 155 'zext' 'zext_ln1011' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 156 [1/1] (0.00ns) (grouped into LUT with out node m_3)   --->   "%lshr_ln1011 = lshr i64 %zext_ln1010, i64 %zext_ln1011"   --->   Operation 156 'lshr' 'lshr_ln1011' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.17> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 157 [1/1] (0.00ns) (grouped into LUT with out node select_ln1011)   --->   "%and_ln1002_1 = and i1 %p_Result_6, i1 %xor_ln1002"   --->   Operation 157 'and' 'and_ln1002_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 158 [1/1] (1.01ns)   --->   "%sub_ln1012 = sub i32 25, i32 %sub_ln997"   --->   Operation 158 'sub' 'sub_ln1012' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 159 [1/1] (0.00ns) (grouped into LUT with out node m_3)   --->   "%zext_ln1012 = zext i32 %sub_ln1012"   --->   Operation 159 'zext' 'zext_ln1012' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 160 [1/1] (0.00ns) (grouped into LUT with out node m_3)   --->   "%shl_ln1012 = shl i64 %zext_ln1010, i64 %zext_ln1012"   --->   Operation 160 'shl' 'shl_ln1012' <Predicate = true> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.17> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 161 [1/1] (0.28ns) (out node of the LUT)   --->   "%select_ln1011 = select i1 %icmp_ln1011, i1 %select_ln999, i1 %and_ln1002_1"   --->   Operation 161 'select' 'select_ln1011' <Predicate = true> <Delay = 0.28> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 162 [1/1] (0.00ns) (grouped into LUT with out node m_3)   --->   "%m_2 = select i1 %icmp_ln1011, i64 %lshr_ln1011, i64 %shl_ln1012"   --->   Operation 162 'select' 'm_2' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 163 [1/1] (0.00ns) (grouped into LUT with out node m_3)   --->   "%zext_ln1014 = zext i1 %select_ln1011"   --->   Operation 163 'zext' 'zext_ln1014' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 164 [1/1] (1.38ns) (out node of the LUT)   --->   "%m_3 = add i64 %m_2, i64 %zext_ln1014"   --->   Operation 164 'add' 'm_3' <Predicate = true> <Delay = 1.38> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 165 [1/1] (0.00ns) (grouped into LUT with out node tmp_uniform)   --->   "%m_4 = partselect i63 @_ssdm_op_PartSelect.i63.i64.i32.i32, i64 %m_3, i32 1, i32 63"   --->   Operation 165 'partselect' 'm_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 166 [1/1] (0.00ns) (grouped into LUT with out node tmp_uniform)   --->   "%zext_ln1015 = zext i63 %m_4"   --->   Operation 166 'zext' 'zext_ln1015' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 167 [1/1] (0.00ns) (grouped into LUT with out node tmp_uniform)   --->   "%p_Result_s = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %m_3, i32 25"   --->   Operation 167 'bitselect' 'p_Result_s' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 168 [1/1] (0.76ns)   --->   "%sub_ln1018 = sub i8 126, i8 %trunc_ln996"   --->   Operation 168 'sub' 'sub_ln1018' <Predicate = true> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 169 [1/1] (0.76ns)   --->   "%add_ln1017 = add i8 %sub_ln1018, i8 1"   --->   Operation 169 'add' 'add_ln1017' <Predicate = true> <Delay = 0.76> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 170 [1/1] (0.00ns) (grouped into LUT with out node tmp_uniform)   --->   "%select_ln1017 = select i1 %p_Result_s, i8 %add_ln1017, i8 %sub_ln1018"   --->   Operation 170 'select' 'select_ln1017' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 171 [1/1] (0.00ns) (grouped into LUT with out node tmp_uniform)   --->   "%tmp = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i1.i8, i1 0, i8 %select_ln1017"   --->   Operation 171 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 172 [1/1] (0.00ns) (grouped into LUT with out node tmp_uniform)   --->   "%p_Result_7 = partset i64 @_ssdm_op_PartSet.i64.i64.i9.i32.i32, i64 %zext_ln1015, i9 %tmp, i32 23, i32 31"   --->   Operation 172 'partset' 'p_Result_7' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 173 [1/1] (0.00ns) (grouped into LUT with out node tmp_uniform)   --->   "%LD = trunc i64 %p_Result_7"   --->   Operation 173 'trunc' 'LD' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 174 [1/1] (0.00ns) (grouped into LUT with out node tmp_uniform)   --->   "%bitcast_ln751 = bitcast i32 %LD"   --->   Operation 174 'bitcast' 'bitcast_ln751' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 175 [1/1] (0.44ns) (out node of the LUT)   --->   "%tmp_uniform = select i1 %icmp_ln988, i32 0, i32 %bitcast_ln751"   --->   Operation 175 'select' 'tmp_uniform' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 11.8>
+ST_5 : Operation 176 [1/1] (0.00ns)   --->   "%bitcast_ln314 = bitcast i32 %tmp_uniform" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 176 'bitcast' 'bitcast_ln314' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 177 [1/1] (0.00ns)   --->   "%tmp_1 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %bitcast_ln314, i32 23, i32 30" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 177 'partselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 178 [1/1] (0.00ns)   --->   "%trunc_ln314 = trunc i32 %bitcast_ln314" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 178 'trunc' 'trunc_ln314' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 179 [1/1] (0.84ns)   --->   "%icmp_ln314 = icmp_ne  i8 %tmp_1, i8 255" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 179 'icmp' 'icmp_ln314' <Predicate = true> <Delay = 0.84> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 180 [1/1] (1.05ns)   --->   "%icmp_ln314_1 = icmp_eq  i23 %trunc_ln314, i23 0" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 180 'icmp' 'icmp_ln314_1' <Predicate = true> <Delay = 1.05> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 181 [1/1] (0.28ns)   --->   "%or_ln314 = or i1 %icmp_ln314_1, i1 %icmp_ln314" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 181 'or' 'or_ln314' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 182 [1/1] (11.5ns)   --->   "%tmp_2 = fcmp_olt  i32 %tmp_uniform, i32 0.075" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 182 'fcmp' 'tmp_2' <Predicate = true> <Delay = 11.5> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 0> <II = 1> <Delay = 11.5> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 183 [1/1] (0.28ns)   --->   "%is_lower_tail_V = and i1 %or_ln314, i1 %tmp_2" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 183 'and' 'is_lower_tail_V' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 11.6>
+ST_6 : Operation 184 [2/2] (11.6ns)   --->   "%r_14 = fsub i32 1, i32 %tmp_uniform" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 184 'fsub' 'r_14' <Predicate = (!is_lower_tail_V)> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 12.0>
+ST_7 : Operation 185 [1/2] (11.6ns)   --->   "%r_14 = fsub i32 1, i32 %tmp_uniform" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 185 'fsub' 'r_14' <Predicate = (!is_lower_tail_V)> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 186 [1/1] (0.00ns)   --->   "%specfucore_ln79 = specfucore void @_ssdm_op_SpecFUCore, i32 %r_14, i64 11, i64 4, i64 18446744073709551615" [../channel_code/xf_fintech/utils.hpp:79]   --->   Operation 186 'specfucore' 'specfucore_ln79' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 187 [1/1] (0.44ns)   --->   "%z = select i1 %is_lower_tail_V, i32 %tmp_uniform, i32 %r_14" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 187 'select' 'z' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 11.5>
+ST_8 : Operation 188 [5/5] (11.5ns)   --->   "%tmp_i = flog i32 @llvm.log.f32, i32 %z" [/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/common/hls_log_float.cpp:9]   --->   Operation 188 'flog' 'tmp_i' <Predicate = true> <Delay = 11.5> <CoreInst = "FLog_fulldsp">   --->   Core 26 'FLog_fulldsp' <Latency = 4> <II = 1> <Delay = 11.5> <FuncUnit> <Opcode : 'flog'> <InPorts = 1> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 11.5>
+ST_9 : Operation 189 [4/5] (11.5ns)   --->   "%tmp_i = flog i32 @llvm.log.f32, i32 %z" [/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/common/hls_log_float.cpp:9]   --->   Operation 189 'flog' 'tmp_i' <Predicate = true> <Delay = 11.5> <CoreInst = "FLog_fulldsp">   --->   Core 26 'FLog_fulldsp' <Latency = 4> <II = 1> <Delay = 11.5> <FuncUnit> <Opcode : 'flog'> <InPorts = 1> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 11.5>
+ST_10 : Operation 190 [3/5] (11.5ns)   --->   "%tmp_i = flog i32 @llvm.log.f32, i32 %z" [/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/common/hls_log_float.cpp:9]   --->   Operation 190 'flog' 'tmp_i' <Predicate = true> <Delay = 11.5> <CoreInst = "FLog_fulldsp">   --->   Core 26 'FLog_fulldsp' <Latency = 4> <II = 1> <Delay = 11.5> <FuncUnit> <Opcode : 'flog'> <InPorts = 1> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 11.5>
+ST_11 : Operation 191 [2/5] (11.5ns)   --->   "%tmp_i = flog i32 @llvm.log.f32, i32 %z" [/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/common/hls_log_float.cpp:9]   --->   Operation 191 'flog' 'tmp_i' <Predicate = true> <Delay = 11.5> <CoreInst = "FLog_fulldsp">   --->   Core 26 'FLog_fulldsp' <Latency = 4> <II = 1> <Delay = 11.5> <FuncUnit> <Opcode : 'flog'> <InPorts = 1> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 11.5>
+ST_12 : Operation 192 [1/5] (11.5ns)   --->   "%tmp_i = flog i32 @llvm.log.f32, i32 %z" [/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/common/hls_log_float.cpp:9]   --->   Operation 192 'flog' 'tmp_i' <Predicate = true> <Delay = 11.5> <CoreInst = "FLog_fulldsp">   --->   Core 26 'FLog_fulldsp' <Latency = 4> <II = 1> <Delay = 11.5> <FuncUnit> <Opcode : 'flog'> <InPorts = 1> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 10.5>
+ST_13 : Operation 193 [1/1] (0.00ns)   --->   "%bitcast_ln323 = bitcast i32 %tmp_i" [../channel_code/xf_fintech/rng.hpp:323->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 193 'bitcast' 'bitcast_ln323' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 194 [1/1] (0.35ns)   --->   "%xor_ln323 = xor i32 %bitcast_ln323, i32 2147483648" [../channel_code/xf_fintech/rng.hpp:323->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 194 'xor' 'xor_ln323' <Predicate = true> <Delay = 0.35> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 195 [1/1] (0.00ns)   --->   "%bitcast_ln323_1 = bitcast i32 %xor_ln323" [../channel_code/xf_fintech/rng.hpp:323->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 195 'bitcast' 'bitcast_ln323_1' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 196 [6/6] (10.1ns)   --->   "%tmp_9 = fsqrt i32 @llvm.sqrt.f32, i32 %bitcast_ln323_1" [/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8]   --->   Operation 196 'fsqrt' 'tmp_9' <Predicate = true> <Delay = 10.1> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 5> <II = 1> <Delay = 10.1> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 10.1>
+ST_14 : Operation 197 [5/6] (10.1ns)   --->   "%tmp_9 = fsqrt i32 @llvm.sqrt.f32, i32 %bitcast_ln323_1" [/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8]   --->   Operation 197 'fsqrt' 'tmp_9' <Predicate = true> <Delay = 10.1> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 5> <II = 1> <Delay = 10.1> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 10.1>
+ST_15 : Operation 198 [4/6] (10.1ns)   --->   "%tmp_9 = fsqrt i32 @llvm.sqrt.f32, i32 %bitcast_ln323_1" [/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8]   --->   Operation 198 'fsqrt' 'tmp_9' <Predicate = true> <Delay = 10.1> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 5> <II = 1> <Delay = 10.1> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 10.1>
+ST_16 : Operation 199 [3/6] (10.1ns)   --->   "%tmp_9 = fsqrt i32 @llvm.sqrt.f32, i32 %bitcast_ln323_1" [/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8]   --->   Operation 199 'fsqrt' 'tmp_9' <Predicate = true> <Delay = 10.1> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 5> <II = 1> <Delay = 10.1> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 10.1>
+ST_17 : Operation 200 [2/6] (10.1ns)   --->   "%tmp_9 = fsqrt i32 @llvm.sqrt.f32, i32 %bitcast_ln323_1" [/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8]   --->   Operation 200 'fsqrt' 'tmp_9' <Predicate = true> <Delay = 10.1> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 5> <II = 1> <Delay = 10.1> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 11.8>
+ST_18 : Operation 201 [1/1] (11.5ns)   --->   "%tmp_5 = fcmp_ogt  i32 %tmp_uniform, i32 0.925" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 201 'fcmp' 'tmp_5' <Predicate = true> <Delay = 11.5> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 0> <II = 1> <Delay = 11.5> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 202 [1/1] (0.00ns) (grouped into LUT with out node or_ln314_1)   --->   "%and_ln314_1 = and i1 %or_ln314, i1 %tmp_5" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 202 'and' 'and_ln314_1' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 203 [1/1] (0.28ns) (out node of the LUT)   --->   "%or_ln314_1 = or i1 %is_lower_tail_V, i1 %and_ln314_1" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 203 'or' 'or_ln314_1' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 204 [2/2] (11.6ns)   --->   "%r_12 = fadd i32 %tmp_uniform, i32 -0.5" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 204 'fadd' 'r_12' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 205 [1/6] (10.1ns)   --->   "%tmp_9 = fsqrt i32 @llvm.sqrt.f32, i32 %bitcast_ln323_1" [/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8]   --->   Operation 205 'fsqrt' 'tmp_9' <Predicate = true> <Delay = 10.1> <CoreInst = "FSqrt">   --->   Core 35 'FSqrt' <Latency = 5> <II = 1> <Delay = 10.1> <FuncUnit> <Opcode : 'fsqrt'> <InPorts = 1> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 11.8>
+ST_19 : Operation 206 [1/2] (11.6ns)   --->   "%r_12 = fadd i32 %tmp_uniform, i32 -0.5" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 206 'fadd' 'r_12' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 207 [1/1] (0.00ns)   --->   "%specfucore_ln79 = specfucore void @_ssdm_op_SpecFUCore, i32 %r_12, i64 11, i64 4, i64 18446744073709551615" [../channel_code/xf_fintech/utils.hpp:79]   --->   Operation 207 'specfucore' 'specfucore_ln79' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 208 [1/1] (0.00ns)   --->   "%bitcast_ln324 = bitcast i32 %tmp_9" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 208 'bitcast' 'bitcast_ln324' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 209 [1/1] (0.00ns)   --->   "%tmp_7 = partselect i8 @_ssdm_op_PartSelect.i8.i32.i32.i32, i32 %bitcast_ln324, i32 23, i32 30" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 209 'partselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 210 [1/1] (0.00ns)   --->   "%trunc_ln324 = trunc i32 %bitcast_ln324" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 210 'trunc' 'trunc_ln324' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 211 [1/1] (0.84ns)   --->   "%icmp_ln324 = icmp_ne  i8 %tmp_7, i8 255" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 211 'icmp' 'icmp_ln324' <Predicate = true> <Delay = 0.84> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 212 [1/1] (1.05ns)   --->   "%icmp_ln324_1 = icmp_eq  i23 %trunc_ln324, i23 0" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 212 'icmp' 'icmp_ln324_1' <Predicate = true> <Delay = 1.05> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 213 [1/1] (0.00ns) (grouped into LUT with out node and_ln324_1)   --->   "%or_ln324 = or i1 %icmp_ln324_1, i1 %icmp_ln324" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 213 'or' 'or_ln324' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 214 [1/1] (11.5ns)   --->   "%tmp_8 = fcmp_olt  i32 %tmp_9, i32 5" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 214 'fcmp' 'tmp_8' <Predicate = true> <Delay = 11.5> <CoreInst = "FCompare">   --->   Core 19 'FCompare' <Latency = 0> <II = 1> <Delay = 11.5> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 215 [1/1] (0.00ns) (grouped into LUT with out node and_ln324_1)   --->   "%and_ln324 = and i1 %or_ln324, i1 %tmp_8" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 215 'and' 'and_ln324' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 216 [1/1] (0.28ns) (out node of the LUT)   --->   "%and_ln324_1 = and i1 %or_ln314_1, i1 %and_ln324" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 216 'and' 'and_ln324_1' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 8.38>
+ST_20 : Operation 217 [2/2] (8.38ns)   --->   "%r_13 = fmul i32 %r_12, i32 %r_12" [../channel_code/xf_fintech/utils.hpp:96]   --->   Operation 217 'fmul' 'r_13' <Predicate = (!or_ln314_1 & !and_ln324_1)> <Delay = 8.38> <CoreInst = "FMul_fulldsp">   --->   Core 29 'FMul_fulldsp' <Latency = 1> <II = 1> <Delay = 8.38> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 218 [1/1] (0.00ns) (grouped into LUT with out node z_4)   --->   "%z_3 = select i1 %or_ln314_1, i32 %z, i32 %r_12" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 218 'select' 'z_3' <Predicate = (!and_ln324_1)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_20 : Operation 219 [1/1] (0.44ns) (out node of the LUT)   --->   "%z_4 = select i1 %and_ln324_1, i32 %z, i32 %z_3" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 219 'select' 'z_4' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 8.38>
+ST_21 : Operation 220 [1/2] (8.38ns)   --->   "%r_13 = fmul i32 %r_12, i32 %r_12" [../channel_code/xf_fintech/utils.hpp:96]   --->   Operation 220 'fmul' 'r_13' <Predicate = (!or_ln314_1 & !and_ln324_1)> <Delay = 8.38> <CoreInst = "FMul_fulldsp">   --->   Core 29 'FMul_fulldsp' <Latency = 1> <II = 1> <Delay = 8.38> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 221 [1/1] (0.00ns)   --->   "%specfucore_ln90 = specfucore void @_ssdm_op_SpecFUCore, i32 %r_13, i64 13, i64 12, i64 18446744073709551615" [../channel_code/xf_fintech/utils.hpp:90]   --->   Operation 221 'specfucore' 'specfucore_ln90' <Predicate = true> <Delay = 0.00>
+
+State 22 <SV = 21> <Delay = 11.6>
+ST_22 : Operation 222 [2/2] (11.6ns)   --->   "%r_6 = fsub i32 0.180625, i32 %r_13" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 222 'fsub' 'r_6' <Predicate = (!or_ln314_1 & !and_ln324_1)> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 223 [2/2] (11.6ns)   --->   "%r_8 = fadd i32 %tmp_9, i32 -1.6" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 223 'fadd' 'r_8' <Predicate = (and_ln324_1)> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 224 [2/2] (11.6ns)   --->   "%r_9 = fadd i32 %tmp_9, i32 -5" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 224 'fadd' 'r_9' <Predicate = (or_ln314_1 & !and_ln324_1)> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 12.0>
+ST_23 : Operation 225 [1/2] (11.6ns)   --->   "%r_6 = fsub i32 0.180625, i32 %r_13" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 225 'fsub' 'r_6' <Predicate = (!or_ln314_1 & !and_ln324_1)> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 226 [1/1] (0.00ns)   --->   "%specfucore_ln79 = specfucore void @_ssdm_op_SpecFUCore, i32 %r_6, i64 11, i64 4, i64 18446744073709551615" [../channel_code/xf_fintech/utils.hpp:79]   --->   Operation 226 'specfucore' 'specfucore_ln79' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 227 [1/2] (11.6ns)   --->   "%r_8 = fadd i32 %tmp_9, i32 -1.6" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 227 'fadd' 'r_8' <Predicate = (and_ln324_1)> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 228 [1/1] (0.00ns)   --->   "%specfucore_ln79 = specfucore void @_ssdm_op_SpecFUCore, i32 %r_8, i64 11, i64 4, i64 18446744073709551615" [../channel_code/xf_fintech/utils.hpp:79]   --->   Operation 228 'specfucore' 'specfucore_ln79' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 229 [1/2] (11.6ns)   --->   "%r_9 = fadd i32 %tmp_9, i32 -5" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 229 'fadd' 'r_9' <Predicate = (or_ln314_1 & !and_ln324_1)> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 230 [1/1] (0.00ns)   --->   "%specfucore_ln79 = specfucore void @_ssdm_op_SpecFUCore, i32 %r_9, i64 11, i64 4, i64 18446744073709551615" [../channel_code/xf_fintech/utils.hpp:79]   --->   Operation 230 'specfucore' 'specfucore_ln79' <Predicate = true> <Delay = 0.00>
+ST_23 : Operation 231 [1/1] (0.00ns) (grouped into LUT with out node r_11)   --->   "%r_10 = select i1 %or_ln314_1, i32 %r_9, i32 %r_6" [../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 231 'select' 'r_10' <Predicate = (!and_ln324_1)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_23 : Operation 232 [1/1] (0.44ns) (out node of the LUT)   --->   "%r_11 = select i1 %and_ln324_1, i32 %r_8, i32 %r_10" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 232 'select' 'r_11' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 8.86>
+ST_24 : Operation 233 [1/1] (0.00ns) (grouped into LUT with out node p3)   --->   "%select_ln324_6 = select i1 %and_ln324_1, i32 0.170238, i32 0.0173372" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 233 'select' 'select_ln324_6' <Predicate = (or_ln314_1)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_24 : Operation 234 [1/1] (0.44ns) (out node of the LUT)   --->   "%p3 = select i1 %or_ln314_1, i32 %select_ln324_6, i32 59.1094" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 234 'select' 'p3' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_24 : Operation 235 [2/2] (8.41ns)   --->   "%fa1 = fmul i32 %p3, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:359->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 235 'fmul' 'fa1' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 8.41>
+ST_25 : Operation 236 [1/2] (8.41ns)   --->   "%fa1 = fmul i32 %p3, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:359->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 236 'fmul' 'fa1' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 12.0>
+ST_26 : Operation 237 [1/1] (0.00ns) (grouped into LUT with out node p2)   --->   "%select_ln324_4 = select i1 %and_ln324_1, i32 1.30673, i32 0.428683" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 237 'select' 'select_ln324_4' <Predicate = (or_ln314_1)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_26 : Operation 238 [1/1] (0.44ns) (out node of the LUT)   --->   "%p2 = select i1 %or_ln314_1, i32 %select_ln324_4, i32 159.291" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 238 'select' 'p2' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_26 : Operation 239 [2/2] (11.6ns)   --->   "%fa2 = fadd i32 %fa1, i32 %p2" [../channel_code/xf_fintech/rng.hpp:361->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 239 'fadd' 'fa2' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 11.6>
+ST_27 : Operation 240 [1/1] (0.00ns) (grouped into LUT with out node q3)   --->   "%select_ln324_11 = select i1 %and_ln324_1, i32 0.120211, i32 0.0122582" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 240 'select' 'select_ln324_11' <Predicate = (or_ln314_1)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_27 : Operation 241 [1/1] (0.44ns) (out node of the LUT)   --->   "%q3 = select i1 %or_ln314_1, i32 %select_ln324_11, i32 67.1876" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 241 'select' 'q3' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_27 : Operation 242 [1/2] (11.6ns)   --->   "%fa2 = fadd i32 %fa1, i32 %p2" [../channel_code/xf_fintech/rng.hpp:361->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 242 'fadd' 'fa2' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 243 [1/1] (0.00ns)   --->   "%specfucore_ln310 = specfucore void @_ssdm_op_SpecFUCore, i32 %fa2, i64 9, i64 4, i64 18446744073709551615" [../channel_code/xf_fintech/rng.hpp:310->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 243 'specfucore' 'specfucore_ln310' <Predicate = true> <Delay = 0.00>
+ST_27 : Operation 244 [2/2] (8.41ns)   --->   "%fb1 = fmul i32 %q3, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:369->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 244 'fmul' 'fb1' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 8.41>
+ST_28 : Operation 245 [2/2] (8.41ns)   --->   "%fa3 = fmul i32 %fa2, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:362->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 245 'fmul' 'fa3' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 246 [1/2] (8.41ns)   --->   "%fb1 = fmul i32 %q3, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:369->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 246 'fmul' 'fb1' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 12.0>
+ST_29 : Operation 247 [1/1] (0.00ns) (grouped into LUT with out node q2)   --->   "%select_ln324_9 = select i1 %and_ln324_1, i32 0.737002, i32 0.241979" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 247 'select' 'select_ln324_9' <Predicate = (or_ln314_1)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_29 : Operation 248 [1/1] (0.44ns) (out node of the LUT)   --->   "%q2 = select i1 %or_ln314_1, i32 %select_ln324_9, i32 78.7578" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 248 'select' 'q2' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_29 : Operation 249 [1/2] (8.41ns)   --->   "%fa3 = fmul i32 %fa2, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:362->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 249 'fmul' 'fa3' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 250 [2/2] (11.6ns)   --->   "%fb2 = fadd i32 %fb1, i32 %q2" [../channel_code/xf_fintech/rng.hpp:371->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 250 'fadd' 'fb2' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 12.0>
+ST_30 : Operation 251 [1/1] (0.00ns) (grouped into LUT with out node p1)   --->   "%select_ln324_2 = select i1 %and_ln324_1, i32 2.75682, i32 3.08123" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 251 'select' 'select_ln324_2' <Predicate = (or_ln314_1)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_30 : Operation 252 [1/1] (0.44ns) (out node of the LUT)   --->   "%p1 = select i1 %or_ln314_1, i32 %select_ln324_2, i32 50.4343" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 252 'select' 'p1' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_30 : Operation 253 [2/2] (11.6ns)   --->   "%fa4 = fadd i32 %fa3, i32 %p1" [../channel_code/xf_fintech/rng.hpp:364->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 253 'fadd' 'fa4' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 254 [1/2] (11.6ns)   --->   "%fb2 = fadd i32 %fb1, i32 %q2" [../channel_code/xf_fintech/rng.hpp:371->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 254 'fadd' 'fb2' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 255 [1/1] (0.00ns)   --->   "%specfucore_ln311 = specfucore void @_ssdm_op_SpecFUCore, i32 %fb2, i64 9, i64 4, i64 18446744073709551615" [../channel_code/xf_fintech/rng.hpp:311->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 255 'specfucore' 'specfucore_ln311' <Predicate = true> <Delay = 0.00>
+
+State 31 <SV = 30> <Delay = 11.6>
+ST_31 : Operation 256 [1/2] (11.6ns)   --->   "%fa4 = fadd i32 %fa3, i32 %p1" [../channel_code/xf_fintech/rng.hpp:364->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 256 'fadd' 'fa4' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 257 [1/1] (0.00ns)   --->   "%specfucore_ln310 = specfucore void @_ssdm_op_SpecFUCore, i32 %fa4, i64 9, i64 4, i64 18446744073709551615" [../channel_code/xf_fintech/rng.hpp:310->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 257 'specfucore' 'specfucore_ln310' <Predicate = true> <Delay = 0.00>
+ST_31 : Operation 258 [2/2] (8.41ns)   --->   "%fb3 = fmul i32 %fb2, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:372->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 258 'fmul' 'fb3' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 8.41>
+ST_32 : Operation 259 [2/2] (8.41ns)   --->   "%fa5 = fmul i32 %fa4, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:365->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 259 'fmul' 'fa5' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 260 [1/2] (8.41ns)   --->   "%fb3 = fmul i32 %fb2, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:372->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 260 'fmul' 'fb3' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 12.0>
+ST_33 : Operation 261 [1/1] (0.44ns)   --->   "%q1 = select i1 %or_ln314_1, i32 1, i32 17.8952" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 261 'select' 'q1' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_33 : Operation 262 [1/2] (8.41ns)   --->   "%fa5 = fmul i32 %fa4, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:365->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 262 'fmul' 'fa5' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 263 [2/2] (11.6ns)   --->   "%fb4 = fadd i32 %fb3, i32 %q1" [../channel_code/xf_fintech/rng.hpp:374->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 263 'fadd' 'fb4' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 12.0>
+ST_34 : Operation 264 [1/1] (0.00ns) (grouped into LUT with out node p0)   --->   "%select_ln324 = select i1 %and_ln324_1, i32 1.42344, i32 6.65791" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 264 'select' 'select_ln324' <Predicate = (or_ln314_1)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_34 : Operation 265 [1/1] (0.44ns) (out node of the LUT)   --->   "%p0 = select i1 %or_ln314_1, i32 %select_ln324, i32 3.38713" [../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 265 'select' 'p0' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_34 : Operation 266 [2/2] (11.6ns)   --->   "%fa6 = fadd i32 %fa5, i32 %p0" [../channel_code/xf_fintech/rng.hpp:367->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 266 'fadd' 'fa6' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 267 [1/2] (11.6ns)   --->   "%fb4 = fadd i32 %fb3, i32 %q1" [../channel_code/xf_fintech/rng.hpp:374->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 267 'fadd' 'fb4' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 268 [1/1] (0.00ns)   --->   "%specfucore_ln311 = specfucore void @_ssdm_op_SpecFUCore, i32 %fb4, i64 9, i64 4, i64 18446744073709551615" [../channel_code/xf_fintech/rng.hpp:311->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 268 'specfucore' 'specfucore_ln311' <Predicate = true> <Delay = 0.00>
+
+State 35 <SV = 34> <Delay = 11.6>
+ST_35 : Operation 269 [1/1] (0.00ns)   --->   "%rbegin8_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_1" [../channel_code/xf_fintech/utils.hpp:79]   --->   Operation 269 'specregionbegin' 'rbegin8_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 270 [1/1] (0.00ns)   --->   "%rend20_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_1, i32 %rbegin8_i" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 270 'specregionend' 'rend20_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 271 [1/1] (0.00ns)   --->   "%rbegin1_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_25" [../channel_code/xf_fintech/utils.hpp:90]   --->   Operation 271 'specregionbegin' 'rbegin1_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 272 [1/1] (0.00ns)   --->   "%rend16_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_25, i32 %rbegin1_i" [../channel_code/xf_fintech/utils.hpp:96]   --->   Operation 272 'specregionend' 'rend16_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 273 [1/1] (0.00ns)   --->   "%rbegin7_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_5" [../channel_code/xf_fintech/utils.hpp:79]   --->   Operation 273 'specregionbegin' 'rbegin7_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 274 [1/1] (0.00ns)   --->   "%rend8_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_5, i32 %rbegin7_i" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 274 'specregionend' 'rend8_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 275 [1/1] (0.00ns)   --->   "%rbegin2_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_28" [../channel_code/xf_fintech/utils.hpp:79]   --->   Operation 275 'specregionbegin' 'rbegin2_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 276 [1/1] (0.00ns)   --->   "%rend48_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_28, i32 %rbegin2_i" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 276 'specregionend' 'rend48_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 277 [1/1] (0.00ns)   --->   "%rbegin4_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_29" [../channel_code/xf_fintech/utils.hpp:79]   --->   Operation 277 'specregionbegin' 'rbegin4_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 278 [1/1] (0.00ns)   --->   "%rend38_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_29, i32 %rbegin4_i" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 278 'specregionend' 'rend38_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 279 [1/1] (0.00ns)   --->   "%rbegin5_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_27" [../channel_code/xf_fintech/utils.hpp:79]   --->   Operation 279 'specregionbegin' 'rbegin5_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 280 [1/1] (0.00ns)   --->   "%rend30_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_27, i32 %rbegin5_i" [../channel_code/xf_fintech/utils.hpp:85]   --->   Operation 280 'specregionend' 'rend30_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 281 [1/1] (0.00ns)   --->   "%rbegin3_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_12" [../channel_code/xf_fintech/rng.hpp:359->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 281 'specregionbegin' 'rbegin3_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 282 [1/1] (0.00ns)   --->   "%rend4_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_12, i32 %rbegin3_i" [../channel_code/xf_fintech/rng.hpp:361->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 282 'specregionend' 'rend4_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 283 [1/1] (0.00ns)   --->   "%rbegin6_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_13" [../channel_code/xf_fintech/rng.hpp:362->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 283 'specregionbegin' 'rbegin6_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 284 [1/1] (0.00ns)   --->   "%rend64_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_13, i32 %rbegin6_i" [../channel_code/xf_fintech/rng.hpp:364->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 284 'specregionend' 'rend64_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 285 [1/1] (0.00ns)   --->   "%rbegin9_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_24" [../channel_code/xf_fintech/rng.hpp:365->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 285 'specregionbegin' 'rbegin9_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 286 [1/2] (11.6ns)   --->   "%fa6 = fadd i32 %fa5, i32 %p0" [../channel_code/xf_fintech/rng.hpp:367->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 286 'fadd' 'fa6' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 287 [1/1] (0.00ns)   --->   "%specfucore_ln310 = specfucore void @_ssdm_op_SpecFUCore, i32 %fa6, i64 9, i64 4, i64 18446744073709551615" [../channel_code/xf_fintech/rng.hpp:310->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 287 'specfucore' 'specfucore_ln310' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 288 [1/1] (0.00ns)   --->   "%rend60_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_24, i32 %rbegin9_i" [../channel_code/xf_fintech/rng.hpp:367->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 288 'specregionend' 'rend60_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 289 [1/1] (0.00ns)   --->   "%rbegin10_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty" [../channel_code/xf_fintech/rng.hpp:369->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 289 'specregionbegin' 'rbegin10_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 290 [1/1] (0.00ns)   --->   "%rend56_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty, i32 %rbegin10_i" [../channel_code/xf_fintech/rng.hpp:371->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 290 'specregionend' 'rend56_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 291 [1/1] (0.00ns)   --->   "%rbegin11_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_22" [../channel_code/xf_fintech/rng.hpp:372->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 291 'specregionbegin' 'rbegin11_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 292 [1/1] (0.00ns)   --->   "%rend24_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_22, i32 %rbegin11_i" [../channel_code/xf_fintech/rng.hpp:374->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 292 'specregionend' 'rend24_i' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 293 [1/1] (0.00ns)   --->   "%br_ln376 = br i1 %or_ln314_1, void %0, void" [../channel_code/xf_fintech/rng.hpp:376->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 293 'br' 'br_ln376' <Predicate = true> <Delay = 0.00>
+ST_35 : Operation 294 [2/2] (8.41ns)   --->   "%fb5 = fmul i32 %fb4, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:378->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 294 'fmul' 'fb5' <Predicate = (!or_ln314_1)> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 8.41>
+ST_36 : Operation 295 [2/2] (8.41ns)   --->   "%fa7 = fmul i32 %fa6, i32 %z_4" [../channel_code/xf_fintech/rng.hpp:377->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 295 'fmul' 'fa7' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 296 [1/2] (8.41ns)   --->   "%fb5 = fmul i32 %fb4, i32 %r_11" [../channel_code/xf_fintech/rng.hpp:378->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 296 'fmul' 'fb5' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 11.6>
+ST_37 : Operation 297 [1/2] (8.41ns)   --->   "%fa7 = fmul i32 %fa6, i32 %z_4" [../channel_code/xf_fintech/rng.hpp:377->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 297 'fmul' 'fa7' <Predicate = true> <Delay = 8.41> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 1> <II = 1> <Delay = 8.41> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 298 [2/2] (11.6ns)   --->   "%fb6 = fadd i32 %fb5, i32 1" [../channel_code/xf_fintech/rng.hpp:380->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 298 'fadd' 'fb6' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 11.6>
+ST_38 : Operation 299 [1/2] (11.6ns)   --->   "%fb6 = fadd i32 %fb5, i32 1" [../channel_code/xf_fintech/rng.hpp:380->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 299 'fadd' 'fb6' <Predicate = true> <Delay = 11.6> <CoreInst = "FAddSub_nodsp">   --->   Core 17 'FAddSub_nodsp' <Latency = 1> <II = 1> <Delay = 11.6> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 300 [1/1] (0.00ns)   --->   "%specfucore_ln311 = specfucore void @_ssdm_op_SpecFUCore, i32 %fb6, i64 9, i64 4, i64 18446744073709551615" [../channel_code/xf_fintech/rng.hpp:311->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 300 'specfucore' 'specfucore_ln311' <Predicate = true> <Delay = 0.00>
+
+State 39 <SV = 38> <Delay = 12.0>
+ST_39 : Operation 301 [6/6] (12.0ns)   --->   "%standard_value = fdiv i32 %fa7, i32 %fb6" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 301 'fdiv' 'standard_value' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 39> <Delay = 12.0>
+ST_40 : Operation 302 [5/6] (12.0ns)   --->   "%standard_value = fdiv i32 %fa7, i32 %fb6" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 302 'fdiv' 'standard_value' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 12.0>
+ST_41 : Operation 303 [4/6] (12.0ns)   --->   "%standard_value = fdiv i32 %fa7, i32 %fb6" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 303 'fdiv' 'standard_value' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 41> <Delay = 12.0>
+ST_42 : Operation 304 [3/6] (12.0ns)   --->   "%standard_value = fdiv i32 %fa7, i32 %fb6" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 304 'fdiv' 'standard_value' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 42> <Delay = 12.0>
+ST_43 : Operation 305 [2/6] (12.0ns)   --->   "%standard_value = fdiv i32 %fa7, i32 %fb6" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 305 'fdiv' 'standard_value' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 43> <Delay = 12.0>
+ST_44 : Operation 306 [1/1] (0.00ns)   --->   "%rbegin_i = specregionbegin i32 @_ssdm_op_SpecRegionBegin, void @empty_7" [../channel_code/xf_fintech/rng.hpp:378->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 306 'specregionbegin' 'rbegin_i' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 307 [1/1] (0.00ns)   --->   "%rend_i = specregionend i32 @_ssdm_op_SpecRegionEnd, void @empty_7, i32 %rbegin_i" [../channel_code/xf_fintech/rng.hpp:380->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 307 'specregionend' 'rend_i' <Predicate = true> <Delay = 0.00>
+ST_44 : Operation 308 [1/6] (12.0ns)   --->   "%standard_value = fdiv i32 %fa7, i32 %fb6" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 308 'fdiv' 'standard_value' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 309 [1/1] (0.42ns)   --->   "%br_ln393 = br void %inverseCumulativeNormalPPND7<float>.exit" [../channel_code/xf_fintech/rng.hpp:393->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 309 'br' 'br_ln393' <Predicate = true> <Delay = 0.42>
+
+State 45 <SV = 35> <Delay = 12.0>
+ST_45 : Operation 310 [6/6] (12.0ns)   --->   "%div_i = fdiv i32 %fa6, i32 %fb4" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 310 'fdiv' 'div_i' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 36> <Delay = 12.0>
+ST_46 : Operation 311 [5/6] (12.0ns)   --->   "%div_i = fdiv i32 %fa6, i32 %fb4" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 311 'fdiv' 'div_i' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 37> <Delay = 12.0>
+ST_47 : Operation 312 [4/6] (12.0ns)   --->   "%div_i = fdiv i32 %fa6, i32 %fb4" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 312 'fdiv' 'div_i' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 38> <Delay = 12.0>
+ST_48 : Operation 313 [3/6] (12.0ns)   --->   "%div_i = fdiv i32 %fa6, i32 %fb4" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 313 'fdiv' 'div_i' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 39> <Delay = 12.0>
+ST_49 : Operation 314 [2/6] (12.0ns)   --->   "%div_i = fdiv i32 %fa6, i32 %fb4" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 314 'fdiv' 'div_i' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 40> <Delay = 12.4>
+ST_50 : Operation 315 [1/6] (12.0ns)   --->   "%div_i = fdiv i32 %fa6, i32 %fb4" [../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 315 'fdiv' 'div_i' <Predicate = true> <Delay = 12.0> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 5> <II = 1> <Delay = 12.0> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 316 [1/1] (0.00ns) (grouped into LUT with out node select_ln389)   --->   "%bitcast_ln390 = bitcast i32 %div_i" [../channel_code/xf_fintech/rng.hpp:390->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 316 'bitcast' 'bitcast_ln390' <Predicate = (is_lower_tail_V)> <Delay = 0.00>
+ST_50 : Operation 317 [1/1] (0.00ns) (grouped into LUT with out node select_ln389)   --->   "%xor_ln390 = xor i32 %bitcast_ln390, i32 2147483648" [../channel_code/xf_fintech/rng.hpp:390->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 317 'xor' 'xor_ln390' <Predicate = (is_lower_tail_V)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 318 [1/1] (0.00ns) (grouped into LUT with out node select_ln389)   --->   "%bitcast_ln390_1 = bitcast i32 %xor_ln390" [../channel_code/xf_fintech/rng.hpp:390->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 318 'bitcast' 'bitcast_ln390_1' <Predicate = (is_lower_tail_V)> <Delay = 0.00>
+ST_50 : Operation 319 [1/1] (0.44ns) (out node of the LUT)   --->   "%select_ln389 = select i1 %is_lower_tail_V, i32 %bitcast_ln390_1, i32 %div_i" [../channel_code/xf_fintech/rng.hpp:389->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 319 'select' 'select_ln389' <Predicate = true> <Delay = 0.44> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_50 : Operation 320 [1/1] (0.42ns)   --->   "%br_ln393 = br void %inverseCumulativeNormalPPND7<float>.exit" [../channel_code/xf_fintech/rng.hpp:393->../channel_code/xf_fintech/rng.hpp:1248]   --->   Operation 320 'br' 'br_ln393' <Predicate = true> <Delay = 0.42>
+
+State 51 <SV = 44> <Delay = 10.7>
+ST_51 : Operation 321 [1/1] (0.00ns)   --->   "%result = phi i32 %select_ln389, void, i32 %standard_value, void %0"   --->   Operation 321 'phi' 'result' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 322 [1/1] (9.61ns)   --->   "%d = fpext i32 %result"   --->   Operation 322 'fpext' 'd' <Predicate = true> <Delay = 9.61> <CoreInst = "Float2Double">   --->   Core 64 'Float2Double' <Latency = 0> <II = 1> <Delay = 9.61> <FuncUnit> <Opcode : 'fpext'> <InPorts = 1> <OutPorts = 1>
+ST_51 : Operation 323 [1/1] (0.00ns)   --->   "%ireg = bitcast i64 %d"   --->   Operation 323 'bitcast' 'ireg' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 324 [1/1] (0.00ns)   --->   "%trunc_ln564 = trunc i64 %ireg"   --->   Operation 324 'trunc' 'trunc_ln564' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 325 [1/1] (0.00ns)   --->   "%p_Result_8 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %ireg, i32 63"   --->   Operation 325 'bitselect' 'p_Result_8' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 326 [1/1] (0.00ns)   --->   "%exp_tmp = partselect i11 @_ssdm_op_PartSelect.i11.i64.i32.i32, i64 %ireg, i32 52, i32 62"   --->   Operation 326 'partselect' 'exp_tmp' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 327 [1/1] (0.00ns)   --->   "%trunc_ln574 = trunc i64 %ireg"   --->   Operation 327 'trunc' 'trunc_ln574' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 328 [1/1] (1.13ns)   --->   "%icmp_ln580 = icmp_eq  i63 %trunc_ln564, i63 0"   --->   Operation 328 'icmp' 'icmp_ln580' <Predicate = true> <Delay = 1.13> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+
+State 52 <SV = 45> <Delay = 7.87>
+ST_52 : Operation 329 [1/1] (0.00ns)   --->   "%zext_ln494 = zext i11 %exp_tmp"   --->   Operation 329 'zext' 'zext_ln494' <Predicate = (!icmp_ln580)> <Delay = 0.00>
+ST_52 : Operation 330 [1/1] (0.00ns)   --->   "%p_Result_9 = bitconcatenate i53 @_ssdm_op_BitConcatenate.i53.i1.i52, i1 1, i52 %trunc_ln574"   --->   Operation 330 'bitconcatenate' 'p_Result_9' <Predicate = (!icmp_ln580)> <Delay = 0.00>
+ST_52 : Operation 331 [1/1] (0.00ns)   --->   "%zext_ln578 = zext i53 %p_Result_9"   --->   Operation 331 'zext' 'zext_ln578' <Predicate = (!icmp_ln580)> <Delay = 0.00>
+ST_52 : Operation 332 [1/1] (1.10ns)   --->   "%man_V_1 = sub i54 0, i54 %zext_ln578"   --->   Operation 332 'sub' 'man_V_1' <Predicate = (p_Result_8 & !icmp_ln580)> <Delay = 1.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 333 [1/1] (0.40ns)   --->   "%man_V_2 = select i1 %p_Result_8, i54 %man_V_1, i54 %zext_ln578"   --->   Operation 333 'select' 'man_V_2' <Predicate = (!icmp_ln580)> <Delay = 0.40> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 334 [1/1] (0.80ns)   --->   "%F2 = sub i12 1075, i12 %zext_ln494"   --->   Operation 334 'sub' 'F2' <Predicate = (!icmp_ln580)> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 335 [1/1] (0.00ns)   --->   "%tmp_23 = partselect i8 @_ssdm_op_PartSelect.i8.i12.i32.i32, i12 %F2, i32 4, i32 11"   --->   Operation 335 'partselect' 'tmp_23' <Predicate = (!icmp_ln580)> <Delay = 0.00>
+ST_52 : Operation 336 [1/1] (0.84ns)   --->   "%icmp_ln590 = icmp_sgt  i8 %tmp_23, i8 0"   --->   Operation 336 'icmp' 'icmp_ln590' <Predicate = (!icmp_ln580)> <Delay = 0.84> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 337 [1/1] (0.80ns)   --->   "%add_ln590 = add i12 %F2, i12 4081"   --->   Operation 337 'add' 'add_ln590' <Predicate = (!icmp_ln580)> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 338 [1/1] (0.80ns)   --->   "%sub_ln590 = sub i12 15, i12 %F2"   --->   Operation 338 'sub' 'sub_ln590' <Predicate = (!icmp_ln580)> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 339 [1/1] (0.37ns)   --->   "%sh_amt = select i1 %icmp_ln590, i12 %add_ln590, i12 %sub_ln590"   --->   Operation 339 'select' 'sh_amt' <Predicate = (!icmp_ln580)> <Delay = 0.37> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 340 [1/1] (0.00ns)   --->   "%sext_ln590 = sext i12 %sh_amt"   --->   Operation 340 'sext' 'sext_ln590' <Predicate = (!icmp_ln580)> <Delay = 0.00>
+ST_52 : Operation 341 [1/1] (0.97ns)   --->   "%icmp_ln591 = icmp_eq  i12 %F2, i12 15"   --->   Operation 341 'icmp' 'icmp_ln591' <Predicate = (!icmp_ln580)> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 342 [1/1] (0.00ns)   --->   "%trunc_ln592 = trunc i54 %man_V_2"   --->   Operation 342 'trunc' 'trunc_ln592' <Predicate = (!icmp_ln580)> <Delay = 0.00>
+ST_52 : Operation 343 [1/1] (0.97ns)   --->   "%icmp_ln594 = icmp_ult  i12 %sh_amt, i12 54"   --->   Operation 343 'icmp' 'icmp_ln594' <Predicate = (!icmp_ln580)> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 344 [1/1] (0.00ns) (grouped into LUT with out node select_ln590)   --->   "%zext_ln595 = zext i32 %sext_ln590"   --->   Operation 344 'zext' 'zext_ln595' <Predicate = (!icmp_ln580)> <Delay = 0.00>
+ST_52 : Operation 345 [1/1] (0.00ns) (grouped into LUT with out node select_ln590)   --->   "%ashr_ln595 = ashr i54 %man_V_2, i54 %zext_ln595"   --->   Operation 345 'ashr' 'ashr_ln595' <Predicate = (!icmp_ln580)> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.17> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 346 [1/1] (0.00ns) (grouped into LUT with out node select_ln590)   --->   "%trunc_ln595 = trunc i54 %ashr_ln595"   --->   Operation 346 'trunc' 'trunc_ln595' <Predicate = (!icmp_ln580)> <Delay = 0.00>
+ST_52 : Operation 347 [1/1] (0.00ns) (grouped into LUT with out node select_ln590)   --->   "%bitcast_ln709 = bitcast i32 %result"   --->   Operation 347 'bitcast' 'bitcast_ln709' <Predicate = (!icmp_ln580)> <Delay = 0.00>
+ST_52 : Operation 348 [1/1] (0.00ns) (grouped into LUT with out node select_ln590)   --->   "%tmp_24 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %bitcast_ln709, i32 31"   --->   Operation 348 'bitselect' 'tmp_24' <Predicate = (!icmp_ln580)> <Delay = 0.00>
+ST_52 : Operation 349 [1/1] (0.00ns) (grouped into LUT with out node select_ln590)   --->   "%select_ln597 = select i1 %tmp_24, i22 4194303, i22 0"   --->   Operation 349 'select' 'select_ln597' <Predicate = (!icmp_ln580)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 350 [1/1] (0.00ns) (grouped into LUT with out node select_ln590)   --->   "%select_ln594 = select i1 %icmp_ln594, i22 %trunc_ln595, i22 %select_ln597"   --->   Operation 350 'select' 'select_ln594' <Predicate = (!icmp_ln580)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 351 [1/1] (0.97ns)   --->   "%icmp_ln612 = icmp_ult  i12 %sh_amt, i12 22"   --->   Operation 351 'icmp' 'icmp_ln612' <Predicate = (!icmp_ln580)> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 352 [1/1] (0.00ns) (grouped into LUT with out node select_ln591)   --->   "%sext_ln590cast = trunc i32 %sext_ln590"   --->   Operation 352 'trunc' 'sext_ln590cast' <Predicate = (!icmp_ln580)> <Delay = 0.00>
+ST_52 : Operation 353 [1/1] (0.00ns) (grouped into LUT with out node select_ln591)   --->   "%shl_ln613 = shl i22 %trunc_ln592, i22 %sext_ln590cast"   --->   Operation 353 'shl' 'shl_ln613' <Predicate = (!icmp_ln580)> <Delay = 0.00> <CoreInst = "Shifter">   --->   Core 75 'Shifter' <Latency = 0> <II = 1> <Delay = 1.17> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 354 [1/1] (0.00ns) (grouped into LUT with out node select_ln591)   --->   "%select_ln612 = select i1 %icmp_ln612, i22 %shl_ln613, i22 0"   --->   Operation 354 'select' 'select_ln612' <Predicate = (!icmp_ln580)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 355 [1/1] (0.00ns) (grouped into LUT with out node select_ln591)   --->   "%xor_ln580 = xor i1 %icmp_ln580, i1 1"   --->   Operation 355 'xor' 'xor_ln580' <Predicate = (!icmp_ln580)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 356 [1/1] (0.00ns) (grouped into LUT with out node select_ln591)   --->   "%and_ln591 = and i1 %icmp_ln591, i1 %xor_ln580"   --->   Operation 356 'and' 'and_ln591' <Predicate = (!icmp_ln580)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 357 [1/1] (1.17ns) (out node of the LUT)   --->   "%select_ln591 = select i1 %and_ln591, i22 %trunc_ln592, i22 %select_ln612"   --->   Operation 357 'select' 'select_ln591' <Predicate = (!icmp_ln580)> <Delay = 1.17> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 358 [1/1] (0.00ns) (grouped into LUT with out node and_ln590)   --->   "%or_ln591 = or i1 %icmp_ln580, i1 %icmp_ln591"   --->   Operation 358 'or' 'or_ln591' <Predicate = (!icmp_ln580)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 359 [1/1] (0.00ns) (grouped into LUT with out node and_ln590)   --->   "%xor_ln591 = xor i1 %or_ln591, i1 1"   --->   Operation 359 'xor' 'xor_ln591' <Predicate = (!icmp_ln580)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 360 [1/1] (0.28ns) (out node of the LUT)   --->   "%and_ln590 = and i1 %icmp_ln590, i1 %xor_ln591"   --->   Operation 360 'and' 'and_ln590' <Predicate = (!icmp_ln580)> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 361 [1/1] (1.50ns) (out node of the LUT)   --->   "%select_ln590 = select i1 %and_ln590, i22 %select_ln594, i22 %select_ln591"   --->   Operation 361 'select' 'select_ln590' <Predicate = (!icmp_ln580)> <Delay = 1.50> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 362 [1/1] (0.34ns) (out node of the LUT)   --->   "%select_ln580 = select i1 %icmp_ln580, i22 0, i22 %select_ln590"   --->   Operation 362 'select' 'select_ln580' <Predicate = true> <Delay = 0.34> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.34> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_52 : Operation 363 [1/1] (1.83ns)   --->   "%write_ln174 = write void @_ssdm_op_Write.ap_fifo.volatile.i22P0A, i22 %random_num3774, i22 %select_ln580" [/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:174]   --->   Operation 363 'write' 'write_ln174' <Predicate = true> <Delay = 1.83> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 22> <Depth = 2> <FIFO>
+ST_52 : Operation 364 [1/1] (0.00ns)   --->   "%ret_ln17 = ret" [../channel_code/rand.cpp:17]   --->   Operation 364 'ret' 'ret_ln17' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 20ns, clock uncertainty: 5.4ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 2.02ns
+The critical path consists of the following:
+	'load' operation ('rngMT19937ICN_uniformRNG_load') on static variable 'rngMT19937ICN_uniformRNG_addr_head_V' [20]  (0 ns)
+	'add' operation ('addr_head_p_3.V') [22]  (0.787 ns)
+	'getelementptr' operation ('rngMT19937ICN_uniformRNG_mt_even_0_V_addr', ../channel_code/xf_fintech/rng.hpp:735) [59]  (0 ns)
+	'load' operation ('rngMT19937ICN_uniformRNG_mt_even_0_V_load', ../channel_code/xf_fintech/rng.hpp:735) on array 'rngMT19937ICN_uniformRNG_mt_even_0_V' [60]  (1.24 ns)
+
+ <State 4>: 6.95ns
+The critical path consists of the following:
+	'xor' operation ('pre_result.V') [71]  (0.351 ns)
+	'xor' operation ('pre_result.V') [82]  (0.351 ns)
+	'xor' operation ('pre_result.V') [87]  (0.351 ns)
+	'xor' operation ('pre_result.V') [90]  (0.351 ns)
+	'cttz' operation ('l') [93]  (0 ns)
+	'sub' operation ('sub_ln997') [95]  (1.02 ns)
+	'add' operation ('lsb_index') [96]  (1.02 ns)
+	'shl' operation ('shl_ln1002') [103]  (0 ns)
+	'or' operation ('or_ln1002_1') [104]  (0 ns)
+	'and' operation ('and_ln1002') [105]  (0 ns)
+	'icmp' operation ('icmp_ln1002') [106]  (1.39 ns)
+	'select' operation ('select_ln999') [112]  (0 ns)
+	'select' operation ('select_ln1011') [120]  (0.287 ns)
+	'add' operation ('m') [123]  (1.39 ns)
+	'select' operation ('tmp_uniform') [134]  (0.449 ns)
+
+ <State 5>: 11.9ns
+The critical path consists of the following:
+	'fcmp' operation ('tmp_2', ../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248) [141]  (11.6 ns)
+	'and' operation ('is_lower_tail.V', ../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248) [142]  (0.287 ns)
+
+ <State 6>: 11.6ns
+The critical path consists of the following:
+	'fsub' operation ('r', ../channel_code/xf_fintech/utils.hpp:85) [159]  (11.6 ns)
+
+ <State 7>: 12.1ns
+The critical path consists of the following:
+	'fsub' operation ('r', ../channel_code/xf_fintech/utils.hpp:85) [159]  (11.6 ns)
+	'select' operation ('z', ../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248) [162]  (0.449 ns)
+
+ <State 8>: 11.5ns
+The critical path consists of the following:
+	'flog' operation ('tmp_i', /wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/common/hls_log_float.cpp:9) [163]  (11.5 ns)
+
+ <State 9>: 11.5ns
+The critical path consists of the following:
+	'flog' operation ('tmp_i', /wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/common/hls_log_float.cpp:9) [163]  (11.5 ns)
+
+ <State 10>: 11.5ns
+The critical path consists of the following:
+	'flog' operation ('tmp_i', /wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/common/hls_log_float.cpp:9) [163]  (11.5 ns)
+
+ <State 11>: 11.5ns
+The critical path consists of the following:
+	'flog' operation ('tmp_i', /wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/common/hls_log_float.cpp:9) [163]  (11.5 ns)
+
+ <State 12>: 11.5ns
+The critical path consists of the following:
+	'flog' operation ('tmp_i', /wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/common/hls_log_float.cpp:9) [163]  (11.5 ns)
+
+ <State 13>: 10.5ns
+The critical path consists of the following:
+	'xor' operation ('xor_ln323', ../channel_code/xf_fintech/rng.hpp:323->../channel_code/xf_fintech/rng.hpp:1248) [165]  (0.351 ns)
+	'fsqrt' operation ('tmp', /wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8) [167]  (10.2 ns)
+
+ <State 14>: 10.2ns
+The critical path consists of the following:
+	'fsqrt' operation ('tmp', /wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8) [167]  (10.2 ns)
+
+ <State 15>: 10.2ns
+The critical path consists of the following:
+	'fsqrt' operation ('tmp', /wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8) [167]  (10.2 ns)
+
+ <State 16>: 10.2ns
+The critical path consists of the following:
+	'fsqrt' operation ('tmp', /wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8) [167]  (10.2 ns)
+
+ <State 17>: 10.2ns
+The critical path consists of the following:
+	'fsqrt' operation ('tmp', /wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/c++/sqrtfloat.cpp:8) [167]  (10.2 ns)
+
+ <State 18>: 11.9ns
+The critical path consists of the following:
+	'fcmp' operation ('tmp_5', ../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248) [143]  (11.6 ns)
+	'and' operation ('and_ln314_1', ../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248) [144]  (0 ns)
+	'or' operation ('or_ln314_1', ../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248) [145]  (0.287 ns)
+
+ <State 19>: 11.9ns
+The critical path consists of the following:
+	'fcmp' operation ('tmp_8', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [174]  (11.6 ns)
+	'and' operation ('and_ln324', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [175]  (0 ns)
+	'and' operation ('and_ln324_1', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [185]  (0.287 ns)
+
+ <State 20>: 8.38ns
+The critical path consists of the following:
+	'fmul' operation ('r', ../channel_code/xf_fintech/utils.hpp:96) [151]  (8.38 ns)
+
+ <State 21>: 8.38ns
+The critical path consists of the following:
+	'fmul' operation ('r', ../channel_code/xf_fintech/utils.hpp:96) [151]  (8.38 ns)
+
+ <State 22>: 11.6ns
+The critical path consists of the following:
+	'fsub' operation ('r', ../channel_code/xf_fintech/utils.hpp:85) [155]  (11.6 ns)
+
+ <State 23>: 12.1ns
+The critical path consists of the following:
+	'fsub' operation ('r', ../channel_code/xf_fintech/utils.hpp:85) [155]  (11.6 ns)
+	'select' operation ('r', ../channel_code/xf_fintech/rng.hpp:314->../channel_code/xf_fintech/rng.hpp:1248) [187]  (0 ns)
+	'select' operation ('r', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [188]  (0.449 ns)
+
+ <State 24>: 8.87ns
+The critical path consists of the following:
+	'select' operation ('select_ln324_6', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [195]  (0 ns)
+	'select' operation ('p3', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [196]  (0.449 ns)
+	'fmul' operation ('fa1', ../channel_code/xf_fintech/rng.hpp:359->../channel_code/xf_fintech/rng.hpp:1248) [202]  (8.42 ns)
+
+ <State 25>: 8.42ns
+The critical path consists of the following:
+	'fmul' operation ('fa1', ../channel_code/xf_fintech/rng.hpp:359->../channel_code/xf_fintech/rng.hpp:1248) [202]  (8.42 ns)
+
+ <State 26>: 12.1ns
+The critical path consists of the following:
+	'select' operation ('select_ln324_4', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [193]  (0 ns)
+	'select' operation ('p2', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [194]  (0.449 ns)
+	'fadd' operation ('fa2', ../channel_code/xf_fintech/rng.hpp:361->../channel_code/xf_fintech/rng.hpp:1248) [204]  (11.6 ns)
+
+ <State 27>: 11.6ns
+The critical path consists of the following:
+	'fadd' operation ('fa2', ../channel_code/xf_fintech/rng.hpp:361->../channel_code/xf_fintech/rng.hpp:1248) [204]  (11.6 ns)
+
+ <State 28>: 8.42ns
+The critical path consists of the following:
+	'fmul' operation ('fa3', ../channel_code/xf_fintech/rng.hpp:362->../channel_code/xf_fintech/rng.hpp:1248) [207]  (8.42 ns)
+
+ <State 29>: 12.1ns
+The critical path consists of the following:
+	'select' operation ('select_ln324_9', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [198]  (0 ns)
+	'select' operation ('q2', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [199]  (0.449 ns)
+	'fadd' operation ('fb2', ../channel_code/xf_fintech/rng.hpp:371->../channel_code/xf_fintech/rng.hpp:1248) [219]  (11.6 ns)
+
+ <State 30>: 12.1ns
+The critical path consists of the following:
+	'select' operation ('select_ln324_2', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [191]  (0 ns)
+	'select' operation ('p1', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [192]  (0.449 ns)
+	'fadd' operation ('fa4', ../channel_code/xf_fintech/rng.hpp:364->../channel_code/xf_fintech/rng.hpp:1248) [209]  (11.6 ns)
+
+ <State 31>: 11.6ns
+The critical path consists of the following:
+	'fadd' operation ('fa4', ../channel_code/xf_fintech/rng.hpp:364->../channel_code/xf_fintech/rng.hpp:1248) [209]  (11.6 ns)
+
+ <State 32>: 8.42ns
+The critical path consists of the following:
+	'fmul' operation ('fa5', ../channel_code/xf_fintech/rng.hpp:365->../channel_code/xf_fintech/rng.hpp:1248) [212]  (8.42 ns)
+
+ <State 33>: 12.1ns
+The critical path consists of the following:
+	'select' operation ('q1', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [197]  (0.449 ns)
+	'fadd' operation ('fb4', ../channel_code/xf_fintech/rng.hpp:374->../channel_code/xf_fintech/rng.hpp:1248) [224]  (11.6 ns)
+
+ <State 34>: 12.1ns
+The critical path consists of the following:
+	'select' operation ('select_ln324', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [189]  (0 ns)
+	'select' operation ('p0', ../channel_code/xf_fintech/rng.hpp:324->../channel_code/xf_fintech/rng.hpp:1248) [190]  (0.449 ns)
+	'fadd' operation ('fa6', ../channel_code/xf_fintech/rng.hpp:367->../channel_code/xf_fintech/rng.hpp:1248) [214]  (11.6 ns)
+
+ <State 35>: 11.6ns
+The critical path consists of the following:
+	'fadd' operation ('fa6', ../channel_code/xf_fintech/rng.hpp:367->../channel_code/xf_fintech/rng.hpp:1248) [214]  (11.6 ns)
+
+ <State 36>: 8.42ns
+The critical path consists of the following:
+	'fmul' operation ('fa7', ../channel_code/xf_fintech/rng.hpp:377->../channel_code/xf_fintech/rng.hpp:1248) [229]  (8.42 ns)
+
+ <State 37>: 11.6ns
+The critical path consists of the following:
+	'fadd' operation ('fb6', ../channel_code/xf_fintech/rng.hpp:380->../channel_code/xf_fintech/rng.hpp:1248) [232]  (11.6 ns)
+
+ <State 38>: 11.6ns
+The critical path consists of the following:
+	'fadd' operation ('fb6', ../channel_code/xf_fintech/rng.hpp:380->../channel_code/xf_fintech/rng.hpp:1248) [232]  (11.6 ns)
+
+ <State 39>: 12ns
+The critical path consists of the following:
+	'fdiv' operation ('standard_value', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [235]  (12 ns)
+
+ <State 40>: 12ns
+The critical path consists of the following:
+	'fdiv' operation ('standard_value', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [235]  (12 ns)
+
+ <State 41>: 12ns
+The critical path consists of the following:
+	'fdiv' operation ('standard_value', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [235]  (12 ns)
+
+ <State 42>: 12ns
+The critical path consists of the following:
+	'fdiv' operation ('standard_value', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [235]  (12 ns)
+
+ <State 43>: 12ns
+The critical path consists of the following:
+	'fdiv' operation ('standard_value', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [235]  (12 ns)
+
+ <State 44>: 12ns
+The critical path consists of the following:
+	'fdiv' operation ('standard_value', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [235]  (12 ns)
+
+ <State 45>: 12ns
+The critical path consists of the following:
+	'fdiv' operation ('div_i', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [238]  (12 ns)
+
+ <State 46>: 12ns
+The critical path consists of the following:
+	'fdiv' operation ('div_i', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [238]  (12 ns)
+
+ <State 47>: 12ns
+The critical path consists of the following:
+	'fdiv' operation ('div_i', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [238]  (12 ns)
+
+ <State 48>: 12ns
+The critical path consists of the following:
+	'fdiv' operation ('div_i', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [238]  (12 ns)
+
+ <State 49>: 12ns
+The critical path consists of the following:
+	'fdiv' operation ('div_i', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [238]  (12 ns)
+
+ <State 50>: 12.5ns
+The critical path consists of the following:
+	'fdiv' operation ('div_i', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) [238]  (12 ns)
+	'select' operation ('select_ln389', ../channel_code/xf_fintech/rng.hpp:389->../channel_code/xf_fintech/rng.hpp:1248) [242]  (0.449 ns)
+
+ <State 51>: 10.7ns
+The critical path consists of the following:
+	'phi' operation ('standard_value') with incoming values : ('standard_value', ../channel_code/xf_fintech/rng.hpp:388->../channel_code/xf_fintech/rng.hpp:1248) ('select_ln389', ../channel_code/xf_fintech/rng.hpp:389->../channel_code/xf_fintech/rng.hpp:1248) [245]  (0 ns)
+	'fpext' operation ('d') [246]  (9.61 ns)
+	'icmp' operation ('icmp_ln580') [257]  (1.13 ns)
+
+ <State 52>: 7.87ns
+The critical path consists of the following:
+	'sub' operation ('F2') [258]  (0.809 ns)
+	'icmp' operation ('icmp_ln590') [260]  (0.849 ns)
+	'select' operation ('sh_amt') [263]  (0.375 ns)
+	'icmp' operation ('icmp_ln612') [275]  (0.976 ns)
+	'select' operation ('select_ln612') [278]  (0 ns)
+	'select' operation ('select_ln591') [281]  (1.18 ns)
+	'select' operation ('select_ln590') [285]  (1.51 ns)
+	'select' operation ('select_ln580') [286]  (0.342 ns)
+	fifo write operation ('write_ln174', /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:174) on port 'random_num3774' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h:174) [287]  (1.84 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

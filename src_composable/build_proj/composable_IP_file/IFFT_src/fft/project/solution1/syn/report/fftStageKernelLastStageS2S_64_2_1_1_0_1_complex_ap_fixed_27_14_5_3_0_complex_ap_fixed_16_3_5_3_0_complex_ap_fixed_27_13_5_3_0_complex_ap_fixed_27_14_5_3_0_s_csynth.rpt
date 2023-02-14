@@ -1,0 +1,171 @@
+
+
+================================================================
+== Vitis HLS Report for 'fftStageKernelLastStageS2S_64_2_1_1_0_1_complex_ap_fixed_27_14_5_3_0_complex_ap_fixed_16_3_5_3_0_complex_ap_fixed_27_13_5_3_0_complex_ap_fixed_27_14_5_3_0_s'
+================================================================
+* Date:           Mon Nov 28 16:40:16 2022
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  3.930 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+------------------------------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |                 Pipeline                 |
+    |   min   |   max   |    min   |    max   | min | max |                   Type                   |
+    +---------+---------+----------+----------+-----+-----+------------------------------------------+
+    |        ?|        ?|         ?|         ?|    0|    0|  loop rewind stp(delay=0 clock cycles(s))|
+    +---------+---------+----------+----------+-----+-----+------------------------------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- L_FFTs_LOOP  |        ?|        ?|         2|          1|          1|     ?|       yes|
+        +---------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     339|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      96|    -|
+|Register         |        -|     -|     175|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|     175|     435|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln712_21_fu_189_p2            |         +|   0|  0|  34|          27|          27|
+    |add_ln712_22_fu_263_p2            |         +|   0|  0|  34|          27|          27|
+    |add_ln712_23_fu_269_p2            |         +|   0|  0|  34|          27|          27|
+    |add_ln712_fu_183_p2               |         +|   0|  0|  34|          27|          27|
+    |iter_2_fu_142_p2                  |         +|   0|  0|  39|          32|           2|
+    |iter_fu_295_p2                    |         +|   0|  0|  39|          32|           1|
+    |r_V_27_fu_247_p2                  |         -|   0|  0|  47|           1|          40|
+    |r_V_fu_223_p2                     |         -|   0|  0|  47|           1|          40|
+    |ap_block_state2_pp0_stage0_iter0  |       and|   0|  0|   2|           1|           1|
+    |ap_block_state3_pp0_stage0_iter1  |       and|   0|  0|   2|           1|           1|
+    |ap_condition_89                   |       and|   0|  0|   2|           1|           1|
+    |tmp_nbreadreq_fu_82_p3            |       and|   0|  0|   2|           1|           0|
+    |icmp_ln215_fu_311_p2              |      icmp|   0|  0|  17|          27|           1|
+    |ap_block_pp0_stage0_01001         |        or|   0|  0|   2|           1|           1|
+    |ap_block_state1                   |        or|   0|  0|   2|           1|           1|
+    |ap_enable_pp0                     |       xor|   0|  0|   2|           1|           2|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 339|         208|         199|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +---------------------------------+----+-----------+-----+-----------+
+    |               Name              | LUT| Input Size| Bits| Total Bits|
+    +---------------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                        |  14|          3|    1|          3|
+    |ap_done                          |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1          |   9|          2|    1|          2|
+    |ap_phi_mux_iter1_phi_fu_122_p6   |  14|          3|   32|         96|
+    |ap_phi_mux_iter_1_phi_fu_135_p4  |  14|          3|   32|         96|
+    |fftOutData_local2_blk_n          |   9|          2|    1|          2|
+    |fftOutData_local_blk_n           |   9|          2|    1|          2|
+    |iter1_reg_118                    |   9|          2|   32|         64|
+    |real_start                       |   9|          2|    1|          2|
+    +---------------------------------+----+-----------+-----+-----------+
+    |Total                            |  96|         21|  102|        269|
+    +---------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------+----+----+-----+-----------+
+    |              Name              | FF | LUT| Bits| Const Bits|
+    +--------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                       |   2|   0|    2|          0|
+    |ap_done_reg                     |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1         |   1|   0|    1|          0|
+    |bflyOutData_M_imag_V_0_reg_365  |  26|   0|   26|          0|
+    |bflyOutData_M_real_V_0_reg_360  |  26|   0|   26|          0|
+    |bflyOutData_M_real_V_1_reg_370  |  26|   0|   26|          0|
+    |icmp_ln215_reg_385              |   1|   0|    1|          0|
+    |iter1_reg_118                   |  32|   0|   32|          0|
+    |iter_reg_380                    |  32|   0|   32|          0|
+    |start_once_reg                  |   1|   0|    1|          0|
+    |tmp_reg_356                     |   1|   0|    1|          0|
+    |trunc_ln717_s_reg_375           |  26|   0|   26|          0|
+    +--------------------------------+----+----+-----+-----------+
+    |Total                           | 175|   0|  175|          0|
+    +--------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |                                                                                           Source Object                                                                                           |    C Type    |
++---------------------------+-----+-----+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+|ap_clk                     |   in|    1|  ap_ctrl_hs|  fftStageKernelLastStageS2S<64, 2, 1, 1, 0, 1, complex<ap_fixed<27, 14, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<27, 13, 5, 3, 0> >, complex<ap_fixed<27, 14, 5, 3, 0> > >|  return value|
+|ap_rst                     |   in|    1|  ap_ctrl_hs|  fftStageKernelLastStageS2S<64, 2, 1, 1, 0, 1, complex<ap_fixed<27, 14, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<27, 13, 5, 3, 0> >, complex<ap_fixed<27, 14, 5, 3, 0> > >|  return value|
+|ap_start                   |   in|    1|  ap_ctrl_hs|  fftStageKernelLastStageS2S<64, 2, 1, 1, 0, 1, complex<ap_fixed<27, 14, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<27, 13, 5, 3, 0> >, complex<ap_fixed<27, 14, 5, 3, 0> > >|  return value|
+|start_full_n               |   in|    1|  ap_ctrl_hs|  fftStageKernelLastStageS2S<64, 2, 1, 1, 0, 1, complex<ap_fixed<27, 14, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<27, 13, 5, 3, 0> >, complex<ap_fixed<27, 14, 5, 3, 0> > >|  return value|
+|ap_done                    |  out|    1|  ap_ctrl_hs|  fftStageKernelLastStageS2S<64, 2, 1, 1, 0, 1, complex<ap_fixed<27, 14, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<27, 13, 5, 3, 0> >, complex<ap_fixed<27, 14, 5, 3, 0> > >|  return value|
+|ap_continue                |   in|    1|  ap_ctrl_hs|  fftStageKernelLastStageS2S<64, 2, 1, 1, 0, 1, complex<ap_fixed<27, 14, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<27, 13, 5, 3, 0> >, complex<ap_fixed<27, 14, 5, 3, 0> > >|  return value|
+|ap_idle                    |  out|    1|  ap_ctrl_hs|  fftStageKernelLastStageS2S<64, 2, 1, 1, 0, 1, complex<ap_fixed<27, 14, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<27, 13, 5, 3, 0> >, complex<ap_fixed<27, 14, 5, 3, 0> > >|  return value|
+|ap_ready                   |  out|    1|  ap_ctrl_hs|  fftStageKernelLastStageS2S<64, 2, 1, 1, 0, 1, complex<ap_fixed<27, 14, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<27, 13, 5, 3, 0> >, complex<ap_fixed<27, 14, 5, 3, 0> > >|  return value|
+|start_out                  |  out|    1|  ap_ctrl_hs|  fftStageKernelLastStageS2S<64, 2, 1, 1, 0, 1, complex<ap_fixed<27, 14, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<27, 13, 5, 3, 0> >, complex<ap_fixed<27, 14, 5, 3, 0> > >|  return value|
+|start_write                |  out|    1|  ap_ctrl_hs|  fftStageKernelLastStageS2S<64, 2, 1, 1, 0, 1, complex<ap_fixed<27, 14, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<27, 13, 5, 3, 0> >, complex<ap_fixed<27, 14, 5, 3, 0> > >|  return value|
+|fftOutData_local2_dout     |   in|  128|     ap_fifo|                                                                                                                                                                                  fftOutData_local2|       pointer|
+|fftOutData_local2_empty_n  |   in|    1|     ap_fifo|                                                                                                                                                                                  fftOutData_local2|       pointer|
+|fftOutData_local2_read     |  out|    1|     ap_fifo|                                                                                                                                                                                  fftOutData_local2|       pointer|
+|fftOutData_local_din       |  out|  128|     ap_fifo|                                                                                                                                                                                   fftOutData_local|       pointer|
+|fftOutData_local_full_n    |   in|    1|     ap_fifo|                                                                                                                                                                                   fftOutData_local|       pointer|
+|fftOutData_local_write     |  out|    1|     ap_fifo|                                                                                                                                                                                   fftOutData_local|       pointer|
++---------------------------+-----+-----+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+

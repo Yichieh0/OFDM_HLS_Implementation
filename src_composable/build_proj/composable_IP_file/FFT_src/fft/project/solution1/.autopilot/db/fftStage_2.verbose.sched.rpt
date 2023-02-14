@@ -1,0 +1,161 @@
+
+
+================================================================
+== Vitis HLS Report for 'fftStage_2'
+================================================================
+* Date:           Mon Nov 28 17:11:17 2022
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  4.465 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 6, States = { 1 2 3 4 5 6 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%fftOutData_local = alloca i64 1" [../fixed/vitis_fft/hls_ssr_fft.hpp:885]   --->   Operation 7 'alloca' 'fftOutData_local' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 80 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 8> <FIFO>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%fftOutData_local2_2 = alloca i64 1" [../fixed/vitis_fft/hls_ssr_fft.hpp:891]   --->   Operation 8 'alloca' 'fftOutData_local2_2' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_LUTRAM">   --->   Core 80 'FIFO_LUTRAM' <Latency = 0> <II = 1> <Delay = 1.93> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 128> <Depth = 8> <FIFO>
+ST_1 : Operation 9 [2/2] (0.00ns)   --->   "%call_ln897 = call void @fftStageKernelS2S<64, 2, 1, 0, 0, 4, complex<ap_fixed<26, 11, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<25, 10, 5, 3, 0> >, complex<ap_fixed<26, 11, 5, 3, 0> > >, i128 %fftOutData_local2, i128 %fftOutData_local, i14 %twiddleObj_twiddleTable_M_imag_V_2" [../fixed/vitis_fft/hls_ssr_fft.hpp:897]   --->   Operation 9 'call' 'call_ln897' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 10 [1/2] (0.00ns)   --->   "%call_ln897 = call void @fftStageKernelS2S<64, 2, 1, 0, 0, 4, complex<ap_fixed<26, 11, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<16, 3, 5, 3, 0> >, complex<ap_fixed<25, 10, 5, 3, 0> >, complex<ap_fixed<26, 11, 5, 3, 0> > >, i128 %fftOutData_local2, i128 %fftOutData_local, i14 %twiddleObj_twiddleTable_M_imag_V_2" [../fixed/vitis_fft/hls_ssr_fft.hpp:897]   --->   Operation 10 'call' 'call_ln897' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 11 [2/2] (0.00ns)   --->   "%call_ln905 = call void @streamingDataCommutor<complex<ap_fixed<26, 11, 5, 3, 0> > >, i128 %fftOutData_local, i128 %fftOutData_local2_2, i1 %control_count_V_7, i1 %control_bits_V_7, i2 %pf_count_V_5, i5 %sample_in_read_count_V_7, i1 %delay_line_stall_7, i53 %delayline_Array_13, i32 %control_delayline_Array_7, i53 %delayline_Array_5" [../fixed/vitis_fft/hls_ssr_fft.hpp:905]   --->   Operation 11 'call' 'call_ln905' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 12 [1/2] (0.00ns)   --->   "%call_ln905 = call void @streamingDataCommutor<complex<ap_fixed<26, 11, 5, 3, 0> > >, i128 %fftOutData_local, i128 %fftOutData_local2_2, i1 %control_count_V_7, i1 %control_bits_V_7, i2 %pf_count_V_5, i5 %sample_in_read_count_V_7, i1 %delay_line_stall_7, i53 %delayline_Array_13, i32 %control_delayline_Array_7, i53 %delayline_Array_5" [../fixed/vitis_fft/hls_ssr_fft.hpp:905]   --->   Operation 12 'call' 'call_ln905' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 13 [2/2] (0.00ns)   --->   "%call_ln906 = call void @fftStage.3, i128 %fftOutData_local2_2, i27 %p_fftOutData_0_0_0_0_0, i27 %p_fftOutData_0_0_0_0_01, i27 %p_fftOutData_0_1_0_0_0, i27 %p_fftOutData_0_1_0_0_02, i14 %twiddleObj_twiddleTable_M_imag_V_3, i1 %control_count_V_9, i1 %control_bits_V_9, i1 %pf_count_V_7, i5 %sample_in_read_count_V_9, i1 %delay_line_stall_9, i55 %delayline_Array_10, i32 %control_delayline_Array_9, i55 %delayline_Array_9, i1 %control_count_V_2, i1 %control_bits_V_2, i5 %sample_in_read_count_V_2, i1 %delay_line_stall_2, i55 %delayline_Array_14, i32 %control_delayline_Array_2, i55 %delayline_Array_2" [../fixed/vitis_fft/hls_ssr_fft.hpp:906]   --->   Operation 13 'call' 'call_ln906' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i27 %p_fftOutData_0_0_0_0_0, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i27 %p_fftOutData_0_0_0_0_01, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i27 %p_fftOutData_0_1_0_0_0, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i27 %p_fftOutData_0_1_0_0_02, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 18 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 1, void @empty_12"   --->   Operation 18 'specdataflowpipeline' 'specdataflowpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 19 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i128 %fftOutData_local2, i64 666, i64 9, i64 18446744073709551615"   --->   Operation 19 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 20 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %fftOutData_local2, void @empty_0, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 20 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 21 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @fftOutData_local_str, i32 1, void @p_str, void @p_str, i32 8, i32 8, i128 %fftOutData_local, i128 %fftOutData_local"   --->   Operation 21 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 22 [1/1] (0.00ns)   --->   "%specmemcore_ln885 = specmemcore void @_ssdm_op_SpecMemCore, i128 %fftOutData_local, i64 666, i64 9, i64 18446744073709551615" [../fixed/vitis_fft/hls_ssr_fft.hpp:885]   --->   Operation 22 'specmemcore' 'specmemcore_ln885' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %fftOutData_local, void @empty_0, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 24 [1/1] (0.00ns)   --->   "%empty_82 = specchannel i32 @_ssdm_op_SpecChannel, void @fftOutData_local2_OC_2_str, i32 1, void @p_str, void @p_str, i32 8, i32 8, i128 %fftOutData_local2_2, i128 %fftOutData_local2_2"   --->   Operation 24 'specchannel' 'empty_82' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 25 [1/1] (0.00ns)   --->   "%specmemcore_ln891 = specmemcore void @_ssdm_op_SpecMemCore, i128 %fftOutData_local2_2, i64 666, i64 9, i64 18446744073709551615" [../fixed/vitis_fft/hls_ssr_fft.hpp:891]   --->   Operation 25 'specmemcore' 'specmemcore_ln891' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 26 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i128 %fftOutData_local2_2, void @empty_0, i32 0, i32 0, void @empty_12, i32 0, i32 0, void @empty_12, void @empty_12, void @empty_12, i32 0, i32 0, i32 0, i32 0, void @empty_12, void @empty_12"   --->   Operation 26 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 27 [1/2] (0.00ns)   --->   "%call_ln906 = call void @fftStage.3, i128 %fftOutData_local2_2, i27 %p_fftOutData_0_0_0_0_0, i27 %p_fftOutData_0_0_0_0_01, i27 %p_fftOutData_0_1_0_0_0, i27 %p_fftOutData_0_1_0_0_02, i14 %twiddleObj_twiddleTable_M_imag_V_3, i1 %control_count_V_9, i1 %control_bits_V_9, i1 %pf_count_V_7, i5 %sample_in_read_count_V_9, i1 %delay_line_stall_9, i55 %delayline_Array_10, i32 %control_delayline_Array_9, i55 %delayline_Array_9, i1 %control_count_V_2, i1 %control_bits_V_2, i5 %sample_in_read_count_V_2, i1 %delay_line_stall_2, i55 %delayline_Array_14, i32 %control_delayline_Array_2, i55 %delayline_Array_2" [../fixed/vitis_fft/hls_ssr_fft.hpp:906]   --->   Operation 27 'call' 'call_ln906' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 28 [1/1] (0.00ns)   --->   "%ret_ln909 = ret" [../fixed/vitis_fft/hls_ssr_fft.hpp:909]   --->   Operation 28 'ret' 'ret_ln909' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 20ns, clock uncertainty: 5.4ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="data_path.hpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/ecc_encoder_src/src/data_path.hpp"/>
+    <originFiles name="decoder.cpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/ecc_encoder_src/src/decoder.cpp"/>
+    <originFiles name="decoder.h" path="/mnt/HLSNAS/g110064539/composable_IP_file/ecc_encoder_src/src/decoder.h"/>
+    <originFiles name="encoder.cpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/ecc_encoder_src/src/encoder.cpp"/>
+    <originFiles name="encoder.h" path="/mnt/HLSNAS/g110064539/composable_IP_file/ecc_encoder_src/src/encoder.h"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/ecc_encoder_src/src/main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

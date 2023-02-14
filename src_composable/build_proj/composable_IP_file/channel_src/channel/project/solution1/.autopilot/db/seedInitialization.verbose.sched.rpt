@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'seedInitialization'
+================================================================
+* Date:           Wed Sep 14 20:24:05 2022
+
+* Version:        2021.1 (Build 3247384 on Thu Jun 10 19:36:07 MDT 2021)
+* Project:        project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  20.00 ns|  6.024 ns|     5.40 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |      629|      629|  12.580 us|  12.580 us|  629|  629|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.23>
+ST_1 : Operation 6 [1/1] (1.23ns)   --->   "%store_ln616 = store i32 69072, i32 0" [../channel_code/xf_fintech/rng.hpp:616]   --->   Operation 6 'store' 'store_ln616' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_1 : Operation 7 [1/1] (1.23ns)   --->   "%store_ln617 = store i32 69072, i32 0" [../channel_code/xf_fintech/rng.hpp:617]   --->   Operation 7 'store' 'store_ln617' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln0 = call void @seedInitialization_Pipeline_SEED_INIT_LOOP, i32 %rngMT19937ICN_uniformRNG_mt_even_0_V, i32 %rngMT19937ICN_uniformRNG_mt_even_1_V, i32 %rngMT19937ICN_uniformRNG_mt_odd_0_V, i32 %rngMT19937ICN_uniformRNG_mt_odd_1_V"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 9 [1/2] (0.00ns)   --->   "%call_ln0 = call void @seedInitialization_Pipeline_SEED_INIT_LOOP, i32 %rngMT19937ICN_uniformRNG_mt_even_0_V, i32 %rngMT19937ICN_uniformRNG_mt_even_1_V, i32 %rngMT19937ICN_uniformRNG_mt_odd_0_V, i32 %rngMT19937ICN_uniformRNG_mt_odd_1_V"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 1.23>
+ST_4 : Operation 10 [2/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_even_0_V_load = load i32 0" [../channel_code/xf_fintech/rng.hpp:632]   --->   Operation 10 'load' 'rngMT19937ICN_uniformRNG_mt_even_0_V_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_4 : Operation 11 [2/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_odd_0_V_load = load i32 0" [../channel_code/xf_fintech/rng.hpp:633]   --->   Operation 11 'load' 'rngMT19937ICN_uniformRNG_mt_odd_0_V_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_4 : Operation 12 [2/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_even_0_V_load_1 = load i32 1" [../channel_code/xf_fintech/rng.hpp:634]   --->   Operation 12 'load' 'rngMT19937ICN_uniformRNG_mt_even_0_V_load_1' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_4 : Operation 13 [2/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_odd_0_V_load_1 = load i32 198" [../channel_code/xf_fintech/rng.hpp:635]   --->   Operation 13 'load' 'rngMT19937ICN_uniformRNG_mt_odd_0_V_load_1' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+
+State 5 <SV = 4> <Delay = 1.23>
+ST_5 : Operation 14 [1/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_even_0_V_load = load i32 0" [../channel_code/xf_fintech/rng.hpp:632]   --->   Operation 14 'load' 'rngMT19937ICN_uniformRNG_mt_even_0_V_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_5 : Operation 15 [1/1] (0.00ns)   --->   "%store_ln632 = store i32 %rngMT19937ICN_uniformRNG_mt_even_0_V_load, i32 %rngMT19937ICN_uniformRNG_x_k_p_0_V" [../channel_code/xf_fintech/rng.hpp:632]   --->   Operation 15 'store' 'store_ln632' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 16 [1/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_odd_0_V_load = load i32 0" [../channel_code/xf_fintech/rng.hpp:633]   --->   Operation 16 'load' 'rngMT19937ICN_uniformRNG_mt_odd_0_V_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_5 : Operation 17 [1/1] (0.00ns)   --->   "%store_ln633 = store i32 %rngMT19937ICN_uniformRNG_mt_odd_0_V_load, i32 %rngMT19937ICN_uniformRNG_x_k_p_1_V" [../channel_code/xf_fintech/rng.hpp:633]   --->   Operation 17 'store' 'store_ln633' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 18 [1/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_even_0_V_load_1 = load i32 1" [../channel_code/xf_fintech/rng.hpp:634]   --->   Operation 18 'load' 'rngMT19937ICN_uniformRNG_mt_even_0_V_load_1' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_5 : Operation 19 [1/1] (0.00ns)   --->   "%store_ln634 = store i32 %rngMT19937ICN_uniformRNG_mt_even_0_V_load_1, i32 %rngMT19937ICN_uniformRNG_x_k_p_2_V" [../channel_code/xf_fintech/rng.hpp:634]   --->   Operation 19 'store' 'store_ln634' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 20 [1/2] (1.23ns)   --->   "%rngMT19937ICN_uniformRNG_mt_odd_0_V_load_1 = load i32 198" [../channel_code/xf_fintech/rng.hpp:635]   --->   Operation 20 'load' 'rngMT19937ICN_uniformRNG_mt_odd_0_V_load_1' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 83 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 512> <RAM>
+ST_5 : Operation 21 [1/1] (0.00ns)   --->   "%store_ln635 = store i32 %rngMT19937ICN_uniformRNG_mt_odd_0_V_load_1, i32 %rngMT19937ICN_uniformRNG_x_k_p_m_V" [../channel_code/xf_fintech/rng.hpp:635]   --->   Operation 21 'store' 'store_ln635' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 22 [1/1] (0.00ns)   --->   "%store_ln636 = store i10 0, i10 %rngMT19937ICN_uniformRNG_addr_head_V" [../channel_code/xf_fintech/rng.hpp:636]   --->   Operation 22 'store' 'store_ln636' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 23 [1/1] (0.00ns)   --->   "%ret_ln637 = ret" [../channel_code/xf_fintech/rng.hpp:637]   --->   Operation 23 'ret' 'ret_ln637' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 20ns, clock uncertainty: 5.4ns.
+
+ <State 1>: 1.24ns
+The critical path consists of the following:
+	'store' operation ('store_ln616', ../channel_code/xf_fintech/rng.hpp:616) of constant 69072 on array 'rngMT19937ICN_uniformRNG_mt_even_0_V' [10]  (1.24 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 1.24ns
+The critical path consists of the following:
+	'load' operation ('rngMT19937ICN_uniformRNG_mt_even_0_V_load', ../channel_code/xf_fintech/rng.hpp:632) on array 'rngMT19937ICN_uniformRNG_mt_even_0_V' [13]  (1.24 ns)
+
+ <State 5>: 1.24ns
+The critical path consists of the following:
+	'load' operation ('rngMT19937ICN_uniformRNG_mt_even_0_V_load', ../channel_code/xf_fintech/rng.hpp:632) on array 'rngMT19937ICN_uniformRNG_mt_even_0_V' [13]  (1.24 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

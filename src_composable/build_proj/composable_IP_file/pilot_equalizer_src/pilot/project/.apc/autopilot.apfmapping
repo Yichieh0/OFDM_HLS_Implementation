@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="pilot_insertion.h" path="/mnt/HLSNAS/g110064539/composable_IP_file/pilot_equalizer_src/pilot_insertion.h"/>
+    <originFiles name="pilot_insertion.cpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/pilot_equalizer_src/pilot_insertion.cpp"/>
+    <originFiles name="equalizer_pilot_removal.h" path="/mnt/HLSNAS/g110064539/composable_IP_file/pilot_equalizer_src/equalizer_pilot_removal.h"/>
+    <originFiles name="equalizer_pilot_removal.cpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/pilot_equalizer_src/equalizer_pilot_removal.cpp"/>
+    <originFiles name="data_path.hpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/pilot_equalizer_src/data_path.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/pilot_equalizer_src/main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

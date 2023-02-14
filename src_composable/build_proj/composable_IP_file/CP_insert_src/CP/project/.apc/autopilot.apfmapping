@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="syn_CP_removal.h" path="/mnt/HLSNAS/g110064539/composable_IP_file/CP_insert_src/syn_CP_removal.h"/>
+    <originFiles name="syn_CP_removal.cpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/CP_insert_src/syn_CP_removal.cpp"/>
+    <originFiles name="data_path.hpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/CP_insert_src/data_path.hpp"/>
+    <originFiles name="CP_insertion.h" path="/mnt/HLSNAS/g110064539/composable_IP_file/CP_insert_src/CP_insertion.h"/>
+    <originFiles name="CP_insertion.cpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/CP_insert_src/CP_insertion.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="/mnt/HLSNAS/g110064539/composable_IP_file/CP_insert_src/main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

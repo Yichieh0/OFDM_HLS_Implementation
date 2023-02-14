@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# xsim v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Feb  2 01:38:37 2023
+# Process ID: 4056892
+# Current directory: /mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project/qam/solution1/sim/verilog
+# Command line: xsim -mode tcl -source {xsim.dir/deQAM/xsim_script.tcl}
+# Log file: /mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project/qam/solution1/sim/verilog/xsim.log
+# Journal file: /mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project/qam/solution1/sim/verilog/xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/deQAM/xsim_script.tcl
+# xsim {deQAM} -autoloadwcfg -tclbatch {deQAM.tcl}
+Time resolution is 1 ps
+source deQAM.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "150000"
+// RTL Simulation : 1 / 1 [n/a] @ "16170000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 16290 ns : File "/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project/qam/solution1/sim/verilog/deQAM.autotb.v" Line 321
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Feb  2 01:38:47 2023...

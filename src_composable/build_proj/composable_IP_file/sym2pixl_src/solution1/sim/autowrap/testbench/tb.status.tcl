@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /mnt/HLSNAS/g110064539/composable_IP_file/sym2pixl_src/solution1/./sim/autowrap/testbench/symbol_to_pixl.cpp_pre.cpp.tb.cpp

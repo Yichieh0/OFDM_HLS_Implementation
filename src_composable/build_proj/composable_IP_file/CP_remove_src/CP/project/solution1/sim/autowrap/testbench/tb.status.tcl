@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /mnt/HLSNAS/g110064539/CP_src/CP/project/solution1/./sim/autowrap/testbench/syn_CP_removal.cpp_pre.cpp.tb.cpp

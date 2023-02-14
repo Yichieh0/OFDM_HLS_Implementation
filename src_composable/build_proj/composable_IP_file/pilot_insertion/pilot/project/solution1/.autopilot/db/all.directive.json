@@ -1,0 +1,81 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "pilot_insertion",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "data_in"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "pilot_insertion",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "INTERFACE",
+            "option": [
+              {
+                "name": "axis",
+                "value": ""
+              },
+              {
+                "name": "register",
+                "value": ""
+              },
+              {
+                "name": "register_mode",
+                "value": "both"
+              },
+              {
+                "name": "port",
+                "value": "data_out"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "pilot_insertion",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "pilot_insertion"
+              }]
+          }
+        },
+        {
+          "functionName": "pilot_insertion",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "pilot_insertion"
+              }]
+          }
+        }
+      ]
+    }]}

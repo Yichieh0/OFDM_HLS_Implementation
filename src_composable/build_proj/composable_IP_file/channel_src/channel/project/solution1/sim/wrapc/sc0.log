@@ -1,0 +1,8 @@
+   Build using "/opt/Xilinx/Vitis_HLS/2021.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_channel_gen_util.cpp
+   Compiling apatb_channel_gen.cpp
+   Compiling channel_gen.cpp_pre.cpp.tb.cpp
+   Compiling main.cpp_pre.cpp.tb.cpp
+   Compiling rand.cpp_pre.cpp.tb.cpp
+   Compiling apatb_channel_gen_ir.ll
+   Generating cosim.tv.exe

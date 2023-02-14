@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /mnt/HLSNAS/g110064539/channel_src/channel/project/solution1/./sim/autowrap/testbench/channel_gen.cpp_pre.cpp.tb.cpp

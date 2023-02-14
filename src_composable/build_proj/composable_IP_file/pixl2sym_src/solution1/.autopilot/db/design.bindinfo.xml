@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln26_fu_142_p2" SOURCE="../pixl2sym_src/pixl_to_symbol.cpp:26" VARIABLE="icmp_ln26" MODULE="pixl_to_symbol_Pipeline_VITIS_LOOP_22_1" LOOP="VITIS_LOOP_22_1" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln46_fu_172_p2" SOURCE="../pixl2sym_src/pixl_to_symbol.cpp:46" VARIABLE="icmp_ln46" MODULE="pixl_to_symbol_Pipeline_VITIS_LOOP_22_1" LOOP="VITIS_LOOP_22_1" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln48_fu_147_p2" SOURCE="../pixl2sym_src/pixl_to_symbol.cpp:48" VARIABLE="icmp_ln48" MODULE="pixl_to_symbol_Pipeline_VITIS_LOOP_48_2" LOOP="VITIS_LOOP_48_2" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="i_2_fu_153_p2" SOURCE="../pixl2sym_src/pixl_to_symbol.cpp:48" VARIABLE="i_2" MODULE="pixl_to_symbol_Pipeline_VITIS_LOOP_48_2" LOOP="VITIS_LOOP_48_2" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op udiv" ID="" IMPL="auto" LATENCY="67" OPTYPE="udiv" PRAGMA="" RTLNAME="udiv_64ns_64s_60_68_1_U11" SOURCE="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:1543" VARIABLE="data_in_axiu_data_V" MODULE="pixl_to_symbol_Pipeline_VITIS_LOOP_48_2" LOOP="VITIS_LOOP_48_2" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op urem" ID="" IMPL="auto" LATENCY="67" OPTYPE="urem" PRAGMA="" RTLNAME="urem_64ns_64s_4_68_1_U12" SOURCE="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:1544" VARIABLE="ret" MODULE="pixl_to_symbol_Pipeline_VITIS_LOOP_48_2" LOOP="VITIS_LOOP_48_2" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="cmp14_fu_110_p2" SOURCE="" VARIABLE="cmp14" MODULE="pixl_to_symbol" LOOP="" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>

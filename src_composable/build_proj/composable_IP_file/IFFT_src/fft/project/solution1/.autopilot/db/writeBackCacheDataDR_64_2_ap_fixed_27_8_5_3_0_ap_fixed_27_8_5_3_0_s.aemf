@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1669624817261">
+  <ports id="1" name="p_digitReseversedOutputBuff_M_real" type="PortType" originalName="p_digitReseversedOutputBuff._M_real.V[0]" coreName="RAM" coreId="1685024095" bitwidth="27" iftype="IfTypeRegister" arraysize="32">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="p_digitReseversedOutputBuff_M_real1" type="PortType" originalName="p_digitReseversedOutputBuff._M_real.V[1]" coreName="RAM" coreId="1701080941" bitwidth="27" iftype="IfTypeRegister" arraysize="32">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="3" name="p_digitReseversedOutputBuff_M_imag" type="PortType" originalName="p_digitReseversedOutputBuff._M_imag.V[0]" coreName="RAM" coreId="1685024095" bitwidth="27" iftype="IfTypeRegister" arraysize="32">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="4" name="p_digitReseversedOutputBuff_M_imag2" type="PortType" originalName="p_digitReseversedOutputBuff._M_imag.V[1]" coreName="RAM" coreId="1902080097" bitwidth="27" iftype="IfTypeRegister" arraysize="32">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="5" name="p_outData_0_0_0_0_0" type="PortType" originalName="p_outData.V._M_real.V[0]" coreName="FIFO" coreId="1601134448" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="6" name="p_outData_0_0_0_0_03" type="PortType" originalName="p_outData.V._M_real.V[1]" coreName="FIFO" coreId="1601134448" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="7" name="p_outData_0_1_0_0_0" type="PortType" originalName="p_outData.V._M_imag.V[0]" coreName="FIFO" coreId="663123728" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="8" name="p_outData_0_1_0_0_04" type="PortType" originalName="p_outData.V._M_imag.V[1]" coreName="FIFO" coreId="542329928" bitwidth="27" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="50" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="53" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="54" source_obj="//@regions.0/@basic_blocks.0/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="55" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="57" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="60" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="63" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="66" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="67" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="77" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="78" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="80" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="83" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.7"/>
+  <edges id="84" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.8"/>
+  <edges id="87" source_obj="//@regions.0/@basic_blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.9"/>
+  <edges id="88" source_obj="//@regions.0/@basic_blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.10"/>
+  <edges id="89" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.11"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.12"/>
+  <edges id="100" source_obj="//@regions.0/@basic_blocks.0/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="101" source_obj="//@regions.0/@basic_blocks.0/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.13"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.0/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.14"/>
+  <edges id="103" source_obj="//@ports.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.15"/>
+  <edges id="106" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.0/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.16"/>
+  <edges id="109" source_obj="//@regions.0/@basic_blocks.0/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.17"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.0/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.18"/>
+  <edges id="111" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="113" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.19"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="115" source_obj="//@regions.0/@basic_blocks.0/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="116" source_obj="//@regions.0/@basic_blocks.0/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.20"/>
+  <edges id="117" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="118" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.21"/>
+  <edges id="120" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="121" source_obj="//@regions.0/@basic_blocks.0/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="122" source_obj="//@regions.0/@basic_blocks.0/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.22"/>
+  <edges id="125" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.4"/>
+  <edges id="126" source_obj="//@regions.0/@basic_blocks.0/@node_objs.23" sink_obj="//@ports.6"/>
+  <edges id="127" source_obj="//@regions.0/@basic_blocks.0/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="128" source_obj="//@regions.0/@basic_blocks.0/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.23"/>
+  <edges id="130" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@ports.5"/>
+  <edges id="131" source_obj="//@regions.0/@basic_blocks.0/@node_objs.24" sink_obj="//@ports.7"/>
+  <edges id="132" source_obj="//@regions.0/@basic_blocks.0/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="133" source_obj="//@regions.0/@basic_blocks.0/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.24"/>
+  <edges id="134" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.25"/>
+  <edges id="137" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.26"/>
+  <edges id="140" source_obj="//@regions.0/@basic_blocks.0/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="141" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="142" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.27"/>
+  <edges id="145" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="237" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="238" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="239" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="240" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="14" name="block_14" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.split12</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln319" lineNumber="319" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreId="1767994478" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="319" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+      <controlInputObjs>.split12</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp">
+      <validLinenumbers>319</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="179" pipe_depth="2" RegionName="writeBackCacheDataDR_LOverRLoop">
+    <basic_blocks id="46" name=".split12" type="BlockType">
+      <controlInputObjs>block_14</controlInputObjs>
+      <controlInputObjs>.split12</controlInputObjs>
+      <controlInputObjs>block_49</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_49</controlOutputObjs>
+      <controlOutputObjs>.split12</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="r21" originalName="r" coreId="1767994478" bitwidth="5" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>bitselect</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>partselect</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <controlInputObjs>block_14</controlInputObjs>
+        <controlInputObjs>.split12</controlInputObjs>
+        <controlInputObjs>block_49</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="tmp_2" lineNumber="208" fileName="../fixed/vitis_fft/hls_ssr_fft_utilities.hpp" fileDirectory=".." rtlName="tmp_2_reg_276" coreId="1767994478" contextFuncName="digitReversalFractionIsLSB_64_2_s" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_utilities.hpp" linenumber="208" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="digitReversalFractionIsLSB&amp;lt;64, 2&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="trunc_ln150" lineNumber="150" fileName="../fixed/vitis_fft/hls_ssr_fft_utilities.hpp" fileDirectory=".." rtlName="trunc_ln150_fu_164_p1" coreId="1767994478" contextFuncName="digitReversal_64_2_s" bitwidth="1" opcode="trunc" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_utilities.hpp" linenumber="150" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="digitReversal&amp;lt;64, 2&amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="or_ln" lineNumber="150" fileName="../fixed/vitis_fft/hls_ssr_fft_utilities.hpp" fileDirectory=".." rtlName="or_ln_fu_168_p3" coreId="1767994478" contextFuncName="digitReversal_64_2_s" bitwidth="2" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_utilities.hpp" linenumber="150" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="digitReversal&amp;lt;64, 2&amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>xor</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="tmp" lineNumber="342" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="tmp_fu_176_p4" coreId="909196388" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="4" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="342" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="out_r" lineNumber="342" originalName="out_r" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="out_r_fu_186_p3" coreId="909196388" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="5" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="342" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="zext_ln344" lineNumber="344" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="zext_ln344_fu_194_p1" coreId="663986928" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="p_digitReseversedOutputBuff_M_real_addr" lineNumber="344" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreId="543516513" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>p_digitReseversedOutputBuff_M_real</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="p_digitReseversedOutputBuff_M_imag_addr" lineNumber="344" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreId="643654896" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>p_digitReseversedOutputBuff_M_imag</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="temp_M_real_V_0" lineNumber="344" originalName="temp._M_real.V[0]" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.67" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="temp_M_imag_V_0" lineNumber="344" originalName="temp._M_imag.V[0]" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.67" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="xor_ln150" lineNumber="150" fileName="../fixed/vitis_fft/hls_ssr_fft_utilities.hpp" fileDirectory=".." rtlName="xor_ln150_fu_200_p2" coreName="LogicGate" implIndex="auto" control="no" opType="xor" coreId="74" contextFuncName="digitReversal_64_2_s" bitwidth="2" opcode="xor" nodeLabel="1.0" m_display="0" m_delay="0.28" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_utilities.hpp" linenumber="150" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="digitReversal&amp;lt;64, 2&amp;gt;"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="30" name="tmp_1" lineNumber="342" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="tmp_1_fu_206_p4" coreId="645322288" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="3" opcode="partselect" nodeLabel="1.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="342" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>bitconcatenate</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="out_r_1" lineNumber="342" originalName="out_r" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="out_r_1_fu_216_p3" coreId="656783264" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="5" opcode="bitconcatenate" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="342" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>xor</dataInputObjs>
+        <dataInputObjs>partselect</dataInputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="zext_ln344_1" lineNumber="344" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="zext_ln344_1_fu_224_p1" coreId="661583536" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>bitconcatenate</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="p_digitReseversedOutputBuff_M_real1_addr" lineNumber="344" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreId="652421456" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>p_digitReseversedOutputBuff_M_real1</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="p_digitReseversedOutputBuff_M_imag2_addr" lineNumber="344" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreId="653028432" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="5" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>p_digitReseversedOutputBuff_M_imag2</dataInputObjs>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="temp_M_real_V_0_1" lineNumber="344" originalName="temp._M_real.V[0]" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.67" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="temp_M_imag_V_0_1" lineNumber="344" originalName="temp._M_imag.V[0]" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.67" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="temp_M_real_V_1_2" lineNumber="344" originalName="temp._M_real.V[1]" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="p_outData_0_0_0_0_03_din" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.32" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="temp_M_real_V_1_3" lineNumber="344" originalName="temp._M_real.V[1]" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="p_outData_0_0_0_0_0_din" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.32" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="temp_M_imag_V_1_2" lineNumber="344" originalName="temp._M_imag.V[1]" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="p_outData_0_1_0_0_04_din" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.32" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="temp_M_imag_V_1_3" lineNumber="344" originalName="temp._M_imag.V[1]" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="p_outData_0_1_0_0_0_din" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="27" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.32" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="344" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>bitselect</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="p_outData_0_0_0_0_0_write_ln174" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="write" opcode="write" nodeLabel="2.0" m_display="0" m_delay="1.64" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="write"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>p_outData_0_0_0_0_0</dataOutputObjs>
+        <dataOutputObjs>p_outData_0_1_0_0_0</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="p_outData_0_0_0_0_03_write_ln174" lineNumber="174" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO" implIndex="memory" control="no" opType="fifo" coreId="78" contextFuncName="write" opcode="write" nodeLabel="2.0" m_display="0" m_delay="1.64" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="write"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>p_outData_0_0_0_0_03</dataOutputObjs>
+        <dataOutputObjs>p_outData_0_1_0_0_04</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="r" lineNumber="319" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="r_fu_230_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="5" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.78" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="319" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="icmp_ln319" lineNumber="319" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." rtlName="icmp_ln319_fu_236_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.75" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="319" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="45" name="br_ln319" lineNumber="319" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreId="661603152" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="319" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split12</controlInputObjs>
+        <controlInputObjs>block_49</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp">
+        <validLinenumbers>342</validLinenumbers>
+        <validLinenumbers>344</validLinenumbers>
+        <validLinenumbers>319</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../fixed/vitis_fft/hls_ssr_fft_utilities.hpp">
+        <validLinenumbers>208</validLinenumbers>
+        <validLinenumbers>150</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>174</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="49" name="block_49" type="BlockType">
+      <controlInputObjs>.split12</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.split12</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="_ln351" lineNumber="351" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreId="192" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" opcode="return" nodeLabel="2.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="351" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="48" name="br_ln351" lineNumber="351" fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" fileDirectory=".." coreId="183" contextFuncName="writeBackCacheDataDR_64_2_ap_fixed_27_8_AP_TRN_AP_WRAP_0_ap_fixed_27_8_AP_TRN_AP_WRAP_0_s" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp" linenumber="351" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/IFFT_src/fft" functionName="writeBackCacheDataDR&amp;lt;64, 2, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt;, ap_fixed&amp;lt;27, 8, AP_TRN, AP_WRAP, 0&amp;gt; &amp;gt;"/>
+        <controlInputObjs>.split12</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="../fixed/vitis_fft/hls_ssr_fft_data_reorder.hpp">
+        <validLinenumbers>351</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="p_digitReseversedOutputBuff_M_imag2_addr_reg_299">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="p_digitReseversedOutputBuff_M_real1_addr_reg_294">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln319_reg_309">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="p_digitReseversedOutputBuff_M_real_addr_reg_284">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_2_reg_276">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="r21_reg_142">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="p_digitReseversedOutputBuff_M_imag_addr_reg_289">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="r_reg_304">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <expressionNodes realName="r21_phi_fu_146">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_176">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_r_1_fu_216">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="out_r_fu_186">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_206">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="temp_M_real_V_1_2_fu_242">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_digitReseversedOutputBuff_M_real1_addr_gep_fu_116">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="return_ln351_fu_274">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="temp_M_real_V_1_3_fu_250">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_digitReseversedOutputBuff_M_real_addr_gep_fu_90">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="r_fu_230">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_156">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln344_fu_194">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="temp_M_imag_V_1_2_fu_258">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="temp_M_imag_V_1_3_fu_266">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln150_fu_200">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln319_fu_236">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_digitReseversedOutputBuff_M_imag2_addr_gep_fu_123">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln344_1_fu_224">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="p_digitReseversedOutputBuff_M_imag_addr_gep_fu_97">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln_fu_168">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln150_fu_164">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="write_ln174_write_fu_70">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln174_write_fu_80">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="p_digitReseversedOutputBuff_M_imag">
+    <nodeIds>28</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_digitReseversedOutputBuff_M_imag2">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_digitReseversedOutputBuff_M_real">
+    <nodeIds>27</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="p_digitReseversedOutputBuff_M_real1">
+    <nodeIds>35</nodeIds>
+  </memoryPorts>
+  <ioPorts name="p_digitReseversedOutputBuff_M_imag(p0)">
+    <contents name="load">
+      <nodeIds>28</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="p_digitReseversedOutputBuff_M_imag2(p0)">
+    <contents name="load">
+      <nodeIds>36</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="p_digitReseversedOutputBuff_M_real(p0)">
+    <contents name="load">
+      <nodeIds>27</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="p_digitReseversedOutputBuff_M_real1(p0)">
+    <contents name="load">
+      <nodeIds>35</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="p_outData_0_0_0_0_0">
+    <contents name="write">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="p_outData_0_0_0_0_03">
+    <contents name="write">
+      <nodeIds>42</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="p_outData_0_1_0_0_0">
+    <contents name="write">
+      <nodeIds>41</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="p_outData_0_1_0_0_04">
+    <contents name="write">
+      <nodeIds>42</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="2" latency="2"/>
+      <operations id="28" stage="2" latency="2"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="2" latency="2"/>
+      <operations id="36" stage="2" latency="2"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="2"/>
+      <operations id="28" stage="1" latency="2"/>
+      <operations id="35" stage="1" latency="2"/>
+      <operations id="36" stage="1" latency="2"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="writeBackCacheDataDR_64_2_ap_fixed_27_8_5_3_0_ap_fixed_27_8_5_3_0_s" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="32" mMaxLatency="33">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>14</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="writeBackCacheDataDR_LOverRLoop" mII="1" mDepth="2" mMinTripCount="32" mMaxTripCount="32" mMinLatency="32" mMaxLatency="32" mType="1">
+      <basicBlocks>46</basicBlocks>
+      <basicBlocks>49</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

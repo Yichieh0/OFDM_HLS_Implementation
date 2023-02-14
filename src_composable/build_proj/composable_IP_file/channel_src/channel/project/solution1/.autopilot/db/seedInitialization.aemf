@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1663158250454">
+  <ports id="1" name="rngMT19937ICN_uniformRNG_mt_even_0_V" type="PortType" coreName="RAM" coreId="396991456" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="512">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="3" name="rngMT19937ICN_uniformRNG_mt_odd_0_V" type="PortType" coreName="RAM" coreId="396474352" bitwidth="32" direction="DirInOut" iftype="IfTypeRegister" arraysize="512">
+    <dataInputObjs>call</dataInputObjs>
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="5" name="rngMT19937ICN_uniformRNG_x_k_p_0_V" type="PortType" coreId="774381607" bitwidth="32" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="6" name="rngMT19937ICN_uniformRNG_x_k_p_1_V" type="PortType" coreId="1314013527" bitwidth="32" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="7" name="rngMT19937ICN_uniformRNG_x_k_p_2_V" type="PortType" coreId="395062800" bitwidth="32" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="8" name="rngMT19937ICN_uniformRNG_x_k_p_m_V" type="PortType" coreId="396961488" bitwidth="32" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <ports id="9" name="rngMT19937ICN_uniformRNG_addr_head_V" type="PortType" coreId="397511472" bitwidth="10" direction="DirOut">
+    <dataInputObjs>store</dataInputObjs>
+  </ports>
+  <edges id="37" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="38" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@ports.2"/>
+  <edges id="42" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="43" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@ports.3"/>
+  <edges id="47" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="48" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@ports.4"/>
+  <edges id="52" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="53" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@ports.5"/>
+  <edges id="56" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@ports.6"/>
+  <edges id="57" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="58" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="59" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="60" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="61" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="62" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="63" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="64" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="65" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="66" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="-57" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@ports.0"/>
+  <edges id="-59" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@ports.1"/>
+  <blocks id="23" name="seedInitialization" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="0_write_ln616" lineNumber="616" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="seedInitialization" opcode="store" m_display="0" m_delay="1.23" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="616" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="0_write_ln617" lineNumber="617" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="seedInitialization" opcode="store" m_display="0" m_delay="1.23" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="617" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="_ln0" rtlName="grp_seedInitialization_Pipeline_SEED_INIT_LOOP_fu_65" coreId="320" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>rngMT19937ICN_uniformRNG_mt_even_0_V</dataInputObjs>
+      <dataInputObjs>rngMT19937ICN_uniformRNG_mt_odd_0_V</dataInputObjs>
+      <dataOutputObjs>rngMT19937ICN_uniformRNG_mt_even_0_V</dataOutputObjs>
+      <dataOutputObjs>rngMT19937ICN_uniformRNG_mt_odd_0_V</dataOutputObjs>
+      <constName>seedInitialization_Pipeline_SEED_INIT_LOOP</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="rngMT19937ICN_uniformRNG_mt_even_0_V_load" lineNumber="632" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="seedInitialization" bitwidth="32" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="632" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="rngMT19937ICN_uniformRNG_x_k_p_0_V_write_ln632" lineNumber="632" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreId="397511472" contextFuncName="seedInitialization" opcode="store" nodeLabel="4.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="632" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>rngMT19937ICN_uniformRNG_x_k_p_0_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="rngMT19937ICN_uniformRNG_mt_odd_0_V_load" lineNumber="633" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="seedInitialization" bitwidth="32" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="633" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="rngMT19937ICN_uniformRNG_x_k_p_1_V_write_ln633" lineNumber="633" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreId="397174080" contextFuncName="seedInitialization" opcode="store" nodeLabel="4.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="633" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>rngMT19937ICN_uniformRNG_x_k_p_1_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="rngMT19937ICN_uniformRNG_mt_even_0_V_load_1" lineNumber="634" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="seedInitialization" bitwidth="32" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="634" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="rngMT19937ICN_uniformRNG_x_k_p_2_V_write_ln634" lineNumber="634" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreId="595319696" contextFuncName="seedInitialization" opcode="store" nodeLabel="4.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="634" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>rngMT19937ICN_uniformRNG_x_k_p_2_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="rngMT19937ICN_uniformRNG_mt_odd_0_V_load_1" lineNumber="635" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="83" contextFuncName="seedInitialization" bitwidth="32" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="635" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="rngMT19937ICN_uniformRNG_x_k_p_m_V_write_ln635" lineNumber="635" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreId="397452016" contextFuncName="seedInitialization" opcode="store" nodeLabel="4.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="635" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>rngMT19937ICN_uniformRNG_x_k_p_m_V</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="rngMT19937ICN_uniformRNG_addr_head_V_write_ln636" lineNumber="636" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreId="395903584" contextFuncName="seedInitialization" opcode="store" nodeLabel="4.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="636" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+      <dataOutputObjs>rngMT19937ICN_uniformRNG_addr_head_V</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="_ln637" lineNumber="637" fileName="../channel_code/xf_fintech/rng.hpp" fileDirectory=".." coreId="397452496" contextFuncName="seedInitialization" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../channel_code/xf_fintech/rng.hpp" linenumber="637" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/channel_src/channel" functionName="seedInitialization"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../channel_code/xf_fintech/rng.hpp">
+      <validLinenumbers>616</validLinenumbers>
+      <validLinenumbers>617</validLinenumbers>
+      <validLinenumbers>632</validLinenumbers>
+      <validLinenumbers>633</validLinenumbers>
+      <validLinenumbers>634</validLinenumbers>
+      <validLinenumbers>635</validLinenumbers>
+      <validLinenumbers>636</validLinenumbers>
+      <validLinenumbers>637</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <moduleNodes realName="grp_seedInitialization_Pipeline_SEED_INIT_LOOP_fu_65">
+    <nodeIds>12</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln636_store_fu_101">
+    <nodeIds>21</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln635_store_fu_95">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln633_store_fu_83">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln632_store_fu_77">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln634_store_fu_89">
+    <nodeIds>18</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="rngMT19937ICN_uniformRNG_mt_even_0_V">
+    <nodeIds>10</nodeIds>
+    <nodeIds>17</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="rngMT19937ICN_uniformRNG_mt_even_0_V" portID="1">
+    <nodeIds>13</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="rngMT19937ICN_uniformRNG_mt_even_0_V" portID="100">
+    <nodeIds>12</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="rngMT19937ICN_uniformRNG_mt_even_1_V">
+    <nodeIds>11</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="rngMT19937ICN_uniformRNG_mt_even_1_V" portID="100">
+    <nodeIds>12</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="rngMT19937ICN_uniformRNG_mt_odd_0_V">
+    <nodeIds>19</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="rngMT19937ICN_uniformRNG_mt_odd_0_V" portID="1">
+    <nodeIds>15</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="rngMT19937ICN_uniformRNG_mt_odd_0_V" portID="100">
+    <nodeIds>12</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="rngMT19937ICN_uniformRNG_mt_odd_1_V" portID="100">
+    <nodeIds>12</nodeIds>
+  </memoryPorts>
+  <ioPorts name="rngMT19937ICN_uniformRNG_addr_head_V"/>
+  <ioPorts name="rngMT19937ICN_uniformRNG_mt_even_0_V(p0)">
+    <contents name="load">
+      <nodeIds>17</nodeIds>
+    </contents>
+    <contents name="store">
+      <nodeIds>10</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="rngMT19937ICN_uniformRNG_mt_even_0_V(p1)">
+    <contents name="load">
+      <nodeIds>13</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="rngMT19937ICN_uniformRNG_mt_odd_0_V(p0)">
+    <contents name="load">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="rngMT19937ICN_uniformRNG_mt_odd_0_V(p1)">
+    <contents name="load">
+      <nodeIds>15</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="rngMT19937ICN_uniformRNG_x_k_p_0_V"/>
+  <ioPorts name="rngMT19937ICN_uniformRNG_x_k_p_1_V"/>
+  <ioPorts name="rngMT19937ICN_uniformRNG_x_k_p_2_V"/>
+  <ioPorts name="rngMT19937ICN_uniformRNG_x_k_p_m_V"/>
+  <fsm>
+    <states id="1">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="12" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="12" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="13" stage="2" latency="2"/>
+      <operations id="15" stage="2" latency="2"/>
+      <operations id="17" stage="2" latency="2"/>
+      <operations id="19" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="13" stage="1" latency="2"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="2"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="2"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="2"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="seedInitialization" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="629" mMaxLatency="629">
+      <basicBlocks>23</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

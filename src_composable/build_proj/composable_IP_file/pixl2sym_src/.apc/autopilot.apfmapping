@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="symbol_to_pixl.h" path="/mnt/HLSNAS/g110064539/pixl2sym_src/symbol_to_pixl.h"/>
+    <originFiles name="symbol_to_pixl.cpp" path="/mnt/HLSNAS/g110064539/pixl2sym_src/symbol_to_pixl.cpp"/>
+    <originFiles name="pixl_to_symbol.h" path="/mnt/HLSNAS/g110064539/pixl2sym_src/pixl_to_symbol.h"/>
+    <originFiles name="pixl_to_symbol.cpp" path="/mnt/HLSNAS/g110064539/pixl2sym_src/pixl_to_symbol.cpp"/>
+    <originFiles name="data_path.hpp" path="/mnt/HLSNAS/g110064539/pixl2sym_src/data_path.hpp"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="/mnt/HLSNAS/g110064539/pixl2sym_src/main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

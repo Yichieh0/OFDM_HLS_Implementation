@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1670231829922">
+  <ports id="1" name="v_V_1_reload" type="PortType" coreId="1680813614" bitwidth="4">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="2" name="v_V_0_reload" type="PortType" coreId="2147483647" bitwidth="4">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="v_out_V_out" type="PortType" coreId="795046515" bitwidth="4" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="54" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="56" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="59" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="62" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="63" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="64" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="67" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@ports.2"/>
+  <edges id="68" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="69" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="70" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="73" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="76" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="77" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="78" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="79" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="80" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="81" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.1"/>
+  <edges id="82" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="83" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="88" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="89" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="90" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="91" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="92" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="95" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="98" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="100" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="101" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.1"/>
+  <edges id="104" source_obj="//@regions.0/@basic_blocks.3/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="105" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="106" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.3"/>
+  <edges id="107" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="108" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.1"/>
+  <edges id="113" source_obj="//@regions.0/@basic_blocks.2/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.2"/>
+  <edges id="115" source_obj="//@regions.0/@basic_blocks.2/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="116" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="117" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.4"/>
+  <edges id="118" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="119" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.1"/>
+  <edges id="124" source_obj="//@regions.0/@basic_blocks.4/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="125" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.2"/>
+  <edges id="126" source_obj="//@regions.0/@basic_blocks.4/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="127" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.4"/>
+  <edges id="149" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="150" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="151" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="152" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.4"/>
+  <edges id="153" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="154" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.3"/>
+  <edges id="155" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.2"/>
+  <edges id="156" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.2" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="157" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.3" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="158" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.4" sink_obj="//@regions.0/@basic_blocks.5"/>
+  <edges id="159" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.5" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="160" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.2/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="161" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.3/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="162" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.4/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="163" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="164" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="165" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.0"/>
+  <edges id="166" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.4/@node_objs.3"/>
+  <edges id="167" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <edges id="168" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.0"/>
+  <edges id="169" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.3/@node_objs.2"/>
+  <edges id="170" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.0"/>
+  <edges id="171" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.2/@node_objs.3"/>
+  <edges id="172" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.5/@node_objs.0"/>
+  <blocks id="11" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>.preheader10</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="i_V_4" originalName="i.V" coreId="3386385680" bitwidth="2" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="5" name="v_out_V" originalName="v_out.V" coreId="3387479888" bitwidth="4" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="v_V_0_reload_read" coreId="3386709504" bitwidth="4" opcode="read" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>v_V_0_reload</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="v_V_1_reload_read" coreId="3386951984" bitwidth="4" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>v_V_1_reload</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="v_out_V_write_ln0" coreId="3386952432" opcode="store" m_display="0" m_delay="0.52" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="i_V_4_write_ln0" coreId="3386953008" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="br_ln0" coreId="0" opcode="br" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader10</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="48" name=".loopexit.loopexit2.exitStub" type="BlockType">
+    <controlInputObjs>.preheader10</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="v_out_V_load_2" coreId="0" bitwidth="4" opcode="load" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>write</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="v_out_V_out_write_ln0" coreId="3387254816" opcode="write" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>v_out_V_out</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="_ln0" coreId="3387256208" opcode="ret" m_display="0" m_topoIndex="34" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="189" pipe_depth="1" RegionName="VITIS_LOOP_105_5">
+    <basic_blocks id="18" name=".preheader10" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>.split8._crit_edge</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.loopexit.loopexit2.exitStub</controlOutputObjs>
+      <controlOutputObjs>.split8</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="i_V" lineNumber="1049" originalName="i.V" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" fileDirectory=".." coreId="0" contextFuncName="operator_eq_32_true" bitwidth="2" opcode="load" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" linenumber="1049" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="operator==&amp;lt;32, true&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>trunc</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="14" name="icmp_ln1057" lineNumber="1057" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="icmp_ln1057_fu_95_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="operator_lt_32_true" bitwidth="1" opcode="icmp" m_display="0" m_delay="0.44" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" linenumber="1057" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="operator&amp;lt;&amp;lt;32, true&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="16" name="add_ln870" lineNumber="870" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="add_ln870_fu_101_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="operator_add_assign_1_false" bitwidth="2" opcode="add" m_display="0" m_delay="0.54" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="br_ln105" lineNumber="105" fileName="../deQAM.cpp" fileDirectory=".." coreId="1852793632" contextFuncName="deQAM" opcode="br" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../deQAM.cpp" linenumber="105" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="deQAM"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split8</controlInputObjs>
+        <controlInputObjs>.loopexit.loopexit2.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>1049</validLinenumbers>
+        <validLinenumbers>1057</validLinenumbers>
+        <validLinenumbers>870</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../deQAM.cpp">
+        <validLinenumbers>105</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="24" name=".split8" type="BlockType">
+      <controlInputObjs>.preheader10</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_41</controlOutputObjs>
+      <controlOutputObjs>.split8._crit_edge</controlOutputObjs>
+      <controlOutputObjs>block_35</controlOutputObjs>
+      <controlOutputObjs>block_30</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="trunc_ln1049" lineNumber="1049" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="trunc_ln1049_fu_107_p1" coreId="3387411568" contextFuncName="operator_eq_32_true" bitwidth="1" opcode="trunc" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" linenumber="1049" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="operator==&amp;lt;32, true&amp;gt;"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="select_ln573_1" lineNumber="573" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="select_ln573_1_fu_111_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_long_long" bitwidth="4" opcode="select" m_display="0" m_delay="0.39" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" linenumber="573" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="operator long long"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="select_ln573" lineNumber="573" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" fileDirectory=".." rtlName="select_ln573_fu_119_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="operator_long_long" bitwidth="4" opcode="select" m_display="0" m_delay="0.39" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" linenumber="573" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="operator long long"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>switch</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="_ln112" lineNumber="112" fileName="../deQAM.cpp" fileDirectory=".." coreId="3386964496" contextFuncName="deQAM" opcode="switch" m_display="0" m_delay="0.72" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../deQAM.cpp" linenumber="112" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="deQAM"/>
+        <dataInputObjs>select</dataInputObjs>
+        <controlInputObjs>block_41</controlInputObjs>
+        <controlInputObjs>.split8._crit_edge</controlInputObjs>
+        <controlInputObjs>block_35</controlInputObjs>
+        <controlInputObjs>block_30</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>1049</validLinenumbers>
+        <validLinenumbers>573</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../deQAM.cpp">
+        <validLinenumbers>112</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="30" name="block_30" type="BlockType">
+      <controlInputObjs>.split8</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>.split8._crit_edge</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="v_out_V_load_4" lineNumber="223" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" fileDirectory=".." coreId="1919252069" contextFuncName="ap_uint_37_s" bitwidth="4" opcode="load" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" linenumber="223" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="ap_uint&amp;lt;37&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="26" name="select_ln223_1" lineNumber="223" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="select_ln223_1_fu_127_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="ap_uint_37_s" bitwidth="4" opcode="select" m_display="0" m_topoIndex="17" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" linenumber="223" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="ap_uint&amp;lt;37&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="v_out_V_5" lineNumber="223" originalName="v_out.V" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="v_out_V_5_fu_135_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_uint_37_s" bitwidth="4" opcode="add" m_display="0" m_delay="0.79" m_topoIndex="18" m_clusterGroupNumber="1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" linenumber="223" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="ap_uint&amp;lt;37&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="v_out_V_write_ln121" lineNumber="121" fileName="../deQAM.cpp" fileDirectory=".." coreId="3387463360" contextFuncName="deQAM" opcode="store" m_display="0" m_delay="0.52" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../deQAM.cpp" linenumber="121" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="deQAM"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln121" lineNumber="121" fileName="../deQAM.cpp" fileDirectory=".." coreId="1734439968" contextFuncName="deQAM" opcode="br" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../deQAM.cpp" linenumber="121" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="deQAM"/>
+        <controlInputObjs>.split8._crit_edge</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h">
+        <validLinenumbers>223</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../deQAM.cpp">
+        <validLinenumbers>121</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="35" name="block_35" type="BlockType">
+      <controlInputObjs>.split8</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>.split8._crit_edge</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="v_out_V_load" lineNumber="223" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" fileDirectory=".." coreId="1043276322" contextFuncName="ap_uint_37_s" bitwidth="4" opcode="load" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" linenumber="223" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="ap_uint&amp;lt;37&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="v_out_V_4" lineNumber="223" originalName="v_out.V" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="v_out_V_4_fu_146_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_uint_37_s" bitwidth="4" opcode="add" m_display="0" m_delay="0.79" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" linenumber="223" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="ap_uint&amp;lt;37&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="v_out_V_write_ln118" lineNumber="118" fileName="../deQAM.cpp" fileDirectory=".." coreId="3386903712" contextFuncName="deQAM" opcode="store" m_display="0" m_delay="0.52" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../deQAM.cpp" linenumber="118" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="deQAM"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="br_ln118" lineNumber="118" fileName="../deQAM.cpp" fileDirectory=".." coreId="3387250112" contextFuncName="deQAM" opcode="br" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../deQAM.cpp" linenumber="118" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="deQAM"/>
+        <controlInputObjs>.split8._crit_edge</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h">
+        <validLinenumbers>223</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../deQAM.cpp">
+        <validLinenumbers>118</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="41" name="block_41" type="BlockType">
+      <controlInputObjs>.split8</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>.split8._crit_edge</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="v_out_V_load_3" lineNumber="223" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" fileDirectory=".." coreId="1684367475" contextFuncName="ap_uint_37_s" bitwidth="4" opcode="load" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" linenumber="223" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="ap_uint&amp;lt;37&amp;gt;"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="select_ln223" lineNumber="223" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="select_ln223_fu_157_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="ap_uint_37_s" bitwidth="4" opcode="select" m_display="0" m_topoIndex="26" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" linenumber="223" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="ap_uint&amp;lt;37&amp;gt;"/>
+        <dataInputObjs>trunc</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="v_out_V_3" lineNumber="223" originalName="v_out.V" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" fileDirectory=".." rtlName="v_out_V_3_fu_165_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="ap_uint_37_s" bitwidth="4" opcode="add" m_display="0" m_delay="0.79" m_topoIndex="27" m_clusterGroupNumber="2">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h" linenumber="223" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="ap_uint&amp;lt;37&amp;gt;"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="v_out_V_write_ln124" lineNumber="124" fileName="../deQAM.cpp" fileDirectory=".." coreId="3387411568" contextFuncName="deQAM" opcode="store" m_display="0" m_delay="0.52" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../deQAM.cpp" linenumber="124" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="deQAM"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="br_ln124" lineNumber="124" fileName="../deQAM.cpp" fileDirectory=".." coreId="0" contextFuncName="deQAM" opcode="br" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="../deQAM.cpp" linenumber="124" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="deQAM"/>
+        <controlInputObjs>.split8._crit_edge</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int.h">
+        <validLinenumbers>223</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="../deQAM.cpp">
+        <validLinenumbers>124</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="44" name=".split8._crit_edge" type="BlockType">
+      <controlInputObjs>.split8</controlInputObjs>
+      <controlInputObjs>block_30</controlInputObjs>
+      <controlInputObjs>block_35</controlInputObjs>
+      <controlInputObjs>block_41</controlInputObjs>
+      <controlOutputObjs>switch</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>.preheader10</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="i_V_4_write_ln870" lineNumber="870" fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" fileDirectory=".." coreId="1702258035" contextFuncName="operator_add_assign_1_false" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h" linenumber="870" fileDirectory="/mnt/HLSNAS/g110064539/composable_IP_file/deQAM_src/project" functionName="operator+=&amp;lt;1, false&amp;gt;"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="br_ln0" coreId="3387411568" opcode="br" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <controlInputObjs>.preheader10</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h">
+        <validLinenumbers>870</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <regnodes realName="i_V_4_reg_185">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <regnodes realName="v_out_V_reg_192">
+    <nodeIds>5</nodeIds>
+  </regnodes>
+  <expressionNodes realName="select_ln573_fu_119">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln1049_fu_107">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln573_1_fu_111">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="v_out_V_3_fu_165">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln1057_fu_95">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="v_out_V_4_fu_146">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln870_fu_101">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="v_out_V_fu_56">
+    <nodeIds>5</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_V_4_fu_52">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="v_out_V_5_fu_135">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln223_1_fu_127">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln223_fu_157">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="store_ln118_store_fu_152">
+    <nodeIds>33</nodeIds>
+  </ioNodes>
+  <ioNodes realName="i_V_load_fu_92">
+    <nodeIds>12</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_82">
+    <nodeIds>8</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln124_store_fu_171">
+    <nodeIds>39</nodeIds>
+  </ioNodes>
+  <ioNodes realName="v_out_V_load_2_load_fu_181">
+    <nodeIds>45</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_79">
+    <nodeIds>25</nodeIds>
+    <nodeIds>31</nodeIds>
+    <nodeIds>36</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln121_store_fu_141">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="v_V_0_reload_read_read_fu_60">
+    <nodeIds>6</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln0_write_fu_72">
+    <nodeIds>46</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln870_store_fu_176">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_87">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="v_V_1_reload_read_read_fu_66">
+    <nodeIds>7</nodeIds>
+  </ioNodes>
+  <ioPorts name="v_V_0_reload">
+    <contents name="read">
+      <nodeIds>6</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="v_V_1_reload">
+    <contents name="read">
+      <nodeIds>7</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="v_out_V_out">
+    <contents name="write">
+      <nodeIds>46</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+    </states>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="deQAM_Pipeline_VITIS_LOOP_105_5" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="4" mMaxLatency="4">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>11</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_105_5" mII="1" mDepth="1" mMinTripCount="2" mMaxTripCount="2" mMinLatency="2" mMaxLatency="2" mType="1">
+      <basicBlocks>18</basicBlocks>
+      <basicBlocks>24</basicBlocks>
+      <basicBlocks>30</basicBlocks>
+      <basicBlocks>35</basicBlocks>
+      <basicBlocks>41</basicBlocks>
+      <basicBlocks>44</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>48</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,1424 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.435 MB.
+INFO: [HLS 200-10] Analyzing design file '../CP_insertion.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3.76 seconds. CPU system time: 0.3 seconds. Elapsed time: 3.74 seconds; current allocated memory: 253.188 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:30:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:71:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:65:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:57:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:50:13)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:5:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.74 seconds. CPU system time: 0.2 seconds. Elapsed time: 4.5 seconds; current allocated memory: 255.275 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.276 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 283.322 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.22 seconds. CPU system time: 0 seconds. Elapsed time: 0.26 seconds; current allocated memory: 327.323 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_29_1' (../CP_insertion.cpp:16) in function 'CP_insertion' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_55_3' (../CP_insertion.cpp:11) in function 'CP_insertion' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.33 seconds; current allocated memory: 394.441 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_54_2' (../CP_insertion.cpp:11:13) in function 'CP_insertion'.
+INFO: [HLS 200-472] Inferring partial write operation for 'in_r.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 429.333 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CP_insertion' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_insertion_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_29_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.11 seconds; current allocated memory: 429.662 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 429.991 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_2_VITIS_LOOP_55_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_54_2_VITIS_LOOP_55_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 430.272 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 430.690 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_insertion' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 430.910 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 431.205 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_insertion_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CP_insertion_Pipeline_VITIS_LOOP_29_1' pipeline 'VITIS_LOOP_29_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CP_insertion_Pipeline_VITIS_LOOP_29_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 431.711 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3' pipeline 'VITIS_LOOP_54_2_VITIS_LOOP_55_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 433.209 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_insertion' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'CP_insertion' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 1 instance(s).
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.500 MB.
+INFO: [HLS 200-10] Analyzing design file '../CP_insertion.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file '../syn_CP_removal.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 9.4 seconds. CPU system time: 0.57 seconds. Elapsed time: 9.84 seconds; current allocated memory: 253.379 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:29:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:224:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:221:15)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:221:29)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:215:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:209:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:151:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:121:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:49:13)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:7:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.91 seconds. CPU system time: 0.23 seconds. Elapsed time: 5.75 seconds; current allocated memory: 257.603 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 257.605 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.1 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 288.054 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-120] /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h:1171: multiplication is assumed not to overflow by default, otherwise, please add option '-fwrapv'.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.35 seconds; current allocated memory: 333.972 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_1' (../syn_CP_removal.cpp:15) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_103_3' (../syn_CP_removal.cpp:103) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_109_4' (../syn_CP_removal.cpp:109) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_115_5' (../syn_CP_removal.cpp:115) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_145_7' (../syn_CP_removal.cpp:145) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_205_9' (../syn_CP_removal.cpp:13) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_211_10' (../syn_CP_removal.cpp:13) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_219_11' (../syn_CP_removal.cpp:219) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_115_5' (../syn_CP_removal.cpp:115) in function 'syn_CP_removal' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_145_7' (../syn_CP_removal.cpp:145) in function 'syn_CP_removal' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_116_6' (../syn_CP_removal.cpp:116) in function 'syn_CP_removal' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_147_8' (../syn_CP_removal.cpp:147) in function 'syn_CP_removal' completely with a factor of 64.
+INFO: [XFORM 203-101] Partitioning array 'in_r.V' (../syn_CP_removal.cpp:54) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'in_i.V' (../syn_CP_removal.cpp:55) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'phi_real.V' (../syn_CP_removal.cpp:56) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'phi_real_temp.V' (../syn_CP_removal.cpp:57) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'phi_imag.V' (../syn_CP_removal.cpp:58) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'phi_imag_temp.V' (../syn_CP_removal.cpp:59) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'power.V' (../syn_CP_removal.cpp:60) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'power_temp.V' (../syn_CP_removal.cpp:61) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'power_2.V' (../syn_CP_removal.cpp:63) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'power_temp_2.V' (../syn_CP_removal.cpp:64) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-102] Partitioning array 'in_r.V.0' (../syn_CP_removal.cpp:54) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_r.V.1' (../syn_CP_removal.cpp:54) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_r.V.2' (../syn_CP_removal.cpp:54) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_r.V.3' (../syn_CP_removal.cpp:54) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_i.V.0' (../syn_CP_removal.cpp:55) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_i.V.1' (../syn_CP_removal.cpp:55) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_i.V.2' (../syn_CP_removal.cpp:55) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_i.V.3' (../syn_CP_removal.cpp:55) automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.59 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.81 seconds; current allocated memory: 408.493 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_99_2' (../syn_CP_removal.cpp:13:13) in function 'syn_CP_removal' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real.V[0]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real_temp.V[0]' (../syn_CP_removal.cpp:104:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag_temp.V[0]' (../syn_CP_removal.cpp:105:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp.V[0]' (../syn_CP_removal.cpp:106:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp_2.V[0]' (../syn_CP_removal.cpp:107:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real.V[0]' (../syn_CP_removal.cpp:110:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag.V[0]' (../syn_CP_removal.cpp:111:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'power.V[0]' (../syn_CP_removal.cpp:112:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_2.V[0]' (../syn_CP_removal.cpp:113:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real.V[0]' (../syn_CP_removal.cpp:172:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag.V[0]' (../syn_CP_removal.cpp:173:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'power.V[0]' (../syn_CP_removal.cpp:174:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_2.V[0]' (../syn_CP_removal.cpp:175:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp_2.V[0]' (../syn_CP_removal.cpp:161:32)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp.V[0]' (../syn_CP_removal.cpp:160:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag_temp.V[0]' (../syn_CP_removal.cpp:159:33)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real_temp.V[0]' (../syn_CP_removal.cpp:158:33)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_temp_real.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp_2.V[0]' (../syn_CP_removal.cpp:167:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp.V[0]' (../syn_CP_removal.cpp:166:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag_temp.V[0]' (../syn_CP_removal.cpp:165:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real_temp.V[0]' (../syn_CP_removal.cpp:164:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_2.V[0]' (../syn_CP_removal.cpp:181:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'power.V[0]' (../syn_CP_removal.cpp:180:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag.V[0]' (../syn_CP_removal.cpp:179:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real.V[0]' (../syn_CP_removal.cpp:178:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_2.V[0]' (../syn_CP_removal.cpp:187:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'power.V[0]' (../syn_CP_removal.cpp:186:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag.V[0]' (../syn_CP_removal.cpp:185:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real.V[0]' (../syn_CP_removal.cpp:184:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp_2.V[0]' (../syn_CP_removal.cpp:134:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp.V[0]' (../syn_CP_removal.cpp:132:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag_temp.V[0]' (../syn_CP_removal.cpp:129:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real_temp.V[0]' (../syn_CP_removal.cpp:128:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.52 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.73 seconds; current allocated memory: 520.637 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'syn_CP_removal' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_28_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_28_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.35 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.45 seconds; current allocated memory: 523.335 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 523.638 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_145_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_145_7'.
+WARNING: [HLS 200-880] The II Violation in module 'syn_CP_removal_Pipeline_VITIS_LOOP_145_7' (loop 'VITIS_LOOP_145_7'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('phi_imag_V_0_addr_write_ln173', ../syn_CP_removal.cpp:173) of variable 'sub_ln712_1' on array 'phi_imag_V_0' and 'load' operation ('phi_imag_V_0_load') on array 'phi_imag_V_0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 72, loop 'VITIS_LOOP_145_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.64 seconds. CPU system time: 0 seconds. Elapsed time: 0.67 seconds; current allocated memory: 528.177 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.38 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.45 seconds; current allocated memory: 534.495 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_205_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_205_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_205_9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.32 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.52 seconds; current allocated memory: 534.692 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 534.926 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_211_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_211_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_211_10'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 535.113 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 535.348 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_103_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_103_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_103_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 535.633 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 535.910 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_109_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_109_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_109_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 536.155 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 536.431 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_115_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_115_5'.
+WARNING: [HLS 200-880] The II Violation in module 'syn_CP_removal_Pipeline_VITIS_LOOP_115_5' (loop 'VITIS_LOOP_115_5'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('phi_imag_temp_V_0_addr_4_write_ln129', ../syn_CP_removal.cpp:129) of variable 'trunc_ln717_9' on array 'phi_imag_temp_V_0' and 'load' operation ('phi_imag_temp_V_0_load_3') on array 'phi_imag_temp_V_0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 37, loop 'VITIS_LOOP_115_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.33 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.39 seconds; current allocated memory: 538.982 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 542.957 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_219_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_219_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_219_11'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.22 seconds; current allocated memory: 543.154 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 543.382 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.25 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 546.150 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.35 seconds. CPU system time: 0 seconds. Elapsed time: 0.4 seconds; current allocated memory: 551.166 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_28_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'syn_CP_removal_Pipeline_VITIS_LOOP_28_1' pipeline 'VITIS_LOOP_28_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_28_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.36 seconds. CPU system time: 0 seconds. Elapsed time: 0.47 seconds; current allocated memory: 551.641 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_145_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'syn_CP_removal_Pipeline_VITIS_LOOP_145_7' pipeline 'VITIS_LOOP_145_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'syn_CP_removal_Pipeline_VITIS_LOOP_145_7' is 66064 from HDL expression: ((1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001))
+INFO: [RTGEN 206-100] Generating core module 'mul_20s_20s_40_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_27s_20s_42_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_27s_27s_42_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_66ns_129_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_10ns_17_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_432_27_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_464_27_1_1': 24 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_64s_6ns_64_68_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_6ns_7_11_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_8ns_6ns_8_12_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_145_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.37 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.58 seconds; current allocated memory: 570.715 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_205_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'syn_CP_removal_Pipeline_VITIS_LOOP_205_9' pipeline 'VITIS_LOOP_205_9' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_205_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.44 seconds; current allocated memory: 593.852 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_211_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'syn_CP_removal_Pipeline_VITIS_LOOP_211_10' pipeline 'VITIS_LOOP_211_10' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_211_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.16 seconds; current allocated memory: 594.991 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_103_3' 
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 251.500 MB.
+INFO: [HLS 200-10] Analyzing design file '../syn_CP_removal.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file '../CP_insertion.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 9.43 seconds. CPU system time: 0.51 seconds. Elapsed time: 9.88 seconds; current allocated memory: 253.604 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:30:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:71:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:65:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:57:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:50:13)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:5:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.71 seconds. CPU system time: 0.22 seconds. Elapsed time: 4.51 seconds; current allocated memory: 255.463 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.464 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 283.926 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.21 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 328.673 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_29_1' (../CP_insertion.cpp:16) in function 'CP_insertion' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_55_3' (../CP_insertion.cpp:11) in function 'CP_insertion' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.36 seconds; current allocated memory: 396.538 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_54_2' (../CP_insertion.cpp:11:13) in function 'CP_insertion'.
+INFO: [HLS 200-472] Inferring partial write operation for 'in_r.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.18 seconds; current allocated memory: 431.747 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CP_insertion' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_insertion_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_29_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.11 seconds; current allocated memory: 432.072 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 432.430 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_2_VITIS_LOOP_55_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_54_2_VITIS_LOOP_55_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 432.743 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 433.129 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_insertion' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 433.348 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.17 seconds; current allocated memory: 433.644 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_insertion_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CP_insertion_Pipeline_VITIS_LOOP_29_1' pipeline 'VITIS_LOOP_29_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CP_insertion_Pipeline_VITIS_LOOP_29_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 434.148 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3' pipeline 'VITIS_LOOP_54_2_VITIS_LOOP_55_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 435.619 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_insertion' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_id_V' to 'axis' (register, both mode).
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.516 MB.
+INFO: [HLS 200-10] Analyzing design file '../syn_CP_removal.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file '../CP_insertion.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 9.48 seconds. CPU system time: 0.44 seconds. Elapsed time: 9.8 seconds; current allocated memory: 253.620 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:30:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:71:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:65:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:57:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:50:13)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'CP_insertion(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_insertion.cpp:5:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.73 seconds. CPU system time: 0.25 seconds. Elapsed time: 5.07 seconds; current allocated memory: 255.463 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.464 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 283.926 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.19 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.27 seconds; current allocated memory: 328.673 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_29_1' (../CP_insertion.cpp:16) in function 'CP_insertion' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_55_3' (../CP_insertion.cpp:11) in function 'CP_insertion' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.24 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.34 seconds; current allocated memory: 396.530 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_54_2' (../CP_insertion.cpp:11:13) in function 'CP_insertion'.
+INFO: [HLS 200-472] Inferring partial write operation for 'in_r.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 431.741 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CP_insertion' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_insertion_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_29_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 432.070 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 432.428 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_54_2_VITIS_LOOP_55_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_54_2_VITIS_LOOP_55_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 432.738 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 433.127 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_insertion' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 433.346 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.15 seconds; current allocated memory: 433.642 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_insertion_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CP_insertion_Pipeline_VITIS_LOOP_29_1' pipeline 'VITIS_LOOP_29_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CP_insertion_Pipeline_VITIS_LOOP_29_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 434.148 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3' pipeline 'VITIS_LOOP_54_2_VITIS_LOOP_55_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CP_insertion_Pipeline_VITIS_LOOP_54_2_VITIS_LOOP_55_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 435.616 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_insertion' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_insertion/data_out_V_id_V' to 'axis' (register, both mode).
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.486 MB.
+INFO: [HLS 200-10] Analyzing design file '../CP_insertion.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file '../syn_CP_removal.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 10.88 seconds. CPU system time: 0.69 seconds. Elapsed time: 11.46 seconds; current allocated memory: 253.440 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:30:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:234:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:226:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:221:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:215:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:153:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:123:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:50:13)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'syn_CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../syn_CP_removal.cpp:7:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 6.07 seconds. CPU system time: 0.37 seconds. Elapsed time: 7.07 seconds; current allocated memory: 257.591 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 257.592 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.14 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.27 seconds; current allocated memory: 289.698 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-120] /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_fixed_base.h:1171: multiplication is assumed not to overflow by default, otherwise, please add option '-fwrapv'.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.32 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.43 seconds; current allocated memory: 336.741 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_29_1' (../syn_CP_removal.cpp:16) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_105_3' (../syn_CP_removal.cpp:105) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_111_4' (../syn_CP_removal.cpp:111) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_117_5' (../syn_CP_removal.cpp:54) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_147_7' (../syn_CP_removal.cpp:54) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_211_9' (../syn_CP_removal.cpp:15) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_217_10' (../syn_CP_removal.cpp:15) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_225_11' (../syn_CP_removal.cpp:225) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_230_12' (../syn_CP_removal.cpp:15) in function 'syn_CP_removal' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_117_5' (../syn_CP_removal.cpp:54) in function 'syn_CP_removal' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_147_7' (../syn_CP_removal.cpp:54) in function 'syn_CP_removal' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_118_6' (../syn_CP_removal.cpp:118) in function 'syn_CP_removal' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_149_8' (../syn_CP_removal.cpp:149) in function 'syn_CP_removal' completely with a factor of 64.
+INFO: [XFORM 203-101] Partitioning array 'in_r.V' (../syn_CP_removal.cpp:56) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'in_i.V' (../syn_CP_removal.cpp:57) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'phi_real.V' (../syn_CP_removal.cpp:58) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'phi_real_temp.V' (../syn_CP_removal.cpp:59) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'phi_imag.V' (../syn_CP_removal.cpp:60) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'phi_imag_temp.V' (../syn_CP_removal.cpp:61) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'power.V' (../syn_CP_removal.cpp:62) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'power_temp.V' (../syn_CP_removal.cpp:63) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'power_2.V' (../syn_CP_removal.cpp:65) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-101] Partitioning array 'power_temp_2.V' (../syn_CP_removal.cpp:66) in dimension 1 with a block factor 4.
+INFO: [XFORM 203-102] Partitioning array 'in_r.V.0' (../syn_CP_removal.cpp:56) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_r.V.1' (../syn_CP_removal.cpp:56) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_r.V.2' (../syn_CP_removal.cpp:56) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_r.V.3' (../syn_CP_removal.cpp:56) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_i.V.0' (../syn_CP_removal.cpp:57) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_i.V.1' (../syn_CP_removal.cpp:57) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_i.V.2' (../syn_CP_removal.cpp:57) automatically.
+INFO: [XFORM 203-102] Partitioning array 'in_i.V.3' (../syn_CP_removal.cpp:57) automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.83 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.06 seconds; current allocated memory: 412.767 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_101_2' (../syn_CP_removal.cpp:15:13) in function 'syn_CP_removal' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real.V[0]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real_temp.V[0]' (../syn_CP_removal.cpp:106:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag_temp.V[0]' (../syn_CP_removal.cpp:107:22)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp.V[0]' (../syn_CP_removal.cpp:108:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp_2.V[0]' (../syn_CP_removal.cpp:109:21)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real.V[0]' (../syn_CP_removal.cpp:112:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag.V[0]' (../syn_CP_removal.cpp:113:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'power.V[0]' (../syn_CP_removal.cpp:114:14)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_2.V[0]' (../syn_CP_removal.cpp:115:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'data_temp_real.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real.V[0]' (../syn_CP_removal.cpp:174:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag.V[0]' (../syn_CP_removal.cpp:175:18)
+INFO: [HLS 200-472] Inferring partial write operation for 'power.V[0]' (../syn_CP_removal.cpp:176:15)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_2.V[0]' (../syn_CP_removal.cpp:177:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp_2.V[0]' (../syn_CP_removal.cpp:163:32)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp.V[0]' (../syn_CP_removal.cpp:162:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag_temp.V[0]' (../syn_CP_removal.cpp:161:33)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real_temp.V[0]' (../syn_CP_removal.cpp:160:33)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp_2.V[0]' (../syn_CP_removal.cpp:169:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp.V[0]' (../syn_CP_removal.cpp:168:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag_temp.V[0]' (../syn_CP_removal.cpp:167:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real_temp.V[0]' (../syn_CP_removal.cpp:166:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_2.V[0]' (../syn_CP_removal.cpp:183:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'power.V[0]' (../syn_CP_removal.cpp:182:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag.V[0]' (../syn_CP_removal.cpp:181:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real.V[0]' (../syn_CP_removal.cpp:180:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_2.V[0]' (../syn_CP_removal.cpp:189:19)
+INFO: [HLS 200-472] Inferring partial write operation for 'power.V[0]' (../syn_CP_removal.cpp:188:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag.V[0]' (../syn_CP_removal.cpp:187:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real.V[0]' (../syn_CP_removal.cpp:186:20)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp_2.V[0]' (../syn_CP_removal.cpp:136:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'power_temp.V[0]' (../syn_CP_removal.cpp:134:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_imag_temp.V[0]' (../syn_CP_removal.cpp:131:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'phi_real_temp.V[0]' (../syn_CP_removal.cpp:130:26)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.71 seconds. CPU system time: 0.02 seconds. Elapsed time: 1.01 seconds; current allocated memory: 536.345 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'syn_CP_removal' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_29_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_29_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.41 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.54 seconds; current allocated memory: 539.189 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 539.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_147_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_147_7'.
+WARNING: [HLS 200-880] The II Violation in module 'syn_CP_removal_Pipeline_VITIS_LOOP_147_7' (loop 'VITIS_LOOP_147_7'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('phi_imag_V_0_addr_write_ln175', ../syn_CP_removal.cpp:175) of variable 'sub_ln712_1' on array 'phi_imag_V_0' and 'load' operation ('phi_imag_V_0_load') on array 'phi_imag_V_0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 162, loop 'VITIS_LOOP_147_7'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.89 seconds. CPU system time: 0 seconds. Elapsed time: 0.95 seconds; current allocated memory: 544.948 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.76 seconds. CPU system time: 0 seconds. Elapsed time: 0.83 seconds; current allocated memory: 552.413 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_211_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_211_9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_211_9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.56 seconds. CPU system time: 0 seconds. Elapsed time: 0.7 seconds; current allocated memory: 552.614 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 552.854 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_217_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_217_10'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_217_10'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 553.011 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 553.283 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_105_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_105_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_105_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 553.563 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 553.836 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_111_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_111_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_111_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 554.087 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 554.361 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_117_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_117_5'.
+WARNING: [HLS 200-880] The II Violation in module 'syn_CP_removal_Pipeline_VITIS_LOOP_117_5' (loop 'VITIS_LOOP_117_5'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between 'store' operation ('phi_imag_temp_V_0_addr_4_write_ln131', ../syn_CP_removal.cpp:131) of variable 'trunc_ln717_9' on array 'phi_imag_temp_V_0' and 'load' operation ('phi_imag_temp_V_0_load_3') on array 'phi_imag_temp_V_0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 2, Depth = 127, loop 'VITIS_LOOP_117_5'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.48 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.57 seconds; current allocated memory: 557.335 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.45 seconds. CPU system time: 0 seconds. Elapsed time: 0.52 seconds; current allocated memory: 561.866 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_225_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_225_11'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 1, loop 'VITIS_LOOP_225_11'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.27 seconds. CPU system time: 0 seconds. Elapsed time: 0.41 seconds; current allocated memory: 562.046 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 562.205 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal_Pipeline_VITIS_LOOP_230_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_230_12'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_230_12'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 562.365 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 562.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'syn_CP_removal' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.32 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.35 seconds; current allocated memory: 565.619 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.5 seconds. CPU system time: 0 seconds. Elapsed time: 0.58 seconds; current allocated memory: 570.834 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_29_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'syn_CP_removal_Pipeline_VITIS_LOOP_29_1' pipeline 'VITIS_LOOP_29_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_29_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.53 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.89 seconds; current allocated memory: 571.315 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_147_7' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'syn_CP_removal_Pipeline_VITIS_LOOP_147_7' pipeline 'VITIS_LOOP_147_7' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'syn_CP_removal_Pipeline_VITIS_LOOP_147_7' is 144317 from HDL expression: ((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))
+INFO: [RTGEN 206-100] Generating core module 'mul_20s_20s_40_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_27s_20s_42_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_27s_27s_42_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_27s_27s_54_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_64ns_66ns_129_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_7ns_9ns_15_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8ns_10ns_17_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_432_27_1_1': 8 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_464_27_1_1': 28 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_85ns_54s_85_89_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_64s_6ns_64_68_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_7ns_6ns_7_11_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_8ns_6ns_8_12_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_147_7'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.75 seconds. CPU system time: 0.03 seconds. Elapsed time: 1.06 seconds; current allocated memory: 602.963 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_211_9' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'syn_CP_removal_Pipeline_VITIS_LOOP_211_9' pipeline 'VITIS_LOOP_211_9' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_211_9'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.79 seconds. CPU system time: 0.02 seconds. Elapsed time: 2.06 seconds; current allocated memory: 627.583 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_217_10' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'syn_CP_removal_Pipeline_VITIS_LOOP_217_10' pipeline 'VITIS_LOOP_217_10' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_217_10'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 628.791 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_105_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'syn_CP_removal_Pipeline_VITIS_LOOP_105_3' pipeline 'VITIS_LOOP_105_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_105_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 630.146 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_111_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_111_4'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 631.883 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_117_5' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'syn_CP_removal_Pipeline_VITIS_LOOP_117_5' pipeline 'VITIS_LOOP_117_5' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-104] Estimated max fanout for 'syn_CP_removal_Pipeline_VITIS_LOOP_117_5' is 106107 from HDL expression: ((1'b0 == ap_block_pp0_stage1_11001) & (1'b1 == ap_CS_fsm_pp0_stage1))
+INFO: [RTGEN 206-100] Generating core module 'mul_20s_20s_40_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_27s_20s_42_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_27s_27s_42_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_27s_27s_54_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_31ns_33ns_63_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_464_27_1_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_85ns_54s_85_89_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_31ns_6ns_31_35_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_117_5'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1.65 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.8 seconds; current allocated memory: 652.192 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_225_11' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_225_11'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.91 seconds. CPU system time: 0.01 seconds. Elapsed time: 1.1 seconds; current allocated memory: 667.905 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal_Pipeline_VITIS_LOOP_230_12' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'syn_CP_removal_Pipeline_VITIS_LOOP_230_12' pipeline 'VITIS_LOOP_230_12' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal_Pipeline_VITIS_LOOP_230_12'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 668.881 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'syn_CP_removal' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_out_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_out_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'syn_CP_removal/data_out_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'syn_CP_removal' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_34ns_65_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_32s_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_32ns_9s_32_36_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sdiv_9ns_32ns_8_13_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'urem_32ns_6ns_5_36_seq_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'syn_CP_removal'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.31 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.85 seconds; current allocated memory: 681.999 MB.
+INFO: [RTMG 210-278] Implementing memory 'syn_CP_removal_phi_real_V_0_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'syn_CP_removal_data_temp_real_V_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1.95 seconds. CPU system time: 0.04 seconds. Elapsed time: 2.56 seconds; current allocated memory: 702.231 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.39 seconds. CPU system time: 0 seconds. Elapsed time: 0.44 seconds; current allocated memory: 713.027 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 251.631 MB.
+INFO: [HLS 200-10] Analyzing design file '../CP_insertion.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file '../CP_removal.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 7.19 seconds. CPU system time: 0.65 seconds. Elapsed time: 7.68 seconds; current allocated memory: 253.725 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:29:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:59:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:59:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:56:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:49:13)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:5:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 4.05 seconds. CPU system time: 0.26 seconds. Elapsed time: 4.87 seconds; current allocated memory: 255.328 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.329 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.2 seconds; current allocated memory: 283.124 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.28 seconds; current allocated memory: 327.091 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_1' (../CP_removal.cpp:15) in function 'CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_54_3' (../CP_removal.cpp:54) in function 'CP_removal' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.26 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.35 seconds; current allocated memory: 393.904 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_53_2' (../CP_removal.cpp:53:27) in function 'CP_removal'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.16 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 428.442 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CP_removal' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_removal_Pipeline_VITIS_LOOP_28_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_28_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.06 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.16 seconds; current allocated memory: 428.803 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 429.134 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_removal_Pipeline_VITIS_LOOP_53_2_VITIS_LOOP_54_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_53_2_VITIS_LOOP_54_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_53_2_VITIS_LOOP_54_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 429.347 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 429.654 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_removal' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 429.867 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 430.187 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_removal_Pipeline_VITIS_LOOP_28_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CP_removal_Pipeline_VITIS_LOOP_28_1' pipeline 'VITIS_LOOP_28_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CP_removal_Pipeline_VITIS_LOOP_28_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 430.660 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_removal_Pipeline_VITIS_LOOP_53_2_VITIS_LOOP_54_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CP_removal_Pipeline_VITIS_LOOP_53_2_VITIS_LOOP_54_3' pipeline 'VITIS_LOOP_53_2_VITIS_LOOP_54_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CP_removal_Pipeline_VITIS_LOOP_53_2_VITIS_LOOP_54_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 432.041 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_removal' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_out_V_last_V' to 'axis' (register, both mode).
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -version=2.0.1
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2LV-c 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -rtl verilog -version 2.0.1 
+INFO: [HLS 200-1510] Running: set_directive_top -name CP_removal CP_removal 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 251.670 MB.
+INFO: [HLS 200-10] Analyzing design file '../CP_removal.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-10] Analyzing design file '../CP_insertion.cpp' ... 
+WARNING: [HLS 207-5301] unused parameter 'print': /opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_int_base.h:792:16
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 7.04 seconds. CPU system time: 0.58 seconds. Elapsed time: 7.48 seconds; current allocated memory: 253.799 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-279] Initial Interval estimation mode is set into default.
+INFO: [HLS 214-284] Auto array partition mode is set into default.
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:293:50)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:296:25)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:67)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:295:36)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:39)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:294:23)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:304:51)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:307:26)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:68)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_user_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:306:37)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_dest_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:40)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>::get_id_ptr()' into 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' (/opt/Xilinx/Vitis_HLS/2021.1/common/technology/autopilot/ap_axi_sdata.h:305:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:29:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:59:14)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:59:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::read()' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:56:23)
+INFO: [HLS 214-131] Inlining function 'hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>::write(hls::axis<ap_uint<64>, 1ul, 1ul, 1ul> const&)' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:49:13)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, double>(double, bool)' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, double>(double, bool)' into '__hls_fptosi_double_i32' (/wrk/ci/prod/2021.1/rdi_builds/continuous/2021_06_10_3247384/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:55:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_double_i32' into 'CP_removal(hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<64>, 1ul, 1ul, 1ul>, 0>&)' (../CP_removal.cpp:5:0)
+INFO: [HLS 214-270] Starting automatic array partition analysis...
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.91 seconds. CPU system time: 0.24 seconds. Elapsed time: 4.71 seconds; current allocated memory: 255.436 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 255.437 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.19 seconds; current allocated memory: 283.781 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.22 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.29 seconds; current allocated memory: 328.728 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_28_1' (../CP_removal.cpp:15) in function 'CP_removal' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_54_3' (../CP_removal.cpp:54) in function 'CP_removal' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.24 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.34 seconds; current allocated memory: 396.511 MB.
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_53_2' (../CP_removal.cpp:53:27) in function 'CP_removal'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.15 seconds. CPU system time: 0 seconds. Elapsed time: 0.18 seconds; current allocated memory: 431.556 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'CP_removal' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_removal_Pipeline_VITIS_LOOP_28_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_28_1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.12 seconds; current allocated memory: 431.890 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 432.251 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_removal_Pipeline_VITIS_LOOP_53_2_VITIS_LOOP_54_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_53_2_VITIS_LOOP_54_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'VITIS_LOOP_53_2_VITIS_LOOP_54_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 432.465 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 432.774 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'CP_removal' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 432.987 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.14 seconds. CPU system time: 0 seconds. Elapsed time: 0.15 seconds; current allocated memory: 433.293 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_removal_Pipeline_VITIS_LOOP_28_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CP_removal_Pipeline_VITIS_LOOP_28_1' pipeline 'VITIS_LOOP_28_1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CP_removal_Pipeline_VITIS_LOOP_28_1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 433.811 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_removal_Pipeline_VITIS_LOOP_53_2_VITIS_LOOP_54_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'CP_removal_Pipeline_VITIS_LOOP_53_2_VITIS_LOOP_54_3' pipeline 'VITIS_LOOP_53_2_VITIS_LOOP_54_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'CP_removal_Pipeline_VITIS_LOOP_53_2_VITIS_LOOP_54_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 435.147 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'CP_removal' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_in_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_out_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_out_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_out_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_out_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'CP_removal/data_out_V_last_V' to 'axis' (register, both mode).
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2021.1 (64-bit)
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+==============================================================

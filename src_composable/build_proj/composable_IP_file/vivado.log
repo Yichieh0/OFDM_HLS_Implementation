@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Feb 14 22:31:28 2023
+# Process ID: 214520
+# Current directory: /mnt/HLSNAS/g110064539/test_tcl/composable_IP_file
+# Command line: vivado
+# Log file: /mnt/HLSNAS/g110064539/test_tcl/composable_IP_file/vivado.log
+# Journal file: /mnt/HLSNAS/g110064539/test_tcl/composable_IP_file/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /mnt/HLSNAS/g110064539/OFDM_Implemented_by_HLS/vivado_project/vivado_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/HLSNAS/g110064539/OFDM_Implemented_by_HLS/vitis_hls_project/prj_impulse_test.prj/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 7628.371 ; gain = 104.738 ; free physical = 27346 ; free virtual = 77103
+update_compile_order -fileset sources_1
+close_project
+close_project: Time (s): cpu = 00:02:22 ; elapsed = 00:00:08 . Memory (MB): peak = 7896.508 ; gain = 0.000 ; free physical = 27781 ; free virtual = 77566
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 14 22:51:54 2023...
