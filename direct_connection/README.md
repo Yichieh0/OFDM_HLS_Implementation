@@ -1,4 +1,5 @@
 ## 。Introduction
+This project is about the implementation of OFDM with multipath channel by HLS through direct connection.  
 #### - System Architecture
 **1. The Basic Block Diagram of HLS OFDM System**
 ![image](https://user-images.githubusercontent.com/102524142/218687462-f4d4fbfd-b3d1-400e-84f1-d97df15432d2.png)
