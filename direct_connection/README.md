@@ -86,9 +86,9 @@ The process will automatically started.
 In this section, some example results would be shown.  
 #### - The original figure
 ![image](https://user-images.githubusercontent.com/102524142/218643587-45041ab9-763b-453e-b0fe-ca159eef95aa.png)
-#### - The figuer after transmitted and decoded by the OFDM system with dircet connection, for TAP_NUM=1 SNR=10dB  
+#### - The figuer after transmitted and decoded by the OFDM system, for TAP_NUM=1 SNR=10dB  
 ![image](https://user-images.githubusercontent.com/102524142/218643624-4938cba4-970a-45c3-b3a1-f99af5b0e384.png)
-#### - The figure after transmitted and decoded by the OFDM system with dircet connection and with error correction code, for TAP_NUM=1 SNR=10dB  
+#### - The figure after transmitted and decoded by the OFDM system with error correction code, for TAP_NUM=1 SNR=10dB  
 ![image](https://user-images.githubusercontent.com/102524142/218643748-2ff0995e-0b8d-4a35-aeee-0a4ba823acf7.png)
 #### - SNR(dB) v.s. BER, for TAP_NUM=1  
 **#without ecc**  
