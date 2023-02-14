@@ -24,12 +24,12 @@ There exists 2 modes for testing, one with error correction code and one without
 Both modes have their own top_module.cpp, top_module.h and main.cpp.  
 The setting could be adjusted in `direct_connection/vitis_hls_project/run_hls.tcl`.  
 Just leave the one you need, and the right files would be added automatically after the command implemented.  
-> #) === without ECC ===  
+> **#=== without ECC ===**  
 >add_files "src/top_module.cpp"  
 >add_files "src/top_module.h"  
 >add_files -tb "src/main.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas" 
 
-> #) === with ECC ===  
+> **#=== with ECC ===**  
 >add_files "src/top_module_ECC.cpp"  
 >add_files "src/top_module_ECC.h"  
 >add_files -tb "src/main_ECC.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"  
@@ -87,10 +87,10 @@ In this section, some example results would be shown.
 ![image](https://user-images.githubusercontent.com/102524142/218643748-2ff0995e-0b8d-4a35-aeee-0a4ba823acf7.png)
 #### - SNR(dB) v.s. BER, for TAP_NUM=1  
 
-#without ecc  
+**#without ecc**  
 SNR = [0, 5, 10, 15, 20]  
 BER = [0.34173791458072586,0.2110691750104297,0.09312565185648728,0.015298615456821028,0.0001600307676261994]  
-#ecc  
+**#ecc**  
 SNR = [0, 5, 10, 15, 20]  
 BER = [0.49950576241134755,0.4793715451606174,0.07988964069670422,0.000023336462244472255,0]  
 ![image](https://user-images.githubusercontent.com/102524142/218641341-053a5bb5-85c0-4cbb-a7a8-68ae2cd8e687.png)
