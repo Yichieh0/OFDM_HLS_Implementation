@@ -9,9 +9,10 @@ This project is about the implementation of OFDM with multipath channel by HLS t
 ## 。Folder Structure
 In this section, the function of all folders in this project would be explained.
 #### - vitis_hls_project
-In this folder, all source codes could be found in the folder `direct_connection/vitis_hls_project/src/`.
+In this folder, all source codes could be found in the folder `direct_connection/vitis_hls_project/src/`.  
+After the command `make run CSIM=1 CSYNTH=1 COSIM=1` processed, the project `prj_umpulse_test.prj` will be built automatically under the folder `direct_connection/vitis_hls_project/`.  
 #### - vivado_project
-This folder contains a vivado project.  
+This folder contains a vivado project `direct_connection/vivado_project/`.  
 The IP in the block design can be replaced by your design.
 #### - jupyter_notebooks_project
 There are host codes and example files of .hwh and .tcl files.  
@@ -27,7 +28,7 @@ Three different projects under different tools should be built up during the pro
 Download the vitis_hls project `direct_connection/vitis_hls_project/`.  
 All the source code files could be found in the folder `direct_connection/vitis_hls_project/src/`.  
 2. **Project Setting Adjustment**  
-There exists 2 modes for testing, one with error correction code and one without.  
+There exists 2 modes for testing, one with error correction code and another is the basic one.  
 Both modes have their own top_module.cpp, top_module.h and main.cpp.  
 The setting could be modified in `direct_connection/vitis_hls_project/run_hls.tcl`.  
 Just leave the part you need, and the corresponding files would be added automatically after the command implemented.  
@@ -91,7 +92,7 @@ The process will automatically started.
 In this section, some example results would be shown.  
 #### - The original figure
 ![image](https://user-images.githubusercontent.com/102524142/218643587-45041ab9-763b-453e-b0fe-ca159eef95aa.png)
-#### - The figuer after transmitted and decoded by the OFDM system, for TAP_NUM=1 SNR=10dB  
+#### - The figuer after transmitted and decoded by the basic OFDM system, for TAP_NUM=1 SNR=10dB  
 ![image](https://user-images.githubusercontent.com/102524142/218643624-4938cba4-970a-45c3-b3a1-f99af5b0e384.png)
 #### - The figure after transmitted and decoded by the OFDM system with error correction code, for TAP_NUM=1 SNR=10dB  
 ![image](https://user-images.githubusercontent.com/102524142/218643748-2ff0995e-0b8d-4a35-aeee-0a4ba823acf7.png)
