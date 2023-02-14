@@ -109,7 +109,6 @@ void channel_gen(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data
 				read_out.data = (data_temp_r, data_temp_i);
 				data_out.write(read_out);
 			}
-
 			else if(TAPS_NUM==2){
 				for (i = TAPS_NUM-1 ;i > 0; i--){
 					x_real_2taps[i] = x_real_2taps[i-1];
@@ -124,6 +123,8 @@ void channel_gen(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data
 						n_2taps[i] = random_num.read();
 					}
 				}
+				x_out_r = 0;
+				x_out_i = 0;
 				for(i = 0; i < TAPS_NUM; i++){
 					x_out_r = x_out_r + (ap_fixed<IN_WL,IN_IL>)(weight_2taps[i]*n_2taps[i])*x_real_2taps[i];
 					x_out_i = x_out_i + (ap_fixed<IN_WL,IN_IL>)(weight_2taps[i]*n_2taps[i])*x_imag_2taps[i];
@@ -150,6 +151,8 @@ void channel_gen(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data
 						n_3taps[i] = random_num.read();
 					}
 				}
+				x_out_r = 0;
+				x_out_i = 0;
 				for(i = 0; i < TAPS_NUM; i++){
 					x_out_r = x_out_r + (ap_fixed<IN_WL,IN_IL>)(weight_3taps[i]*n_3taps[i])*x_real_3taps[i];
 					x_out_i = x_out_i + (ap_fixed<IN_WL,IN_IL>)(weight_3taps[i]*n_3taps[i])*x_imag_3taps[i];
@@ -177,6 +180,8 @@ void channel_gen(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data
 						n_6taps[i] = random_num.read();
 					}
 				}
+				x_out_r = 0;
+				x_out_i = 0;
 				for(i = 0; i < TAPS_NUM; i++){
 					x_out_r = x_out_r + (ap_fixed<IN_WL,IN_IL>)(weight_6taps[i]*n_6taps[i])*x_real_6taps[i];
 					x_out_i = x_out_i + (ap_fixed<IN_WL,IN_IL>)(weight_6taps[i]*n_6taps[i])*x_imag_6taps[i];
@@ -203,6 +208,8 @@ void channel_gen(hls::stream<ap_axiu_64>& data_in, hls::stream<ap_axiu_64>& data
 						n_9taps[i] = random_num.read();
 					}
 				}
+				x_out_r = 0;
+				x_out_i = 0;
 				for(i = 0; i < TAPS_NUM; i++){
 					x_out_r = x_out_r + (ap_fixed<IN_WL,IN_IL>)(weight_9taps[i]+n_9taps[i])*x_real_9taps[i];
 					x_out_i = x_out_i + (ap_fixed<IN_WL,IN_IL>)(weight_9taps[i]+n_9taps[i])*x_imag_9taps[i];
