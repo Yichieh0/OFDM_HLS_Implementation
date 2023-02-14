@@ -50,7 +50,7 @@ Download the vivado project `direct_connection/vivado_project/`.
 2. **Open the Vivado Project**  
 The project could be found by following the path `direct_connection/vivado_project/vivado_project.xpr`.
 
-3. ****
+3. **IIP to the Project**
 
 4. **Open Block Design**
 Open the block design by
