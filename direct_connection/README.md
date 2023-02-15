@@ -8,13 +8,15 @@ This project is about the implementation of OFDM with multipath channel by HLS t
 
 ## 。Folder Structure
 In this section, the function of all folders in this project would be explained.
-#### - vitis_hls_project
-In this folder, all source codes could be found in the folder `direct_connection/vitis_hls_project/src/`.  
-After the command `make run CSIM=1 CSYNTH=1 COSIM=1` processed, the project `prj_umpulse_test.prj` will be built automatically under the folder `direct_connection/vitis_hls_project/`.  
-#### - vivado_project
-This folder contains a vivado project `direct_connection/vivado_project/`.  
+#### - project
+1. **vitis_hls_project**
+In this folder, all source codes could be found in the folder `project/vitis_hls_project/src/`.  
+After the command `make run CSIM=1 CSYNTH=1 COSIM=1` processed, the project `prj_umpulse_test.prj` will be built automatically under the folder `project/vitis_hls_project/`.  
+2. **vivado_project**
+This folder contains a vivado project tcl file `project/vivado_project.tcl`.  
+The vivado project could be automatically built by the command `vivado -source vivado_project.tcl`. 
 The IP in the block design can be replaced by your design.
-#### - jupyter_notebooks_project
+3. **jupyter_notebooks_project**
 There are host codes and example files of .hwh and .tcl files.  
 The examples files mentioned above could directly process by the host code, or you could replaced by your own design.
 #### - impl_result
@@ -25,12 +27,12 @@ In this section, the whole building flow would be shown.
 Three different projects under different tools should be built up during the process.  
 #### - Vitis_hls
 1. **Resources Downloading**  
-Download the vitis_hls project `direct_connection/vitis_hls_project/`.  
-All the source code files could be found in the folder `direct_connection/vitis_hls_project/src/`.  
+Download the vitis_hls project `direct_connection/project/vitis_hls_project/`.  
+All the source code files could be found in the folder `direct_connection/project/vitis_hls_project/src/`.  
 2. **Project Setting Adjustment**  
 There exists 2 modes for testing, one with error correction code and another is the basic one.  
 Both modes have their own top_module.cpp, top_module.h and main.cpp.  
-The setting could be modified in `direct_connection/vitis_hls_project/run_hls.tcl`.  
+The setting could be modified in `direct_connection/project/vitis_hls_project/run_hls.tcl`.  
 Just leave the part you need, and the corresponding files would be added automatically after the command implemented.  
 > **#=== without ECC ===**  
 >add_files "src/top_module.cpp"  
@@ -41,8 +43,8 @@ Just leave the part you need, and the corresponding files would be added automat
 >add_files "src/top_module_ECC.h"  
 >add_files -tb "src/main_ECC.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"  
 3. **Simulations and Synthesis**  
-The steps CSIM, CSYNTH and COSIM can directly implement by the command `make run CSIM=1 CSYNTH=1 COSIM=1` under the folder `direct_connection/vitis_hls_project/`.  
-After that the project `prj_impulse_test.prj` would be built under the folder `direct_connection/vitis_hls_project/`.  
+The steps CSIM, CSYNTH and COSIM can directly implement by the command `make run CSIM=1 CSYNTH=1 COSIM=1` under the folder `direct_connection/project/vitis_hls_project/`.  
+After that the project `prj_impulse_test.prj` would be built under the folder `direct_connection/project/vitis_hls_project/`.  
 >In CSIM, the correction of your C or C++ code could be checked.  
 >In CSYNTH, the total resources of your design and some violation which could be optimized could be checked.  
 >In COSIM, the correction of the RTL design built up by the synthesis process could be checked.  
@@ -55,9 +57,9 @@ Open the project by vitis_hls GUI, and clicked the `Export IP` button.
 ![image](https://user-images.githubusercontent.com/102524142/218661965-c5f6f4fe-e5dc-4548-b103-72fa21f4a3bb.png)  
 #### - Vivado
 1. **Resources Downloading**  
-Download the vivado project `direct_connection/vivado_project/`.  
+Download the vivado project tcl file `direct_connection/project/vivado_project.tcl`.  
 2. **Open the Vivado Project**  
-The project could be found by following the path `direct_connection/vivado_project/vivado_project.xpr`.
+The project could be built by the following command `vivado -source vivado_project.tcl`.
 
 3. **Import IP to the Project**  
 The IP file would be under the folder `direct_connection/vitis_hls_project/prj_impulse_test.prj/solution1`  
@@ -75,11 +77,11 @@ Open the block design and replace the top_module_0 IP with your own IP.
 6. **Generate Bitstream**  
 Clicked the generate bistream button in the toolbar.  
 ![image](https://user-images.githubusercontent.com/102524142/218656985-ad70af63-fe23-430d-a271-cf508d7b8a1c.png)  
-After generating bitstream, you would get `direct_connection/vivado_project/vivado_project.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh` and `direct_connection/vivado_project/vivado_project.runs/impl_1/design_1_wrapper.tcl`.
+After generating bitstream, you would get `direct_connection/project/vivado_project/vivado_project.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh` and `direct_connection/project/vivado_project/vivado_project.runs/impl_1/design_1_wrapper.tcl`.
 
 #### - Jupyter Notebooks
 1. **Resources Downloading**  
-Download the host code of jupyter notebooks in `direct_connection/vivado_project/`. 
+Download the host code of jupyter notebooks in `direct_connection/project/jupyter_notebooks_project/`. 
 2. **Upload Necessary Files**  
 Upload the .bit and .hwh files and rename those files should into the same name.  
 Upload an arbitrary picture for testing.  
