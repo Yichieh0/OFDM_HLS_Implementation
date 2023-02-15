@@ -87,6 +87,7 @@ Upload the .bit and .hwh files and rename those files should into the same name.
 Upload an arbitrary picture for testing.  
 3. **Parameter Setting**
 The parameters can be modified into different combinations for different situations.
+![image](https://user-images.githubusercontent.com/102524142/218928701-1fd3440d-c4c9-43bc-b805-7011c23c6131.png)
 >1. qam_num = 16 : The modulation type. (The system only supports 16QAM.)  
 >2. sym_num = 2 : Since the length of a single pixel is 8, a single data can be turned into 8/(the length of a data be modulated) symbols.  
 >3. pilot_width = 4 : The interval of two pilots. The smaller the value is, the result of the channel equalization would be more accurate.  
@@ -98,7 +99,7 @@ The parameters can be modified into different combinations for different situati
 >(The IP should be exported once again after modified the FFT_len) 
 4. **Run the Process**  
 Clicked the start button at the toolbox then the process will automatically started.
-
+![image](https://user-images.githubusercontent.com/102524142/218928569-404af209-e9fb-42ae-b0c9-4122dd55beb1.png)
 ## 。Run Test
 In this section, some example results would be shown.  
 #### - The original figure
