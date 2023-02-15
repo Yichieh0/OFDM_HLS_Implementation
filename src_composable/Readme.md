@@ -13,6 +13,8 @@ In this folder, vivado script tcl file is in the `src_composable/build_proj/comm
 This file is used when running host.  
 #### - composable_pipeline.ipynb
 This file is used when running host. This file is host code.  
+#### - Only_IP_source_code
+In this folder, all source codes could be found, but only .C++, .h file.
 
 ## 。Build Setup
 In this section, vivado building flow would be shown.   
