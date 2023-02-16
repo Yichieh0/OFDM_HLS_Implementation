@@ -11,7 +11,7 @@ In this section, the function of all folders in this project would be explained.
 #### - project
 1. **vitis_hls_project**
 In this folder, all source codes could be found in the folder `project/vitis_hls_project/src/`.  
-After the command `make run CSIM=1 CSYNTH=1 COSIM=1` processed, the project `prj_umpulse_test.prj` will be built automatically under the folder `project/vitis_hls_project/`.  
+After the command `vitis_hls -f run_hls.tcl` processed, the project `prj_umpulse_test.prj` will be built automatically under the folder `project/vitis_hls_project/`.  
 2. **vivado_project**
 This folder contains a vivado project tcl file `project/vivado_project.tcl`.  
 The vivado project could be automatically built by the command `vivado -source vivado_project.tcl`. 
