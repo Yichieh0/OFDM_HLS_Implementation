@@ -45,16 +45,15 @@ Just leave the part you need, and the corresponding files would be added automat
 3. **Simulations and Synthesis**  
 The steps CSIM, CSYNTH and COSIM can directly implement by the command `make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1` under the folder `direct_connection/project/vitis_hls_project/`.  
 After that the project `prj_impulse_test.prj` would be built under the folder `direct_connection/project/vitis_hls_project/`.  
->In CSIM, the correction of your C or C++ code could be checked.  
->In CSYNTH, the total resources of your design and some violation which could be optimized could be checked.  
->In COSIM, the correction of the RTL design built up by the synthesis process could be checked.  
+>In CSIM=1, the correction of your C or C++ code could be checked.  
+>In CSYNTH=1, the total resources of your design and some violation which could be optimized could be checked.  
+>In COSIM=1, the correction of the RTL design built up by the synthesis process could be checked.  
 4. **Results**  
 After the process of CSIM and COSIM done, the symbol error rate and the bit error rate could be checked.  
 If the results of CSIM and COSIM are the same, then your design are ready to be exported.  
 ![image](https://user-images.githubusercontent.com/102524142/218661346-5eee9d67-79e7-410b-8258-9509217fa900.png)  
 5. **Export IP**  
-Open the project by vitis_hls GUI, and clicked the `Export IP` button.   
-![image](https://user-images.githubusercontent.com/102524142/218661965-c5f6f4fe-e5dc-4548-b103-72fa21f4a3bb.png)  
+>In EXPORT_IP=1, the ip will export automatically by the script.
 #### - Vivado
 1. **Resources Downloading**  
 Download the vivado project tcl file `direct_connection/project/vivado_project.tcl`.  
