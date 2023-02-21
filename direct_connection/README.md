@@ -42,41 +42,22 @@ Just leave the part you need, and the corresponding files would be added automat
 >add_files "src/top_module_ECC.cpp"  
 >add_files "src/top_module_ECC.h"  
 >add_files -tb "src/main_ECC.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"  
-3. **Simulations and Synthesis**  
+3. **Simulations and Synthesis and Export IP**  
 The steps CSIM, CSYNTH and COSIM can directly implement by the command `make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1` under the folder `direct_connection/project/vitis_hls_project/`.  
 After that the project `prj_impulse_test.prj` would be built under the folder `direct_connection/project/vitis_hls_project/`.  
 >In CSIM=1, the correction of your C or C++ code could be checked.  
 >In CSYNTH=1, the total resources of your design and some violation which could be optimized could be checked.  
 >In COSIM=1, the correction of the RTL design built up by the synthesis process could be checked.  
+>In EXPORT_IP=1, the ip would be exported automatically by the script (or it could be done by GUI).
 4. **Results**  
 After the process of CSIM and COSIM done, the symbol error rate and the bit error rate could be checked.  
-If the results of CSIM and COSIM are the same, then your design are ready to be exported.  
 ![image](https://user-images.githubusercontent.com/102524142/218661346-5eee9d67-79e7-410b-8258-9509217fa900.png)  
-5. **Export IP**  
->In EXPORT_IP=1, the ip would be exported automatically by the script (or it could be done by GUI).
+
 #### - Vivado
 1. **Resources Downloading**  
 Download the vivado project tcl file `direct_connection/project/vivado_project.tcl`.  
 2. **Open the Vivado Project**  
-The project could be built by the following command `vivado -source vivado_project.tcl`.
-
-3. **Import IP to the Project**  
-The IP file would be under the folder `direct_connection/vitis_hls_project/prj_impulse_test.prj/solution1`  
-![image](https://user-images.githubusercontent.com/102524142/218662980-235e3b82-19a4-4969-bb91-6f75c2f293d4.png)
-
-4. **Open Block Design**  
-Open the block design and replace the top_module_0 IP with your own IP.  
-![image](https://user-images.githubusercontent.com/102524142/218667122-d48f67ce-9d16-4c07-b966-7bfb0099d313.png)
-
-![image](https://user-images.githubusercontent.com/102524142/218648419-04583858-bb18-4a3c-b0c9-cc1dd90be8a9.png)
-
-5. **Create HDL Wrapper**  
-![image](https://user-images.githubusercontent.com/102524142/218645130-f3a166d4-06a2-4ff2-90c0-b41584ec9acd.png)
-
-6. **Generate Bitstream**  
-Clicked the generate bistream button in the toolbar.  
-![image](https://user-images.githubusercontent.com/102524142/218656985-ad70af63-fe23-430d-a271-cf508d7b8a1c.png)  
-After generating bitstream, you would get `direct_connection/project/vivado_project/vivado_project.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh` and `direct_connection/project/vivado_project/vivado_project.runs/impl_1/design_1_wrapper.tcl`.
+The project could be built by the following command `vivado -source vivado_project.tcl`, And the bitstream would be generated automatically.
 
 #### - Jupyter Notebooks
 1. **Resources Downloading**  
