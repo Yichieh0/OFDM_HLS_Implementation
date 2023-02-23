@@ -15,8 +15,8 @@ In wireless communication system, multipath and fading noise are the two main pu
 
 ### > Folder Structure :
 
-1. Direct Conntection
+1. Direct Conntection  
 All sub-kernels will be wrapped in the top_module, which connect to the host code with hls master interface. Those sub-kernels will connect to each other with hls stream interface.
 
-2. Composable Pipeline
+2. Composable Pipeline  
 The whole system will be connected by the hls stream interface.
