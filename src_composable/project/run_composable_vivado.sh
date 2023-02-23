@@ -7,6 +7,16 @@ then
  echo "start vivado project"
 fi
 
+if [ -d "./commun.hwh" ]
+then
+ rm ./commun.hwh
+fi
+
+if [ -d "./commun.bit" ]
+then
+ rm ./commun.bit
+fi
+
 vivado -source composable_communcation.tcl
 
 echo "======================================================================"
