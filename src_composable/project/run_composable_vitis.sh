@@ -3,43 +3,82 @@
 
 echo "start vitis_hls project"
 cd ./vitis_hls_composable_project/channel
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../CP/CP_insertion
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../CP_removal
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../../ECC/decoder
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../encoder
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../../FFT/FFT
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../IFFT
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../../pilot/pilot_insertion
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../pilot_removal
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../../QAM/QAM
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../deQAM
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../../sym_pixl/pixl2sym
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 cd ../sym2pixl
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 
 echo "======================================================================"
