@@ -2,7 +2,10 @@
 # bash run_composable.sh
 
 cd ./vitis_hls_project
-make clean
+if [ -d "./prj_impulse_test.prj/" ]
+then
+  make clean
+fi
 echo "start vitis_hls project"
 make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1
 
