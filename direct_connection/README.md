@@ -24,6 +24,9 @@ The result reports of vitis_hls_project would be included in this folder.
 
 ## 。Build Setup
 In this section, the whole building flow would be shown.  
+By process the command `bash run_main.sh` under the folder `direct_connection/project/`, the vitis_hls and vivado project would be built automatically by the script.  
+And the target files `design1` and `` would be copied to the folder `direct_connection/project/`.
+
 Three different projects under different tools should be built up during the process.  
 #### - Vitis_hls
 1. **Resources Downloading**  
