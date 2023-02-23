@@ -7,7 +7,7 @@ then
  echo "start vivado project"
 fi
 
-vivado -source vivado_project.tcl.tcl
+vivado -source vivado_project.tcl
 
 echo "======================================================================"
 echo "                           vivado complete "
