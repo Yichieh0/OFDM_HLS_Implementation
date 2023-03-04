@@ -26,12 +26,12 @@ The result reports of vitis_hls_project will be included in this folder.
 ## 。Build Setup
 In this section, the whole building flow would be shown.  
 By process the command `bash run_main.sh` under the folder `direct_connection/project/`, the vitis_hls and vivado project would be built automatically by the script.  
-And the target files `design1` and `` would be copied to the folder `direct_connection/project/`.
+And the target files `design1.bit` and `design1.hwh` would be copied to the folder `direct_connection/project/jupyter_notebooks_project/`.
 
 Three different projects under different tools should be built up during the process.  
 #### - Vitis_hls
-1. **Resources Downloading**  
-Download the vitis_hls project `direct_connection/project/vitis_hls_project/`.  
+1. **Resources**  
+Change the current direction to `direct_connection/project/vitis_hls_project/`.  
 All the source code files could be found in the folder `direct_connection/project/vitis_hls_project/src/`.  
 2. **Project Setting Adjustment**  
 There exists 2 modes for testing, one with error correction code and another is the basic one.  
@@ -47,25 +47,22 @@ Just leave the part you need, and the corresponding files would be added automat
 >add_files "src/top_module_ECC.h"  
 >add_files -tb "src/main_ECC.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"  
 3. **Simulations and Synthesis and Export IP**  
-The steps CSIM, CSYNTH and COSIM can directly implement by the command `make run CSIM=1 CSYNTH=1 COSIM=1 EXPORT_IP=1` under the folder `direct_connection/project/vitis_hls_project/`.  
+The steps CSIM, CSYNTH and COSIM can directly implement by the command `bash run_vitis.sh` under the folder `direct_connection/project/vitis_hls_project/`.  
 After that the project `prj_impulse_test.prj` would be built under the folder `direct_connection/project/vitis_hls_project/`.  
->In CSIM=1, the correction of your C or C++ code could be checked.  
->In CSYNTH=1, the total resources of your design and some violation which could be optimized could be checked.  
->In COSIM=1, the correction of the RTL design built up by the synthesis process could be checked.  
->In EXPORT_IP=1, the ip would be exported automatically by the script (or it could be done by GUI).
 4. **Results**  
-After the process of CSIM and COSIM done, the symbol error rate and the bit error rate could be checked.  
+After all, the symbol error rate and the bit error rate could be checked.  
 ![image](https://user-images.githubusercontent.com/102524142/218661346-5eee9d67-79e7-410b-8258-9509217fa900.png)  
+And the IP is automatically exported by the script.
 
 #### - Vivado
-1. **Resources Downloading**  
-Download the vivado project tcl file `direct_connection/project/vivado_project.tcl`.  
+1. **Resources**  
+Make sure your current direction is still in `direct_connection/project/vitis_hls_project/`.  
 2. **Open the Vivado Project**  
-The project could be built by the following command `vivado -source vivado_project.tcl`, And the bitstream would be generated automatically.
+The project could be built by the following command `bash run_vivado.sh`, And the bitstream would be generated automatically.
 
 #### - Jupyter Notebooks
 1. **Resources Downloading**  
-Download the host code of jupyter notebooks in `direct_connection/project/jupyter_notebooks_project/`. 
+Check the `.bit` and `.hwh` files are already in the folder `direct_connection/project/jupyter_notebooks_project/`. 
 2. **Upload Necessary Files**  
 Upload the .bit and .hwh files and rename those files should into the same name.  
 Upload an arbitrary picture for testing.  
