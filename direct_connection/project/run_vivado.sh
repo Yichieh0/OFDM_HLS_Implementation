@@ -19,8 +19,8 @@ fi
 
 vivado -source vivado_project.tcl -mode tcl
 
-cp ./vivado_project/vivado_project.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh ./design_1.hwh
-cp ./vivado_project/vivado_project.runs/impl_1/design_1_wrapper.bit ./design_1.bit
+cp ./vivado_project/vivado_project.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh ./jupyter_notebooks_project/design_1.hwh
+cp ./vivado_project/vivado_project.runs/impl_1/design_1_wrapper.bit ./jupyter_notebooks_project/design_1.bit
 
 echo "======================================================================"
 echo "                           vivado complete "
