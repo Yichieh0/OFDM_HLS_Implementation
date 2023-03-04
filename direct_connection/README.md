@@ -26,7 +26,7 @@ The result reports of vitis_hls_project will be included in this folder.
 ## 。Build Setup
 In this section, the whole building flow would be shown.  
 By process the command `bash run_main.sh` under the folder `direct_connection/project/`, the vitis_hls and vivado project would be built automatically by the script.  
-And the target files `design1.bit` and `design1.hwh` would be copied to the folder `direct_connection/project/jupyter_notebooks_project/`.
+After all the processes done, then the target files `design1.bit` and `design1.hwh` will be copied to the folder `direct_connection/project/jupyter_notebooks_project/`.
 
 Three different projects under different tools should be built up during the process.  
 #### - Vitis_hls
@@ -47,12 +47,11 @@ Just leave the part you need, and the corresponding files would be added automat
 >add_files "src/top_module_ECC.h"  
 >add_files -tb "src/main_ECC.cpp" -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"  
 3. **Simulations and Synthesis and Export IP**  
-The steps CSIM, CSYNTH and COSIM can directly implement by the command `bash run_vitis.sh` under the folder `direct_connection/project/vitis_hls_project/`.  
+The steps CSIM, CSYNTH, COSIM and EXPORT_IP can directly implement by the command `bash run_vitis.sh` under the folder `direct_connection/project/vitis_hls_project/`.  
 After that the project `prj_impulse_test.prj` would be built under the folder `direct_connection/project/vitis_hls_project/`.  
 4. **Results**  
 After all, the symbol error rate and the bit error rate could be checked.  
 ![image](https://user-images.githubusercontent.com/102524142/218661346-5eee9d67-79e7-410b-8258-9509217fa900.png)  
-And the IP is automatically exported by the script.
 
 #### - Vivado
 1. **Resources**  
