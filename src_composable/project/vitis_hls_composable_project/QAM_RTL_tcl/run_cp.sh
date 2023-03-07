@@ -8,8 +8,8 @@ then
  echo "start vivado project"
 fi
 
-rm -r *.log
-rm -r *.jou
+rm *.log
+rm *.jou
 
 vivado -source QAM_RTL_IP.tcl -mode tcl
 
