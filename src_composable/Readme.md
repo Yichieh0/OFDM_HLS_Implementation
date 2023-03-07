@@ -4,24 +4,26 @@ The block diagram of the system can be shown as follow
 Every IP should be exported individually.
 More detailed information could be found in the design document and workbook on the home page.
 
+## 。Built whole project
+Go to this folder `cd project/`.  
+This folder can built whole project by the command `bash run_composable_main.sh` under this folder.  
+This command will generate `composable_communcation/` vivado project, include communcation composable pipeline block design. 
+
 ## 。Folder Structure
 In this section, the function of all folders in this project would be explained.
-#### - build_proj
-In this folder, all source codes and vitis project IP could be found in the folder `src_composable/build_proj/composable_IP_file/`.  
-In this folder, vivado script tcl file is in the `src_composable/build_proj/commun_script_tcl`.
-#### - commun_paths.json
-This file is used when running host.  
-#### - composable_pipeline.ipynb
-This file is used when running host. This file is host code.  
-#### - Only_IP_source_code
-In this folder, all source codes could be found, but only .C++, .h file.
+#### - jupyer_notebook_project
+In this folder, all host code could be found, include:
+###### - commun_path.json
+###### - composable_pipeline.ipynb
+After you use the command `bash run_composable_main.sh` to build porject, two files will be added to the file:
+###### - commun.bit
+###### - commun.hwh
+When you want to use FPGA verification, put the files in this file into jupyer notebook.  
 
-## 。Build Setup
-In this section, vivado building flow would be shown.   
-
-Download the project and `cd` to folder `src_composable/build_proj/`.  
-Run `vivado -source commun_script.tcl` in console at current folder.  
-Then the vivado project can be built successfully.
+#### - vitis_hls_composable_project
+In this folder, all vitis hls source code could be found.  
+All source code can be used by `OFDM_HLS_Implementation/src_composable/project/run_composable_vitis.sh` tcl file to generate each vitis project.  
+This tcl file is called by `run_composable_main.sh` in `project/` folder. 
 
 Be aware of the consistency of the vivado version and board. 
 The version of vivado we are using is "2021.1",and use board "kv260".
