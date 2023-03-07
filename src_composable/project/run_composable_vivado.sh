@@ -17,6 +17,11 @@ if [ -d "./commun.bit" ]
 then
  rm ./commun.bit
 fi
+#------RTL_QAM----#
+cd vitis_hls_composable_project/QAM_RTL_tcl/
+bash run_cp.sh
+cd ../../
+#------------------#
 
 vivado -source composable_communcation.tcl -mode tcl
 
