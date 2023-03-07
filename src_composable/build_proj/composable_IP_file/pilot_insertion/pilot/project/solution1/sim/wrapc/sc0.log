@@ -1,8 +1,0 @@
-   Build using "/opt/Xilinx/Vitis_HLS/2021.1/tps/lnx64/gcc-6.2.0/bin/g++"
-   Compiling apatb_pilot_insertion.cpp
-   Compiling pilot_insertion.cpp_pre.cpp.tb.cpp
-   Compiling equalizer_pilot_removal.cpp_pre.cpp.tb.cpp
-   Compiling main.cpp_pre.cpp.tb.cpp
-   Compiling apatb_pilot_insertion_util.cpp
-   Compiling apatb_pilot_insertion_ir.ll
-   Generating cosim.tv.exe

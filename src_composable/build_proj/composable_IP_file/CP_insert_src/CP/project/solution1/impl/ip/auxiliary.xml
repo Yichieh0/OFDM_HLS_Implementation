@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="CP_insertion" xd:componentRef="CP_insertion" xd:initiationInterval="x" xd:clockPeriod="20" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
-  <xd:arg xd:name="data_in" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in" xd:busTypeRef="axis" xd:dataWidth="64"/>
-  <xd:arg xd:name="data_out" xd:originalName="data_out" xd:direction="out" xd:interfaceRef="data_out" xd:busTypeRef="axis" xd:dataWidth="64"/>
-  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
-  <xd:resourceEstimates xd:LUT="1257" xd:FF="1266" xd:BRAM="0" xd:DSP="3"/>
-</xd:acceleratorMap>

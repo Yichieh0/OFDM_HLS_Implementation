@@ -1,8 +1,0 @@
-   Build using "/opt/Xilinx/Vitis_HLS/2021.1/tps/lnx64/gcc-6.2.0/bin/g++"
-   Compiling QAM.cpp_pre.cpp.tb.cpp
-   Compiling apatb_deQAM_util.cpp
-   Compiling deQAM.cpp_pre.cpp.tb.cpp
-   Compiling apatb_deQAM.cpp
-   Compiling main.cpp_pre.cpp.tb.cpp
-   Compiling apatb_deQAM_ir.ll
-   Generating cosim.tv.exe

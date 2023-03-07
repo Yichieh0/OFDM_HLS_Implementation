@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /mnt/HLSNAS/g110064539/composable_IP_file/QAM_src/project/qam/solution1/./sim/autowrap/testbench/QAM.cpp_pre.cpp.tb.cpp

@@ -1,7 +1,0 @@
-Running: xsim.dir/pixl_to_symbol/xsimk -simmode gui -wdb pixl_to_symbol.wdb -simrunnum 0 -socket 59187
-Design successfully loaded
-Design Loading Memory Usage: 29124 KB (Peak: 29132 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 112088 KB (Peak: 168392 KB)
-Simulation CPU Usage: 80 ms

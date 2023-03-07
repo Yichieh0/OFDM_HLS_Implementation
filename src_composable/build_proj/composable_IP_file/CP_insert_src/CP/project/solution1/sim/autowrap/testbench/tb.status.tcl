@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /mnt/HLSNAS/g110064539/composable_IP_file/CP_insert_src/CP/project/solution1/./sim/autowrap/testbench/CP_insertion.cpp_pre.cpp.tb.cpp

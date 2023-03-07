@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /mnt/HLSNAS/g110064539/composable_IP_file/ecc_encoder_src/solution1/./sim/autowrap/testbench/encoder.cpp_pre.cpp.tb.cpp

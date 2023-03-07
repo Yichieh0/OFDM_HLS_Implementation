@@ -1,8 +1,0 @@
-   Build using "/opt/Xilinx/Vitis_HLS/2021.1/tps/lnx64/gcc-6.2.0/bin/g++"
-   Compiling apatb_pixl_to_symbol_util.cpp
-   Compiling pixl_to_symbol.cpp_pre.cpp.tb.cpp
-   Compiling apatb_pixl_to_symbol.cpp
-   Compiling symbol_to_pixl.cpp_pre.cpp.tb.cpp
-   Compiling main.cpp_pre.cpp.tb.cpp
-   Compiling apatb_pixl_to_symbol_ir.ll
-   Generating cosim.tv.exe
