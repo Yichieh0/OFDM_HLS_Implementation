@@ -20,8 +20,8 @@ fi
 
 vivado -source composable_communcation.tcl -mode tcl
 
-cp ./composable_communcation/composable_communcation.gen/sources_1/bd/commun/hw_handoff/commun.hwh commun.hwh
-cp ./composable_communcation/composable_communcation.runs/impl_1/commun_wrapper.bit commun.bit
+cp ./composable_communcation/composable_communcation.gen/sources_1/bd/commun/hw_handoff/commun.hwh jupyter_notebooks_project/commun.hwh
+cp ./composable_communcation/composable_communcation.runs/impl_1/commun_wrapper.bit ./jupyter_notebooks_project/commun.bit
 
 echo "======================================================================"
 echo "                           vivado complete "
