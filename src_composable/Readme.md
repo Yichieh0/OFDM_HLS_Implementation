@@ -25,7 +25,9 @@ In this folder, all vitis hls source code could be found.
 All source code can be used by `OFDM_HLS_Implementation/src_composable/project/run_composable_vitis.sh` tcl file to generate each vitis project.  
 This tcl file is called by `run_composable_main.sh` in `project/` folder. 
 
-Be aware of the consistency of the vivado version and board. 
+
+
+- Be aware of the consistency of the vivado version and board. 
 The version of vivado we are using is "2021.1",and use board "kv260".
 ![image](https://user-images.githubusercontent.com/102540321/218909422-b9c85355-c4ff-429c-96e6-6094b1cf5fb1.png)
 
